@@ -1,3 +1,3 @@
-<h1>About this site</h1>
+<h1>Who I am</h1>
+
 <p>TODO...</p>
-<a href="/">Home</a>
