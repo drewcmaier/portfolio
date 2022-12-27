@@ -1,9 +1,12 @@
+@import '@fontsource/concert-one';
+@import '@fontsource/oxygen';
+
 :root {
     --color-neutral: rgba(0%, 0%, 0%, 0.9);
     --color-background: rgba(100%, 100%, 100%, 1.0);
     --color-text: var(--color-neutral);
-
-    --font-body: Oxygen, sans-serif;
+    --font-heading: 'Concert One', sans-serif;
+    --font-body: 'Oxygen', sans-serif;
     --font-mono: 'Fira Mono', monospace;
     /* Font scale: https://type-scale.com/. Using Major third (rems) */
     --font-size-0: 0.8rem;
@@ -31,6 +34,7 @@ h2,
 h3,
 h4,
 h5 {
+    font-family: var(--font-heading);
     font-weight: bold;
 }
 

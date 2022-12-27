@@ -27,5 +27,9 @@
 		"typescript": "^4.9.3",
 		"vite": "^4.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@fontsource/concert-one": "^4.5.9",
+		"@fontsource/oxygen": "^4.5.9"
+	}
 }
