@@ -1,3 +1,3 @@
 <h1>Who I am</h1>
 
-<p>TODO...</p>
+<p>I am a web developer in Phoenixville, PA</p>

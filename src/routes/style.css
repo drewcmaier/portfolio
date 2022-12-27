@@ -4,10 +4,10 @@
 :root {
     --color-neutral: rgba(0%, 0%, 0%, 0.9);
     --color-background: rgba(100%, 100%, 100%, 1.0);
+    --color-accent: rgba(13, 135, 122, 1.0);
     --color-text: var(--color-neutral);
-    --font-heading: 'Concert One', sans-serif;
-    --font-body: 'Oxygen', sans-serif;
-    --font-mono: 'Fira Mono', monospace;
+    --color-text-inverse: var(--color-background);
+
     /* Font scale: https://type-scale.com/. Using Major third (rems) */
     --font-size-0: 0.8rem;
     --font-size-1: 1rem;
@@ -16,6 +16,15 @@
     --font-size-4: 2rem;
     --font-size-5: 2.5rem;
     --font-size-6: 3rem;
+
+    --breakpoint-sm: 20rem;
+    --breakpoint-md: 32rem;
+    --breakpoint-lg: 48rem;
+
+    --font-heading: 'Concert One', sans-serif;
+    --font-body: 'Oxygen', sans-serif;
+    --font-mono: 'Fira Mono', monospace;
+
     font-family: var(--font-body);
     font-size: var(--font-size-1);
     color: var(--color-text);
@@ -25,25 +34,21 @@ body {
     min-height: 100vh;
     margin: 0;
     background-attachment: fixed;
-    background-color: var(--color-bg-1);
+    background-color: var(--color-background);
     background-size: 100vw 100vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+:where(h1, h2, h3, h4, h5) {
     font-family: var(--font-heading);
     font-weight: bold;
 }
 
-p {
-    line-height: 1.5;
+:where(h1, h2, h3, h4, h5, p) {
+    margin: 0;
 }
 
-a {
-    font-weight: 400;
+p {
+    line-height: 1.5;
 }
 
 h1 {
@@ -64,6 +69,12 @@ h4 {
 
 h5 {
     font-size: var(--font-size-2);
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-text-inverse);
 }
 
 pre {
