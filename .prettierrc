@@ -17,5 +17,5 @@
 			}
 		}
 	],
-	"svelteSortOrder": "options-styles-scripts-markup"
+	"svelteSortOrder": "options-scripts-markup-styles"
 }
