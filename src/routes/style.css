@@ -2,9 +2,9 @@
 @import '@fontsource/oxygen';
 
 :root {
-    --color-neutral: rgba(0%, 0%, 0%, 0.9);
-    --color-background: rgba(100%, 100%, 100%, 1.0);
-    --color-accent: rgba(13, 135, 122, 1.0);
+    --color-neutral: rgb(10%, 10%, 10%);
+    --color-background: rgb(100%, 100%, 100%);
+    --color-accent: rgb(13, 135, 122);
     --color-text: var(--color-neutral);
     --color-text-inverse: var(--color-background);
 
@@ -40,7 +40,7 @@ body {
 
 :where(h1, h2, h3, h4, h5) {
     font-family: var(--font-heading);
-    font-weight: bold;
+    font-weight: 700;
 }
 
 :where(h1, h2, h3, h4, h5, p) {
@@ -52,19 +52,19 @@ p {
 }
 
 h1 {
-    font-size: var(--font-size-6);
-}
-
-h2 {
     font-size: var(--font-size-5);
 }
 
-h3 {
+h2 {
     font-size: var(--font-size-4);
 }
 
-h4 {
+h3 {
     font-size: var(--font-size-3);
+}
+
+h4 {
+    font-size: var(--font-size-2);
 }
 
 h5 {
@@ -72,20 +72,8 @@ h5 {
 }
 
 a {
-    font-weight: bold;
     text-decoration: none;
     color: var(--color-text-inverse);
-}
-
-pre {
-    font-size: 16px;
-    font-family: var(--font-mono);
-    background-color: rgba(255, 255, 255, 0.45);
-    border-radius: 3px;
-    box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-    padding: 0.5em;
-    overflow-x: auto;
-    color: var(--color-text);
 }
 
 input,
