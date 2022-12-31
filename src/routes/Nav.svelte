@@ -89,6 +89,7 @@
 
 	a {
 		font-size: var(--font-size-3);
+		color: var(--color-text-inverse);
 	}
 
 	button {

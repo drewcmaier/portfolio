@@ -14,7 +14,7 @@
 	main {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		/* align-items: center; */
 		padding: 2rem;
 	}
 </style>
