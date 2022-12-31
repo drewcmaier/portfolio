@@ -67,7 +67,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 2rem;
+		padding: 1rem;
 	}
 
 	h1 {
@@ -82,8 +82,9 @@
 
 		position: absolute;
 		/* TODO - measure */
-		inset: 7rem 0 0 0;
+		inset: 5rem 0 0 0;
 		backdrop-filter: brightness(20%) blur(8px);
+		background-color: var(--color-neutral);
 
 		display: flex;
 		flex-direction: column;
