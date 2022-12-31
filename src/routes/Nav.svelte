@@ -81,8 +81,10 @@
 		padding: 0;
 
 		position: absolute;
+		z-index: 9999;
 		/* TODO - measure */
 		inset: 7rem 0 0 0;
+		background-color: var(--color-neutral);
 		backdrop-filter: brightness(20%) blur(0.5rem);
 		-webkit-backdrop-filter: brightness(20%) blur(0.5rem);
 
