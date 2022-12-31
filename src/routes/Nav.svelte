@@ -67,7 +67,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 1rem;
+		padding: 2rem;
 	}
 
 	h1 {
@@ -82,9 +82,9 @@
 
 		position: absolute;
 		/* TODO - measure */
-		inset: 5rem 0 0 0;
-		backdrop-filter: brightness(20%) blur(8px);
-		background-color: var(--color-neutral);
+		inset: 7rem 0 0 0;
+		backdrop-filter: brightness(20%) blur(0.5rem);
+		-webkit-backdrop-filter: brightness(20%) blur(0.5rem);
 
 		display: flex;
 		flex-direction: column;
@@ -111,6 +111,7 @@
 	button {
 		z-index: 1;
 		margin: 0;
+		margin-right: -0.5rem;
 		cursor: pointer;
 		border: none;
 		background-color: transparent;
