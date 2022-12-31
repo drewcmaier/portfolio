@@ -1,11 +1,13 @@
 @import '@fontsource/concert-one';
-@import '@fontsource/oxygen';
+@import '@fontsource/oxygen/300.css';
+@import '@fontsource/oxygen/700.css';
 
 :root {
     --color-neutral: rgb(10%, 10%, 10%);
     --color-background: rgb(100%, 100%, 100%);
-    --color-accent: rgb(13, 135, 122);
+    --color-accent: rgb(0, 196, 186);
     --color-text: var(--color-neutral);
+    --color-text-secondary: rgb(20%, 20%, 20%);
     --color-text-inverse: var(--color-background);
 
     /* Font scale: https://type-scale.com/. Using Major third (rems) */
@@ -36,6 +38,7 @@ body {
     background-attachment: fixed;
     background-color: var(--color-background);
     background-size: 100vw 100vh;
+    font-weight: 400;
 }
 
 :where(h1, h2, h3, h4, h5) {
@@ -65,6 +68,7 @@ h2 {
 
 h3 {
     font-size: var(--font-size-3);
+    color: var(--color-text-secondary);
 }
 
 h4 {
@@ -75,9 +79,11 @@ h5 {
     font-size: var(--font-size-2);
 }
 
-a {
+a,
+a:visited {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    color: var(--color-accent);
 }
 
 strong {

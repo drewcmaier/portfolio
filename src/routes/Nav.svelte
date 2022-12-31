@@ -87,7 +87,8 @@
 		list-style-type: none;
 	}
 
-	a {
+	a,
+	a:visited {
 		font-size: var(--font-size-3);
 		color: var(--color-text-inverse);
 	}
