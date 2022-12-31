@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+
 	import Hamburger from '$lib/icons/Hamburger.svelte';
 	import X from '$lib/icons/X.svelte';
 
@@ -10,18 +12,22 @@
 		label: string;
 	}
 
-	let isMenuOpen = false;
-	function onToggleMenu() {
-		isMenuOpen = !isMenuOpen;
-	}
-
 	const routes: Route[] = [
 		{ path: '/about', label: 'About' },
 		{ path: '/projects', label: 'Projects' }
 	];
 
+	let isMenuOpen = false;
+	function onToggleMenu() {
+		isMenuOpen = !isMenuOpen;
+	}
+
 	function onClickLink() {
 		isMenuOpen = false;
+	}
+
+	function isCurrentRoute(route: string) {
+		return $page.route.id === route;
 	}
 </script>
 
@@ -42,9 +48,13 @@
 			<Hamburger />
 		{/if}
 	</button>
-	<ul id="nav-menu-list" class={isMenuOpen ? undefined : 'nav-menu--closed'}>
+	<ul id="nav-menu-list" class:nav-menu--closed={!isMenuOpen}>
 		{#each routes as route}
-			<li><a href={route.path} on:click={onClickLink}>{route.label}</a></li>
+			<li>
+				<a href={route.path} on:click={onClickLink} class:active={$page.route.id === route.path}
+					>{route.label}</a
+				>
+			</li>
 		{/each}
 	</ul>
 </nav>
@@ -91,6 +101,10 @@
 	a:visited {
 		font-size: var(--font-size-3);
 		color: var(--color-text-inverse);
+	}
+
+	a.active {
+		text-decoration: underline;
 	}
 
 	button {
