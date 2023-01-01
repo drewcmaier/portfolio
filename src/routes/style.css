@@ -23,8 +23,9 @@
     --breakpoint-md: 32rem;
     --breakpoint-lg: 48rem;
 
-    --font-heading: 'Concert One', sans-serif;
     --font-body: 'Oxygen', sans-serif;
+    --font-heading: var(--font-body);
+    /* --font-heading: 'Concert One', sans-serif; */
     --font-mono: 'Fira Mono', monospace;
 
     font-family: var(--font-body);
