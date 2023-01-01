@@ -25,30 +25,20 @@
 	function onClickLink() {
 		isMenuOpen = false;
 	}
-
-	function isCurrentRoute(route: string) {
-		return $page.route.id === route;
-	}
 </script>
 
 <nav>
 	<a href="/" on:click={onClickLink}>
 		<h1>Drew Maier</h1>
 	</a>
-	<button
-		on:click={onToggleMenu}
-		aria-label="Menu"
-		role="menu"
-		aria-controls="nav-menu-list"
-		aria-expanded={isMenuOpen}
-	>
+	<button on:click={onToggleMenu} aria-label="Menu" role="menu" aria-controls="nav-menu-list">
 		{#if isMenuOpen}
 			<X />
 		{:else}
 			<Hamburger />
 		{/if}
 	</button>
-	<ul id="nav-menu-list" class:nav-menu--closed={!isMenuOpen}>
+	<ul id="nav-menu-list" class:nav-menu--closed={!isMenuOpen} aria-expanded={isMenuOpen}>
 		{#each routes as route}
 			<li>
 				<a href={route.path} on:click={onClickLink} class:active={$page.route.id === route.path}
@@ -58,6 +48,20 @@
 		{/each}
 	</ul>
 </nav>
+
+<!--
+	Scroll lock when menu is open
+	Source: https://github.com/sveltejs/svelte/issues/3105
+-->
+<svelte:head>
+	{#if isMenuOpen}
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
+	{/if}
+</svelte:head>
 
 <style>
 	nav {
@@ -80,11 +84,9 @@
 		margin: 0 auto;
 		padding: 0;
 
-		position: absolute;
-		z-index: 9999;
+		position: fixed;
 		/* TODO - measure */
 		inset: 7rem 0 0 0;
-		background-color: var(--color-neutral);
 		backdrop-filter: brightness(20%) blur(0.5rem);
 		-webkit-backdrop-filter: brightness(20%) blur(0.5rem);
 
@@ -124,6 +126,10 @@
 	}
 
 	@media screen and (min-width: 32rem) {
+		nav {
+			position: static;
+		}
+
 		ul {
 			flex-direction: row;
 			position: static;
