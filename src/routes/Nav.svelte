@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-
 	import Hamburger from '$lib/icons/Hamburger.svelte';
 	import X from '$lib/icons/X.svelte';
 
@@ -13,7 +12,7 @@
 	}
 
 	const routes: Route[] = [
-		{ path: '/about', label: 'About' },
+		{ path: '/about', label: 'About me' },
 		{ path: '/projects', label: 'Projects' }
 	];
 
@@ -86,7 +85,7 @@
 
 		position: fixed;
 		/* TODO - measure */
-		inset: 7rem 0 0 0;
+		inset: 102px 0 0 0;
 		backdrop-filter: brightness(20%) blur(0.5rem);
 		-webkit-backdrop-filter: brightness(20%) blur(0.5rem);
 
@@ -115,10 +114,11 @@
 	button {
 		z-index: 1;
 		margin: 0;
-		margin-right: -0.5rem;
 		cursor: pointer;
 		border: none;
 		background-color: transparent;
+		padding: 1rem;
+		margin: -1rem;
 	}
 
 	.nav-menu--closed {
