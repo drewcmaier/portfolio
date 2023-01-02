@@ -14,6 +14,6 @@
 	main {
 		display: flex;
 		flex-direction: column;
-		padding: 2rem;
+		padding: var(--spacing-md);
 	}
 </style>

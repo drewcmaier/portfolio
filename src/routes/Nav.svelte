@@ -70,7 +70,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 2rem;
+		padding: var(--spacing-md);
 	}
 
 	h1 {
@@ -78,16 +78,15 @@
 	}
 
 	ul {
-		/* TODO breakpoints */
-		max-width: 48rem;
+		max-width: var(--breakpoint-lg);
 		margin: 0 auto;
 		padding: 0;
 
 		position: fixed;
 		/* TODO - measure */
-		inset: 102px 0 0 0;
-		backdrop-filter: brightness(20%) blur(0.5rem);
-		-webkit-backdrop-filter: brightness(20%) blur(0.5rem);
+		inset: 4rem 0 0 0;
+		backdrop-filter: brightness(20%) blur(8px);
+		-webkit-backdrop-filter: brightness(20%) blur(8px);
 
 		display: flex;
 		flex-direction: column;
@@ -117,8 +116,8 @@
 		cursor: pointer;
 		border: none;
 		background-color: transparent;
-		padding: 1rem;
-		margin: -1rem;
+		padding: 0.5rem;
+		margin: -0.5rem;
 	}
 
 	.nav-menu--closed {

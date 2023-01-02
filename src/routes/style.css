@@ -10,27 +10,44 @@
     --color-text-secondary: rgb(20%, 20%, 20%);
     --color-text-inverse: var(--color-background);
 
+    --spacing-xs: 0.125rem;
+    --spacing-sm: 0.25rem;
+    --spacing-md: 0.5rem;
+    --spacing-lg: 1.0rem;
+    --spacing-xl: 2.0rem;
+
     /* Font scale: https://type-scale.com/. Using Major third (rems) */
     --font-size-0: 0.8rem;
-    --font-size-1: 1rem;
+    --font-size-1: 1.0rem;
     --font-size-2: 1.25rem;
     --font-size-3: 1.5rem;
-    --font-size-4: 2rem;
+    --font-size-4: 2.0rem;
     --font-size-5: 2.5rem;
-    --font-size-6: 3rem;
+    --font-size-6: 3.0rem;
 
     --breakpoint-sm: 20rem;
     --breakpoint-md: 32rem;
     --breakpoint-lg: 48rem;
 
     --font-body: 'Oxygen', sans-serif;
+    --font-heading: 'Neuton', 'Bodoni MT';
     --font-heading: var(--font-body);
-    /* --font-heading: 'Concert One', sans-serif; */
     --font-mono: 'Fira Mono', monospace;
 
     font-family: var(--font-body);
     font-size: var(--font-size-1);
     color: var(--color-text);
+}
+
+/* Desktop-only styles */
+@media screen and (min-width: 32rem) {
+    :root {
+        --spacing-xs: 0.25rem;
+        --spacing-sm: 0.5rem;
+        --spacing-md: 1.0rem;
+        --spacing-lg: 2.0rem;
+        --spacing-xl: 3.0rem;
+    }
 }
 
 body {
@@ -53,7 +70,7 @@ body {
 
 p {
     line-height: 1.5;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-md);
 }
 
 h1 {
@@ -62,13 +79,13 @@ h1 {
 
 h2 {
     font-size: var(--font-size-3);
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-md);
 }
 
 h3 {
     font-size: var(--font-size-2);
     color: var(--color-text-secondary);
-    margin-bottom: 0.125rem;
+    margin-bottom: var(--spacing-xs);
 }
 
 h4 {
