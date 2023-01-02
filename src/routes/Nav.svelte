@@ -64,8 +64,8 @@
 
 <style>
 	nav {
-		background-color: var(--color-neutral);
-		color: var(--color-text-inverse);
+		background-color: var(--color-secondary);
+		color: var(--color-text);
 
 		display: flex;
 		align-items: center;
@@ -75,6 +75,7 @@
 
 	h1 {
 		text-align: center;
+		font-weight: 400;
 	}
 
 	ul {
@@ -84,9 +85,8 @@
 
 		position: fixed;
 		/* TODO - measure */
-		inset: 4rem 0 0 0;
-		backdrop-filter: brightness(20%) blur(8px);
-		-webkit-backdrop-filter: brightness(20%) blur(8px);
+		inset: 72px 0 0 0;
+		background-color: var(--color-secondary);
 
 		display: flex;
 		flex-direction: column;
@@ -103,7 +103,7 @@
 	a,
 	a:visited {
 		font-size: var(--font-size-3);
-		color: var(--color-text-inverse);
+		color: var(--color-text);
 	}
 
 	a.active {

@@ -1,19 +1,18 @@
-@import '@fontsource/concert-one';
+/* @import '@fontsource/eczar'; */
 @import '@fontsource/oxygen/300.css';
 @import '@fontsource/oxygen/700.css';
 
 :root {
-    --color-neutral: rgb(10%, 10%, 10%);
-    --color-background: rgb(100%, 100%, 100%);
-    --color-accent: rgb(0, 196, 186);
-    --color-text: var(--color-neutral);
-    --color-text-secondary: rgb(20%, 20%, 20%);
-    --color-text-inverse: var(--color-background);
+    --color-primary: #2b272a;
+    --color-secondary: #f7f5f6;
+    --color-accent: #1b8ba1;
+    --color-text: var(--color-primary);
+    --color-text-inverse: var(--color-secondary);
 
     --spacing-xs: 0.125rem;
-    --spacing-sm: 0.25rem;
-    --spacing-md: 0.5rem;
-    --spacing-lg: 1.0rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1.0rem;
+    --spacing-lg: 1.5rem;
     --spacing-xl: 2.0rem;
 
     /* Font scale: https://type-scale.com/. Using Major third (rems) */
@@ -30,7 +29,7 @@
     --breakpoint-lg: 48rem;
 
     --font-body: 'Oxygen', sans-serif;
-    --font-heading: 'Neuton', 'Bodoni MT';
+    /* --font-heading: 'Eczar', 'Bodoni MT'; */
     --font-heading: var(--font-body);
     --font-mono: 'Fira Mono', monospace;
 
@@ -54,7 +53,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background-attachment: fixed;
-    background-color: var(--color-background);
+    background-color: var(--color-secondary);
     background-size: 100vw 100vh;
     font-weight: 400;
 }
@@ -101,10 +100,6 @@ a:visited {
     text-decoration: none;
     font-weight: 400;
     color: var(--color-accent);
-}
-
-strong {
-    font-weight: 700;
 }
 
 input,
