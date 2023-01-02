@@ -60,7 +60,7 @@ body {
 
 :where(h1, h2, h3, h4, h5) {
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: 400;
 }
 
 :where(h1, h2, h3, h4, h5, p) {
@@ -69,7 +69,7 @@ body {
 
 p {
     line-height: 1.5;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
 }
 
 h1 {
@@ -79,6 +79,7 @@ h1 {
 h2 {
     font-size: var(--font-size-3);
     margin-bottom: var(--spacing-md);
+    font-weight: 700;
 }
 
 h3 {
