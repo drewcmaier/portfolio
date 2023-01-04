@@ -66,6 +66,7 @@
 	nav {
 		background-color: var(--color-secondary);
 		color: var(--color-text);
+		border-bottom: 1px solid;
 
 		display: flex;
 		align-items: center;
@@ -87,6 +88,7 @@
 		/* TODO - measure */
 		inset: 72px 0 0 0;
 		background-color: var(--color-secondary);
+		border-top: 1px solid;
 
 		display: flex;
 		flex-direction: column;
@@ -136,6 +138,8 @@
 			justify-content: flex-end;
 			gap: 2rem;
 			margin: 0;
+			background-color: transparent;
+			border: none;
 		}
 
 		button {

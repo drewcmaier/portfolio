@@ -1,11 +1,11 @@
-/* @import '@fontsource/eczar'; */
 @import '@fontsource/oxygen/300.css';
 @import '@fontsource/oxygen/700.css';
 
 :root {
-    --color-primary: #2b272a;
+    --color-primary: #394b41;
     --color-secondary: #f7f5f6;
-    --color-accent: #1b8ba1;
+    --color-tertiary: #2c9acd;
+    --color-accent: #94e9be;
     --color-text: var(--color-primary);
     --color-text-inverse: var(--color-secondary);
 
@@ -100,7 +100,7 @@ a,
 a:visited {
     text-decoration: none;
     font-weight: 400;
-    color: var(--color-accent);
+    color: var(--color-tertiary);
 }
 
 input,
