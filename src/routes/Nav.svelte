@@ -104,6 +104,8 @@
 
 	a,
 	a:visited {
+		text-decoration: none;
+		font-weight: 400;
 		font-size: var(--font-size-3);
 		color: var(--color-text);
 	}

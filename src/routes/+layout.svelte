@@ -9,11 +9,10 @@
 <main>
 	<slot />
 </main>
+<footer />
 
 <style>
 	main {
-		display: flex;
-		flex-direction: column;
 		padding: var(--spacing-md);
 	}
 </style>

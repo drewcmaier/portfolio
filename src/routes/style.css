@@ -4,7 +4,7 @@
 :root {
     --color-primary: #394b41;
     --color-secondary: #f7f5f6;
-    --color-tertiary: #2c9acd;
+    --color-tertiary: #006cac;
     --color-accent: #94e9be;
     --color-text: var(--color-primary);
     --color-text-inverse: var(--color-secondary);
@@ -50,7 +50,6 @@
 }
 
 body {
-    min-height: 100vh;
     margin: 0;
     background-attachment: fixed;
     background-color: var(--color-secondary);
@@ -98,9 +97,8 @@ h5 {
 
 a,
 a:visited {
-    text-decoration: none;
-    font-weight: 400;
-    color: var(--color-tertiary);
+    font-weight: 700;
+    color: var(--color-text);
 }
 
 input,
