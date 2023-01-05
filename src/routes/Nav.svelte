@@ -64,8 +64,9 @@
 
 <style>
 	nav {
-		background-color: var(--color-secondary);
-		color: var(--color-text);
+		background-color: var(--color-primary);
+		color: var(--color-text-inverse);
+		fill: var(--color-text-inverse);
 		border-bottom: var(--border-normal);
 
 		display: flex;
@@ -87,7 +88,7 @@
 		position: fixed;
 		/* TODO - measure */
 		inset: 72px 0 0 0;
-		background-color: var(--color-secondary);
+		background-color: var(--color-primary);
 		border: var(--border-normal);
 
 		display: flex;
@@ -104,10 +105,10 @@
 
 	a,
 	a:visited {
+		color: var(--color-text-inverse);
 		text-decoration: none;
 		font-weight: 400;
 		font-size: var(--font-size-3);
-		color: var(--color-text);
 	}
 
 	a.active {
