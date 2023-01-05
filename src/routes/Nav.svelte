@@ -12,7 +12,7 @@
 	}
 
 	const routes: Route[] = [
-		{ path: '/about', label: 'About me' },
+		{ path: '/', label: 'About me' },
 		{ path: '/projects', label: 'Projects' }
 	];
 
