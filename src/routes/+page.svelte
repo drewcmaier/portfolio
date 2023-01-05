@@ -13,8 +13,7 @@
 		padding: var(--spacing-xl);
 	}
 
-	p,
-	span {
+	:where(p, span):not(:last-child) {
 		line-height: 2;
 		margin-bottom: var(--spacing-md);
 	}
