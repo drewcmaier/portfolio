@@ -52,6 +52,10 @@
     }
 }
 
+html {
+    background-color: var(--color-primary);
+}
+
 body {
     margin: 0;
     background-attachment: fixed;
