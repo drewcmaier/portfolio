@@ -15,6 +15,9 @@
     --spacing-lg: 1.5rem;
     --spacing-xl: 2.0rem;
 
+    --border-thin: 0.5px solid var(--color-primary);
+    --border-normal: 1px solid var(--color-primary);
+
     /* Font scale: https://type-scale.com/. Using Major third (rems) */
     --font-size-0: 0.8rem;
     --font-size-1: 1.0rem;

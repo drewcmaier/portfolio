@@ -13,8 +13,7 @@
 	}
 
 	section {
-		border-radius: 0.25rem;
-		border: 0.5px solid var(--color-primary);
+		border: var(--border-thin);
 		padding: var(--spacing-md);
 	}
 </style>
