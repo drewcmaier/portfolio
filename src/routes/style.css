@@ -2,12 +2,13 @@
 @import '@fontsource/oxygen/700.css';
 
 :root {
-    --color-primary: #394b41;
-    --color-secondary: #f7f5f6;
-    --color-tertiary: #006cac;
-    --color-accent: #94e9be;
+    --color-primary: #011627;
+    --color-secondary: #ffffff;
+    --color-tertiary: #427aa1;
+    --color-accent: #4ecdc4;
+    --color-background: #f5f1ef;
     --color-text: var(--color-primary);
-    --color-text-inverse: var(--color-secondary);
+    --color-text-inverse: var(--color-background);
 
     --spacing-xs: 0.125rem;
     --spacing-sm: 0.75rem;
@@ -17,6 +18,7 @@
 
     --border-thin: 0.5px solid var(--color-primary);
     --border-normal: 1px solid var(--color-primary);
+    --border-radius-sm: 0.25rem;
 
     /* Font scale: https://type-scale.com/. Using Major third (rems) */
     --font-size-0: 0.8rem;
@@ -59,7 +61,7 @@ html {
 body {
     margin: 0;
     background-attachment: fixed;
-    background-color: var(--color-secondary);
+    background-color: var(--color-background);
     background-size: 100vw 100vh;
     font-weight: 400;
 }
