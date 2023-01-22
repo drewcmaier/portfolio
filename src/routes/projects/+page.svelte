@@ -2,6 +2,7 @@
 	import ProjectCard from './ProjectCard.svelte';
 
 	import indeed from './images/indeed.png';
+	import fl from './images/fl.jpeg';
 </script>
 
 <div class="card-container">
@@ -21,7 +22,7 @@
 			My primary focuses are <strong>usability, accessibility, and consistency</strong>.
 		</p>
 		<section>
-			On a daily basis, I use:
+			<h4>Technologies:</h4>
 			<ul>
 				<li>React</li>
 				<li>Node</li>
@@ -32,7 +33,18 @@
 	</ProjectCard>
 
 	<ProjectCard heading="Unbroken Studios">
-		<p>Senior UI Engineer responsible architecting and implementing all in-game UI</p>
+		<p>
+			I was a Senior Engineer responsible for architecting and implementing all in-game UI. I also
+			did some gameplay programming.
+		</p>
+		<img src={fl} alt="Screenshot from Fractured Lands" />
+		<section>
+			<h4>Technologies:</h4>
+			<ul>
+				<li>C++</li>
+				<li>Unreal Engine 4</li>
+			</ul>
+		</section>
 	</ProjectCard>
 
 	<ProjectCard heading="Gearbox Software">
