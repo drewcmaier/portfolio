@@ -27,7 +27,7 @@
 	.hello {
 		display: block;
 		font-family: var(--font-mono);
-		font-size: var(--font-size-7);
+		font-size: var(--font-size-6);
 		margin: var(--spacing-5) 0;
 	}
 </style>

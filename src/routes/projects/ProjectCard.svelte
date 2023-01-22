@@ -4,7 +4,9 @@
 
 <section>
 	<h3>{heading}</h3>
-	<slot />
+	<div class="project-card-content">
+		<slot />
+	</div>
 </section>
 
 <style>
@@ -13,9 +15,15 @@
 	}
 
 	section {
-		border: var(--border-normal);
+		/* border: var(--border-normal); */
 		border-radius: var(--border-radius-sm);
 		background-color: #ffffff;
-		padding: var(--spacing-3);
+		padding: var(--spacing-5);
+	}
+
+	.project-card-content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-4);
 	}
 </style>

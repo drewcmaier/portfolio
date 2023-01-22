@@ -1,6 +1,6 @@
 @import '@fontsource/oxygen/300.css';
 @import '@fontsource/oxygen/700.css';
-@import '@fontsource/fira-mono';
+@import '@fontsource/fira-mono/400.css';
 
 :root {
     --color-primary: #011627;
@@ -38,8 +38,8 @@
 
     --font-body: 'Oxygen', sans-serif;
     /* --font-heading: 'Eczar', 'Bodoni MT'; */
-    --font-heading: var(--font-body);
     --font-mono: 'Fira Mono', monospace;
+    --font-heading: var(--font-mono);
 
     font-family: var(--font-body);
     font-size: var(--font-size-1);
@@ -69,17 +69,17 @@ body {
     font-weight: 400;
 }
 
-:where(h1, h2, h3, h4, h5) {
-    font-family: var(--font-heading);
-    font-weight: 400;
-}
-
 :where(h1, h2, h3, h4, h5, p) {
     margin: 0;
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.75;
+}
+
+:where(h1, h2, h3, h4, h5) {
+    font-family: var(--font-heading);
+    font-weight: 700;
 }
 
 h1 {
@@ -119,6 +119,15 @@ button {
 
 button:focus:not(:focus-visible) {
     outline: none;
+}
+
+ul,
+li {
+    margin: 0;
+}
+
+ul {
+    padding-inline-start: var(--spacing-3);
 }
 
 .visually-hidden {

@@ -4,16 +4,31 @@
 	import indeed from './images/indeed.png';
 </script>
 
-<h2>Projects</h2>
-
 <div class="card-container">
+	<h2>Projects</h2>
 	<ProjectCard heading="Indeed">
 		<p>
-			Senior UX Developer, <a href="https://employers.indeed.com">Indeed for Employers</a>. I help
-			people get jobs
+			I am currently a Senior UX Developer at <a href="https://employers.indeed.com"
+				>Indeed for Employers</a
+			>.
 		</p>
-
 		<img src={indeed} alt="Indeed for Employers page" />
+		<p>
+			As a member of the <a href="https://indeed.design/article/what-is-a-design-technologist"
+				>Design Technology</a
+			>
+			organization, I work closely with software engineers to realize designs created by UX designers.
+			My primary focuses are <strong>usability, accessibility, and consistency</strong>.
+		</p>
+		<section>
+			On a daily basis, I use:
+			<ul>
+				<li>React</li>
+				<li>Node</li>
+				<li>css-in-js (Emotion)</li>
+				<li>Jest</li>
+			</ul>
+		</section>
 	</ProjectCard>
 
 	<ProjectCard heading="Unbroken Studios">
@@ -32,25 +47,34 @@
 		<p>Lead Engineer for several online implementations of board games</p>
 	</ProjectCard>
 
-	<ProjectCard heading="pogo.com (Electronic Arts">
+	<ProjectCard heading="pogo.com">
 		<p>Gameplay engineer</p>
 	</ProjectCard>
 </div>
 
 <style>
+	h2 {
+		margin-bottom: 0;
+	}
+
+	p {
+		font-size: var(--font-size-1);
+	}
+
 	img {
 		width: 100%;
 		object-fit: fill;
 		box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.125);
 	}
 
-	p {
-		margin-bottom: var(--spacing-3);
-	}
-
 	.card-container {
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing-4);
+		align-items: center;
+		gap: var(--spacing-3);
+
+		margin: auto;
+		width: 100%;
+		max-width: 64rem;
 	}
 </style>
