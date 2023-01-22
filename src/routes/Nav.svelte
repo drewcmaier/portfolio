@@ -26,27 +26,29 @@
 	}
 </script>
 
-<nav>
-	<a href="/" on:click={onClickLink}>
-		<h1>Drew Maier</h1>
-	</a>
-	<button on:click={onToggleMenu} aria-label="Menu" role="menu" aria-controls="nav-menu-list">
-		{#if isMenuOpen}
-			<X />
-		{:else}
-			<Hamburger />
-		{/if}
-	</button>
-	<ul id="nav-menu-list" class:nav-menu--closed={!isMenuOpen} aria-expanded={isMenuOpen}>
-		{#each routes as route}
-			<li>
-				<a href={route.path} on:click={onClickLink} class:active={$page.route.id === route.path}
-					>{route.label}</a
-				>
-			</li>
-		{/each}
-	</ul>
-</nav>
+<header>
+	<nav>
+		<a href="/" on:click={onClickLink}>
+			<h1>Drew Maier</h1>
+		</a>
+		<button on:click={onToggleMenu} aria-label="Menu" role="menu" aria-controls="nav-menu-list">
+			{#if isMenuOpen}
+				<X />
+			{:else}
+				<Hamburger />
+			{/if}
+		</button>
+		<ul id="nav-menu-list" class:nav-menu--closed={!isMenuOpen} aria-expanded={isMenuOpen}>
+			{#each routes as route}
+				<li>
+					<a href={route.path} on:click={onClickLink} class:active={$page.route.id === route.path}
+						>{route.label}</a
+					>
+				</li>
+			{/each}
+		</ul>
+	</nav>
+</header>
 
 <!--
 	Scroll lock when menu is open

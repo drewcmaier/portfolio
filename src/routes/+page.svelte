@@ -20,6 +20,10 @@
 		margin-bottom: var(--spacing-4);
 	}
 
+	:where(p, span):last-child {
+		margin-bottom: var(--spacing-5);
+	}
+
 	.hello {
 		display: block;
 		font-family: var(--font-mono);
