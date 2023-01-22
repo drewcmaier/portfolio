@@ -45,12 +45,12 @@
 	}
 
 	p {
-		margin-bottom: var(--spacing-md);
+		margin-bottom: var(--spacing-3);
 	}
 
 	.card-container {
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing-lg);
+		gap: var(--spacing-4);
 	}
 </style>

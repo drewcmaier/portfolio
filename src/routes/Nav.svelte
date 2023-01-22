@@ -67,12 +67,13 @@
 		background-color: var(--color-primary);
 		color: var(--color-text-inverse);
 		fill: var(--color-text-inverse);
+
 		border-bottom: var(--border-normal);
 
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: var(--spacing-md);
+		padding: var(--spacing-3);
 	}
 
 	h1 {

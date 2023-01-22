@@ -6,25 +6,24 @@
 			>and I am a UX Developer for <a href="https://www.indeed.com">Indeed</a> in the Philadelphia area.</span
 		>
 	</p>
+	<p>Whether it's for the web, mobile apps, or console video games, I love frontend development.</p>
 </section>
 
 <style>
 	section {
-		padding: var(--spacing-xl);
+		padding: var(--spacing-6);
+		font-size: var(--font-size-2);
+		height: fill;
 	}
 
 	:where(p, span):not(:last-child) {
-		line-height: 2;
-		margin-bottom: var(--spacing-md);
-	}
-
-	strong {
-		font-size: var(--font-size-2);
-		margin: var(--spacing-md) 0;
+		margin-bottom: var(--spacing-4);
 	}
 
 	.hello {
 		display: block;
-		font-size: var(--font-size-6);
+		font-family: var(--font-mono);
+		font-size: var(--font-size-7);
+		margin: var(--spacing-5) 0;
 	}
 </style>

@@ -1,20 +1,22 @@
 @import '@fontsource/oxygen/300.css';
 @import '@fontsource/oxygen/700.css';
+@import '@fontsource/fira-mono';
 
 :root {
     --color-primary: #011627;
-    --color-secondary: #ffffff;
+    --color-secondary: #f5f1ef;
     --color-tertiary: #427aa1;
     --color-accent: #4ecdc4;
     --color-background: #f5f1ef;
     --color-text: var(--color-primary);
     --color-text-inverse: var(--color-background);
 
-    --spacing-xs: 0.125rem;
-    --spacing-sm: 0.75rem;
-    --spacing-md: 1.0rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2.0rem;
+    --spacing-1: 0.125rem;
+    --spacing-2: 0.75rem;
+    --spacing-3: 1.0rem;
+    --spacing-4: 1.5rem;
+    --spacing-5: 2.0rem;
+    --spacing-6: 3.0rem;
 
     --border-thin: 0.5px solid var(--color-primary);
     --border-normal: 1px solid var(--color-primary);
@@ -28,6 +30,7 @@
     --font-size-4: 2.0rem;
     --font-size-5: 2.5rem;
     --font-size-6: 3.0rem;
+    --font-size-7: 4.0rem;
 
     --breakpoint-sm: 20rem;
     --breakpoint-md: 32rem;
@@ -44,15 +47,15 @@
 }
 
 /* Desktop-only styles */
-@media screen and (min-width: 32rem) {
+/* @media screen and (min-width: 32rem) {
     :root {
-        --spacing-xs: 0.25rem;
-        --spacing-sm: 0.5rem;
-        --spacing-md: 1.0rem;
-        --spacing-lg: 2.0rem;
-        --spacing-xl: 3.0rem;
+        --spacing-1: 0.25rem;
+        --spacing-2: 0.5rem;
+        --spacing-3: 1.0rem;
+        --spacing-4: 2.0rem;
+        --spacing-5: 3.0rem;
     }
-}
+} */
 
 html {
     background-color: var(--color-primary);
@@ -85,14 +88,13 @@ h1 {
 
 h2 {
     font-size: var(--font-size-3);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-3);
     font-weight: 700;
 }
 
 h3 {
     font-size: var(--font-size-2);
-    color: var(--color-text-secondary);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-2);
 }
 
 h4 {

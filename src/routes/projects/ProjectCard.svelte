@@ -13,9 +13,9 @@
 	}
 
 	section {
-		/* border: var(--border-normal); */
+		border: var(--border-normal);
 		border-radius: var(--border-radius-sm);
-		background-color: var(--color-secondary);
-		padding: var(--spacing-md);
+		background-color: #ffffff;
+		padding: var(--spacing-3);
 	}
 </style>
