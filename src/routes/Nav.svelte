@@ -29,7 +29,7 @@
 <header>
 	<nav>
 		<a href="/" on:click={onClickLink}>
-			<h1>Drew Maier</h1>
+			<h1>dm</h1>
 		</a>
 		<button on:click={onToggleMenu} aria-label="Menu" role="menu" aria-controls="nav-menu-list">
 			{#if isMenuOpen}
@@ -80,7 +80,6 @@
 
 	h1 {
 		text-align: center;
-		font-weight: 400;
 	}
 
 	ul {
@@ -110,7 +109,7 @@
 	a:visited {
 		color: var(--color-text-inverse);
 		text-decoration: none;
-		font-weight: 400;
+		font-weight: var(--font-weight-normal);
 		font-size: var(--font-size-3);
 	}
 

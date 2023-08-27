@@ -1,5 +1,5 @@
-@import '@fontsource/oxygen/300.css';
-@import '@fontsource/oxygen/700.css';
+@import '@fontsource/rubik/300.css';
+@import '@fontsource/rubik/500.css';
 @import '@fontsource/fira-mono/400.css';
 
 :root {
@@ -32,14 +32,16 @@
     --font-size-6: 3.0rem;
     --font-size-7: 4.0rem;
 
+    --font-weight-normal: 300;
+    --font-weight-bold: 500;
+
     --breakpoint-sm: 20rem;
     --breakpoint-md: 32rem;
     --breakpoint-lg: 48rem;
 
-    --font-body: 'Oxygen', sans-serif;
-    /* --font-heading: 'Eczar', 'Bodoni MT'; */
+    --font-heading: 'Rubik', sans-serif;
+    --font-body: 'Rubik', sans-serif;
     --font-mono: 'Fira Mono', monospace;
-    --font-heading: var(--font-mono);
 
     font-family: var(--font-body);
     font-size: var(--font-size-1);
@@ -66,7 +68,7 @@ body {
     background-attachment: fixed;
     background-color: var(--color-background);
     background-size: 100vw 100vh;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
 }
 
 :where(h1, h2, h3, h4, h5, p) {
@@ -79,7 +81,7 @@ p {
 
 :where(h1, h2, h3, h4, h5) {
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: var(--font-weight-normal);
 }
 
 h1 {
@@ -89,7 +91,7 @@ h1 {
 h2 {
     font-size: var(--font-size-3);
     margin-bottom: var(--spacing-3);
-    font-weight: 700;
+    font-weight: var(--font-weight-normal);
 }
 
 h3 {
@@ -107,7 +109,7 @@ h5 {
 
 a,
 a:visited {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     color: var(--color-text);
 }
 

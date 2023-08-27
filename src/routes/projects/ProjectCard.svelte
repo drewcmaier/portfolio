@@ -10,10 +10,6 @@
 </section>
 
 <style>
-	h3 {
-		font-weight: 700;
-	}
-
 	section {
 		/* border: var(--border-normal); */
 		border-radius: var(--border-radius-sm);

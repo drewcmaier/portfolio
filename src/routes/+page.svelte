@@ -3,7 +3,8 @@
 	<p>
 		<span>My name is</span> <strong>Drew</strong>
 		<span
-			>and I am a UX Developer for <a href="https://www.indeed.com">Indeed</a> in the Philadelphia area.</span
+			>and I am a UX Developer for <a href="https://www.indeed.com">Indeed</a> in the Greater Philadelphia
+			area.</span
 		>
 	</p>
 	<p>Whether it's for the web, mobile apps, or console video games, I love frontend development.</p>
