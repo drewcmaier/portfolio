@@ -8,6 +8,7 @@
 		>
 	</p>
 	<p>Whether it's for the web, mobile apps, or console video games, I love frontend development.</p>
+	<p class="emoji">🖥️ 📱 🎮</p>
 </section>
 
 <style>
@@ -30,5 +31,9 @@
 		font-family: var(--font-mono);
 		font-size: var(--font-size-6);
 		margin: var(--spacing-5) 0;
+	}
+
+	.emoji {
+		font-size: var(--font-size-6);
 	}
 </style>
