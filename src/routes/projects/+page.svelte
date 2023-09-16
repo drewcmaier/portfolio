@@ -107,7 +107,7 @@
 			I was a Gameplay Engineer for <a href="https://www.pogo.com">pogo.com</a>. I worked on the
 			first Flash games for the site, establishing best practices for development.
 		</p>
-		<img src={puck} alt="Screenshot from Puck's Peak" width="400" class="img-centered" />
+		<img src={puck} class="img-small" alt="Screenshot from Puck's Peak" />
 		<section>
 			<h4>Technologies:</h4>
 			<ul>
@@ -129,11 +129,8 @@
 
 	img {
 		object-fit: fill;
+		max-width: fit-content;
 		box-shadow: 0px 4px 16px 5px rgba(0, 0, 0, 0.125);
-	}
-
-	.img-centered {
-		align-self: center;
 	}
 
 	.card-container {
@@ -143,5 +140,11 @@
 
 		margin: auto;
 		max-width: 54rem;
+	}
+
+	@media screen and (min-width: 32rem) {
+		.img-small {
+			align-self: center;
+		}
 	}
 </style>
