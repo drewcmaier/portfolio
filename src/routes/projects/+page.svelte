@@ -82,11 +82,9 @@
 	.card-container {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		gap: var(--spacing-3);
 
 		margin: auto;
-		width: 100%;
 		max-width: 64rem;
 	}
 </style>

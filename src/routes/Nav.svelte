@@ -89,7 +89,7 @@
 
 		position: fixed;
 		/* TODO - measure */
-		inset: 72px 0 0 0;
+		inset: 71px 0 0 0;
 		background-color: var(--color-primary);
 		border: var(--border-normal);
 
