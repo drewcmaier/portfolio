@@ -22,7 +22,7 @@
 			As a member of the <a href="https://indeed.design/article/what-is-a-design-technologist"
 				>Design Technology</a
 			>
-			organization, I work closely with software engineers to realize designs created by UX designers.
+			organization, I collaborate closely with software engineers to realize designs created by UX designers.
 			My primary focuses are <strong>usability, accessibility, and consistency</strong>.
 		</p>
 		<section>
@@ -39,7 +39,7 @@
 		<p>
 			I was a Senior Engineer responsible for architecting and implementing all in-game UI for <a
 				href="http://fractured-lands.com/">Fractured Lands</a
-			>. I also briefly worked on gameplay systems and tools for
+			>. I also briefly developed gameplay systems and tools for
 			<a href="https://www.suicidesquadgame.com/en-us">Suicide Squad: Kill the Justice League</a>.
 		</p>
 		<img src={fl} alt="Screenshot from Fractured Lands" />
@@ -57,7 +57,7 @@
 			I was a UI Programmer for <a href="https://borderlands.2k.com/borderlands-3/">Borderlands 3</a
 			>
 			and <a href="https://2k.com/en-US/game/battleborn-standard-edition/">Battleborn</a>. Some of
-			the features I worked on in these games included the heads-up display (HUD), item menus, and
+			the features I implemented in these games included the heads-up display (HUD), item menus, and
 			map screen.
 		</p>
 		<img src={bl3} alt="Screenshot from Borderlands 3" />
@@ -88,10 +88,8 @@
 	</ProjectCard>
 
 	<ProjectCard heading="Zabu">
-		<p>
-			I was a Lead Engineer for a small startup that created online implementations of board games.
-		</p>
-		<img src={ts} alt="Screenshot from Thunderstone" />
+		<p>I was a Lead Engineer for a startup that created online implementations of board games.</p>
+		<img src={ts} class="img-small" alt="Screenshot from Thunderstone" />
 		<section>
 			<h4>Technologies:</h4>
 			<ul>
@@ -104,8 +102,8 @@
 
 	<ProjectCard heading="pogo.com">
 		<p>
-			I was a Gameplay Engineer for <a href="https://www.pogo.com">pogo.com</a>. I worked on the
-			first Flash games for the site, establishing best practices for development.
+			I was a Gameplay Engineer for <a href="https://www.pogo.com">pogo.com</a>, where I worked on
+			the first Flash games for the site and established best practices.
 		</p>
 		<img src={puck} class="img-small" alt="Screenshot from Puck's Peak" />
 		<section>
@@ -140,6 +138,10 @@
 
 		margin: auto;
 		max-width: 54rem;
+	}
+
+	.img-small {
+		max-width: 100%;
 	}
 
 	@media screen and (min-width: 32rem) {

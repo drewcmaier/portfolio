@@ -17,6 +17,7 @@
     --spacing-4: 1.5rem;
     --spacing-5: 2.0rem;
     --spacing-6: 3.0rem;
+    --spacing-7: 4.5rem;
 
     --border-thin: 0.5px solid var(--color-primary);
     --border-normal: 1px solid var(--color-primary);
@@ -130,6 +131,14 @@ li {
 
 ul {
     padding-inline-start: var(--spacing-3);
+}
+
+svg {
+    fill: var(--color-primary);
+}
+
+nav svg {
+    fill: var(--color-background);
 }
 
 .visually-hidden {
