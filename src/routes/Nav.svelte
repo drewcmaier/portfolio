@@ -131,6 +131,8 @@
 
 	.nav-menu--closed {
 		opacity: 0;
+		left: -9999px;
+		top: -9999px;
 	}
 
 	@media screen and (min-width: 32rem) {
@@ -154,6 +156,7 @@
 		}
 
 		.nav-menu--closed {
+			opacity: 1;
 			display: flex;
 		}
 	}
