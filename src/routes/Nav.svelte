@@ -99,6 +99,8 @@
 		justify-items: center;
 		align-items: center;
 		gap: 4rem;
+
+		transition: opacity 0.2s;
 	}
 
 	li {
@@ -128,7 +130,7 @@
 	}
 
 	.nav-menu--closed {
-		display: none;
+		opacity: 0;
 	}
 
 	@media screen and (min-width: 32rem) {
