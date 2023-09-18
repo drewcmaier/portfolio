@@ -48,8 +48,13 @@
 	.contact-links {
 		display: flex;
 		list-style: none;
-		gap: var(--spacing-2);
 		padding: 0;
-		margin-block-start: var(--spacing-6);
+		gap: var(--spacing-3);
+		margin-block-start: var(--spacing-5);
+	}
+
+	.contact-links li {
+		padding: var(--spacing-2);
+		margin: calc(0px - var(--spacing-2));
 	}
 </style>
