@@ -13,7 +13,7 @@
 
 	const routes: Route[] = [
 		{ path: '/', label: 'About me' },
-		{ path: '/work', label: 'My work' }
+		{ path: '/experience', label: 'Experience' }
 	];
 
 	let isMenuOpen = false;
