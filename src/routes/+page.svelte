@@ -25,9 +25,10 @@
 
 <style>
 	section {
+		flex: 1;
 		padding: var(--spacing-4);
 		font-size: var(--font-size-2);
-		height: fill;
+		background-color: var(--color-secondary);
 	}
 
 	:where(p, span):not(:last-child) {

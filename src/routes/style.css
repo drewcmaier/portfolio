@@ -3,7 +3,7 @@
 @import '@fontsource/fira-mono/400.css';
 
 :root {
-    --color-primary: #011627;
+    --color-primary: #252525;
     --color-secondary: #ffffff;
     --color-tertiary: #427aa1;
     --color-accent: #4ecdc4;
@@ -44,6 +44,8 @@
     --font-body: 'Rubik', sans-serif;
     --font-mono: 'Fira Mono', monospace;
 
+    --shadow-card: 0px 4px 16px 5px rgba(0, 0, 0, 0.125);
+
     font-family: var(--font-body);
     font-size: var(--font-size-1);
     color: var(--color-text);
@@ -78,6 +80,8 @@ body {
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 :where(h1, h2, h3, h4, h5, p) {
@@ -147,6 +151,12 @@ svg {
 
 nav svg {
     fill: var(--color-background);
+}
+
+section {
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--shadow-card);
 }
 
 .visually-hidden {

@@ -25,14 +25,14 @@
 			organization, I collaborate closely with software engineers to realize designs created by UX designers.
 			My primary focuses are <strong>usability, accessibility, and consistency</strong>.
 		</p>
-		<section>
+		<div>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>React</li>
 				<li>Typescript</li>
 				<li>CSS</li>
 			</ul>
-		</section>
+		</div>
 	</ProjectCard>
 
 	<ProjectCard heading="Unbroken Studios">
@@ -43,13 +43,13 @@
 			<a href="https://www.suicidesquadgame.com/en-us">Suicide Squad: Kill the Justice League</a>.
 		</p>
 		<img src={fl} alt="Screenshot from Fractured Lands" />
-		<section>
+		<div>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>C++</li>
 				<li>Unreal Engine 4</li>
 			</ul>
-		</section>
+		</div>
 	</ProjectCard>
 
 	<ProjectCard heading="Gearbox Software">
@@ -61,14 +61,14 @@
 			map screen.
 		</p>
 		<img src={bl3} alt="Screenshot from Borderlands 3" />
-		<section>
+		<div>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>C++</li>
 				<li>Unreal Engine 3 & 4</li>
 				<li>Scaleform</li>
 			</ul>
-		</section>
+		</div>
 	</ProjectCard>
 
 	<ProjectCard heading="EA Mobile">
@@ -78,26 +78,26 @@
 			>, the studio's final game.
 		</p>
 		<img src={dk} alt="Screenshot from Dungeon Keeper" />
-		<section>
+		<div>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>C#</li>
 				<li>Unity</li>
 			</ul>
-		</section>
+		</div>
 	</ProjectCard>
 
 	<ProjectCard heading="Zabu">
 		<p>I was a Lead Engineer for a startup that created online implementations of board games.</p>
 		<img src={ts} class="img-small" alt="Screenshot from Thunderstone" />
-		<section>
+		<div>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>Flash</li>
 				<li>Java</li>
 				<li>iOS</li>
 			</ul>
-		</section>
+		</div>
 	</ProjectCard>
 
 	<ProjectCard heading="pogo.com">
@@ -106,13 +106,13 @@
 			the first Flash games for the site and established best practices.
 		</p>
 		<img src={puck} class="img-small" alt="Screenshot from Puck's Peak" />
-		<section>
+		<div>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>Flash</li>
 				<li>Java</li>
 			</ul>
-		</section>
+		</div>
 	</ProjectCard>
 </div>
 
@@ -135,9 +135,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-3);
-
-		margin: auto;
+		width: 100%;
 		max-width: 54rem;
+		margin: auto;
 	}
 
 	.img-small {
