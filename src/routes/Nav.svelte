@@ -3,9 +3,6 @@
 	import Hamburger from '$lib/icons/Hamburger.svelte';
 	import X from '$lib/icons/X.svelte';
 
-	// TODO: use responsive helper
-	// https://svelte.dev/repl/26eb44932920421da01e2e21539494cd?version=3.55.0
-
 	interface Route {
 		path: string;
 		label: string;
@@ -76,6 +73,9 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: var(--spacing-3);
+
+		position: fixed;
+		inset: 0 0 auto;
 	}
 
 	h1 {
@@ -88,8 +88,7 @@
 		padding: 0;
 
 		position: fixed;
-		/* TODO - measure */
-		inset: 71px 0 0 0;
+		inset: 0;
 		background-color: var(--color-primary);
 		border: var(--border-normal);
 
