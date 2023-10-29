@@ -62,6 +62,10 @@
 </svelte:head>
 
 <style>
+	header {
+		background-color: var(--color-primary);
+	}
+
 	nav {
 		background-color: var(--color-primary);
 		color: var(--color-text-inverse);
@@ -69,6 +73,7 @@
 
 		border-bottom: var(--border-normal);
 
+		box-sizing: content-box;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -76,6 +81,8 @@
 
 		position: fixed;
 		inset: 0 0 auto;
+		max-width: var(--breakpoint-lg);
+		margin: auto;
 	}
 
 	h1 {

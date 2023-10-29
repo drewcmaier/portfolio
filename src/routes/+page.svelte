@@ -4,7 +4,7 @@
 </script>
 
 <section>
-	<strong class="hello">Hello, world! 👋</strong>
+	<strong class="hello">Hello, world!&nbsp;👋</strong>
 	<p>
 		<span>My name is</span> <strong>Drew Maier</strong>
 		<span
@@ -26,9 +26,11 @@
 <style>
 	section {
 		flex: 1;
-		padding: var(--spacing-4);
+		padding: var(--spacing-5);
 		font-size: var(--font-size-2);
 		background-color: var(--color-secondary);
+		max-width: var(--breakpoint-lg);
+		margin: auto;
 	}
 
 	:where(p, span):not(:last-child) {

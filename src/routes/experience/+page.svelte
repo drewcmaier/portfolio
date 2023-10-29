@@ -136,7 +136,7 @@
 		flex-direction: column;
 		gap: var(--spacing-3);
 		width: 100%;
-		max-width: 54rem;
+		max-width: var(--breakpoint-lg);
 		margin: auto;
 	}
 

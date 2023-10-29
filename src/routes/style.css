@@ -2,6 +2,12 @@
 @import '@fontsource/rubik/500.css';
 @import '@fontsource/fira-mono/400.css';
 
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
 :root {
 	--color-primary: #252525;
 	--color-secondary: #ffffff;
@@ -16,8 +22,6 @@
 	--spacing-3: 1rem;
 	--spacing-4: 1.5rem;
 	--spacing-5: 2rem;
-	--spacing-6: 3rem;
-	--spacing-7: 4.5rem;
 
 	--border-thin: 0.5px solid var(--color-primary);
 	--border-normal: 1px solid var(--color-primary);
@@ -51,17 +55,6 @@
 	color: var(--color-text);
 }
 
-/* Desktop-only styles */
-/* @media screen and (min-width: 32rem) {
-    :root {
-        --spacing-1: 0.25rem;
-        --spacing-2: 0.5rem;
-        --spacing-3: 1.0rem;
-        --spacing-4: 2.0rem;
-        --spacing-5: 3.0rem;
-    }
-} */
-
 html {
 	height: 100%;
 	background-color: var(--color-primary);
@@ -76,12 +69,6 @@ body {
 	background-size: 100vw 100vh;
 	font-weight: var(--font-weight-normal);
 	margin: 0;
-}
-
-main {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
 }
 
 :where(h1, h2, h3, h4, h5, p) {
@@ -157,6 +144,7 @@ section {
 	background-color: var(--color-secondary);
 	border-radius: var(--border-radius-sm);
 	box-shadow: var(--shadow-card);
+	max-width: var(--breakpoint-lg);
 }
 
 .visually-hidden {
