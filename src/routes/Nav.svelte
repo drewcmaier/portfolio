@@ -35,7 +35,7 @@
 				<Hamburger />
 			{/if}
 		</button>
-		<ul id="nav-menu-list" class:nav-menu--closed={!isMenuOpen} aria-expanded={isMenuOpen}>
+		<ul id="nav-menu-list" class:nav-menu--closed={!isMenuOpen}>
 			{#each routes as route}
 				<li>
 					<a href={route.path} on:click={onClickLink} class:active={$page.route.id === route.path}
