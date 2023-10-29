@@ -3,52 +3,52 @@
 @import '@fontsource/fira-mono/400.css';
 
 :root {
-    --color-primary: #252525;
-    --color-secondary: #ffffff;
-    --color-tertiary: #427aa1;
-    --color-accent: #4ecdc4;
-    --color-background: #f5f1ef;
-    --color-text: var(--color-primary);
-    --color-text-inverse: var(--color-background);
+	--color-primary: #252525;
+	--color-secondary: #ffffff;
+	--color-tertiary: #427aa1;
+	--color-accent: #4ecdc4;
+	--color-background: #f5f1ef;
+	--color-text: var(--color-primary);
+	--color-text-inverse: var(--color-background);
 
-    --spacing-1: 0.125rem;
-    --spacing-2: 0.75rem;
-    --spacing-3: 1.0rem;
-    --spacing-4: 1.5rem;
-    --spacing-5: 2.0rem;
-    --spacing-6: 3.0rem;
-    --spacing-7: 4.5rem;
+	--spacing-1: 0.125rem;
+	--spacing-2: 0.75rem;
+	--spacing-3: 1rem;
+	--spacing-4: 1.5rem;
+	--spacing-5: 2rem;
+	--spacing-6: 3rem;
+	--spacing-7: 4.5rem;
 
-    --border-thin: 0.5px solid var(--color-primary);
-    --border-normal: 1px solid var(--color-primary);
-    --border-radius-sm: 0.25rem;
+	--border-thin: 0.5px solid var(--color-primary);
+	--border-normal: 1px solid var(--color-primary);
+	--border-radius-sm: 0.25rem;
 
-    /* Font scale: https://type-scale.com/. Using Major third (rems) */
-    --font-size-0: 0.8rem;
-    --font-size-1: 1.0rem;
-    --font-size-2: 1.25rem;
-    --font-size-3: 1.5rem;
-    --font-size-4: 2.0rem;
-    --font-size-5: 2.5rem;
-    --font-size-6: 3.0rem;
-    --font-size-7: 4.0rem;
+	/* Font scale: https://type-scale.com/. Using Major third (rems) */
+	--font-size-0: 0.8rem;
+	--font-size-1: 1rem;
+	--font-size-2: 1.25rem;
+	--font-size-3: 1.5rem;
+	--font-size-4: 2rem;
+	--font-size-5: 2.5rem;
+	--font-size-6: 3rem;
+	--font-size-7: 4rem;
 
-    --font-weight-normal: 300;
-    --font-weight-bold: 500;
+	--font-weight-normal: 300;
+	--font-weight-bold: 500;
 
-    --breakpoint-sm: 20rem;
-    --breakpoint-md: 32rem;
-    --breakpoint-lg: 48rem;
+	--breakpoint-sm: 20rem;
+	--breakpoint-md: 32rem;
+	--breakpoint-lg: 48rem;
 
-    --font-heading: 'Rubik', sans-serif;
-    --font-body: 'Rubik', sans-serif;
-    --font-mono: 'Fira Mono', monospace;
+	--font-heading: 'Rubik', sans-serif;
+	--font-body: 'Rubik', sans-serif;
+	--font-mono: 'Fira Mono', monospace;
 
-    --shadow-card: 0px 4px 16px 5px rgba(0, 0, 0, 0.125);
+	--shadow-card: 0px 4px 16px 5px rgba(0, 0, 0, 0.125);
 
-    font-family: var(--font-body);
-    font-size: var(--font-size-1);
-    color: var(--color-text);
+	font-family: var(--font-body);
+	font-size: var(--font-size-1);
+	color: var(--color-text);
 }
 
 /* Desktop-only styles */
@@ -63,110 +63,110 @@
 } */
 
 html {
-    height: 100%;
-    background-color: var(--color-primary);
+	height: 100%;
+	background-color: var(--color-primary);
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-attachment: fixed;
-    background-color: var(--color-background);
-    background-size: 100vw 100vh;
-    font-weight: var(--font-weight-normal);
-    margin: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background-attachment: fixed;
+	background-color: var(--color-background);
+	background-size: 100vw 100vh;
+	font-weight: var(--font-weight-normal);
+	margin: 0;
 }
 
 main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
 }
 
 :where(h1, h2, h3, h4, h5, p) {
-    margin: 0;
+	margin: 0;
 }
 
 p {
-    line-height: 1.75;
+	line-height: 1.75;
 }
 
 :where(h1, h2, h3, h4, h5) {
-    font-family: var(--font-heading);
-    font-weight: var(--font-weight-normal);
+	font-family: var(--font-heading);
+	font-weight: var(--font-weight-normal);
 }
 
 h1 {
-    font-size: var(--font-size-4);
+	font-size: var(--font-size-4);
 }
 
 h2 {
-    font-size: var(--font-size-3);
-    margin-bottom: var(--spacing-3);
-    font-weight: var(--font-weight-normal);
+	font-size: var(--font-size-3);
+	margin-bottom: var(--spacing-3);
+	font-weight: var(--font-weight-normal);
 }
 
 h3 {
-    font-size: var(--font-size-2);
-    margin-bottom: var(--spacing-2);
+	font-size: var(--font-size-2);
+	margin-bottom: var(--spacing-2);
 }
 
 h4 {
-    font-size: var(--font-size-1);
+	font-size: var(--font-size-1);
 }
 
 h5 {
-    font-size: var(--font-size-1);
+	font-size: var(--font-size-1);
 }
 
 a,
 a:visited {
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-text);
 }
 
 input,
 button {
-    font-size: inherit;
-    font-family: inherit;
+	font-size: inherit;
+	font-family: inherit;
 }
 
 button:focus:not(:focus-visible) {
-    outline: none;
+	outline: none;
 }
 
 ul,
 li {
-    margin: 0;
+	margin: 0;
 }
 
 ul {
-    padding-inline-start: var(--spacing-3);
+	padding-inline-start: var(--spacing-3);
 }
 
 svg {
-    fill: var(--color-primary);
+	fill: var(--color-primary);
 }
 
 nav svg {
-    fill: var(--color-background);
+	fill: var(--color-background);
 }
 
 section {
-    background-color: var(--color-secondary);
-    border-radius: var(--border-radius-sm);
-    box-shadow: var(--shadow-card);
+	background-color: var(--color-secondary);
+	border-radius: var(--border-radius-sm);
+	box-shadow: var(--shadow-card);
 }
 
 .visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: auto;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
 }
