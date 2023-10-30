@@ -4,7 +4,7 @@
 </script>
 
 <section>
-	<strong class="hello">Hello, world!&nbsp;👋</strong>
+	<strong class="hello">Hello, world!<span class="cursor">█</span></strong>
 	<p>
 		<span>My name is</span> <strong>Drew Maier</strong>
 		<span
@@ -45,7 +45,14 @@
 		display: block;
 		font-family: var(--font-mono);
 		font-size: var(--font-size-6);
-		margin: var(--spacing-5) 0;
+		padding: var(--spacing-5);
+
+		position: relative;
+		margin-inline: calc(-1 * var(--spacing-5));
+		top: calc(-1 * var(--spacing-5));
+		background-color: var(--color-primary);
+		color: var(--color-text-inverse);
+		border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
 	}
 
 	.contact-links {
@@ -59,5 +66,15 @@
 	.contact-links li {
 		padding: var(--spacing-2);
 		margin: calc(0px - var(--spacing-2));
+	}
+
+	.cursor {
+		animation: cursor-blink 1s step-start infinite;
+	}
+
+	@keyframes cursor-blink {
+		50% {
+			opacity: 0;
+		}
 	}
 </style>
