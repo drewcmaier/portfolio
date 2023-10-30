@@ -17,14 +17,14 @@
 				>Indeed for Employers</a
 			>.
 		</p>
-		<img src={indeed} alt="Indeed for Employers page" />
 		<p>
 			As a member of the <a href="https://indeed.design/article/what-is-a-design-technologist"
 				>Design Technology</a
 			>
 			organization, I collaborate closely with software engineers to realize designs created by UX designers.
-			My primary focuses are <strong>usability, accessibility, and consistency</strong>.
+			My focuses are <strong>usability, accessibility, and consistency</strong>.
 		</p>
+		<img src={indeed} alt="Indeed for Employers page" />
 		<div>
 			<h4>Technologies:</h4>
 			<ul>
@@ -37,7 +37,7 @@
 
 	<ProjectCard heading="Unbroken Studios">
 		<p>
-			I was a Senior Engineer responsible for architecting and implementing all in-game UI for <a
+			As a Senior UI Engineer, I was responsible for architecting and implementing in-game UI for <a
 				href="http://fractured-lands.com/">Fractured Lands</a
 			>. I also briefly developed gameplay systems and tools for
 			<a href="https://www.suicidesquadgame.com/en-us">Suicide Squad: Kill the Justice League</a>.
