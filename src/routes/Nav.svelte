@@ -83,6 +83,7 @@
 		inset: 0 0 auto;
 		max-width: var(--breakpoint-lg);
 		margin: auto;
+		z-index: 100;
 	}
 
 	h1 {
