@@ -13,9 +13,9 @@
 		>
 	</p>
 	<p>
-		Whether it's <strong>websites</strong>, <strong>games</strong>, or
-		<strong>mobile apps</strong>, frontend development is my passion. My goal is to create software
-		that people enjoy using.
+		Frontend development is my passion. Whether it's a <strong>website</strong>, a
+		<strong>game</strong>, or a
+		<strong>mobile app</strong>, my priority is always to create an enjoyable user experience.
 	</p>
 	<ul class="contact-links">
 		<li><a href="https://www.linkedin.com/in/drew-maier"><LinkedIn /></a></li>
@@ -64,8 +64,8 @@
 	}
 
 	.contact-links li {
-		padding: var(--spacing-2);
-		margin: calc(0px - var(--spacing-2));
+		width: 44px;
+		height: 44px;
 	}
 
 	.cursor {

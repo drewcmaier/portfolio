@@ -6,8 +6,8 @@
 	xml:space="preserve"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
-	width="32"
-	height="32"
+	width="44"
+	height="44"
 	><g
 		><circle cx="256" cy="256" r="256" /><g
 			><path

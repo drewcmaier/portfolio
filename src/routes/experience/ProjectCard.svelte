@@ -16,7 +16,7 @@
 
 	section h3 {
 		padding: var(--spacing-3);
-		margin-bottom: calc(-1 * var(--spacing-2));
+		margin-bottom: 0;
 
 		/* background */
 		position: relative;
