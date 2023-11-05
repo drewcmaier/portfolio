@@ -46,7 +46,7 @@
 
 	--font-heading: 'Rubik', sans-serif;
 	--font-body: 'Rubik', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
+	--font-mono: 'Fira Code', monospace;
 
 	--shadow-card: 0px 4px 16px 5px rgba(0, 0, 0, 0.125);
 
@@ -76,7 +76,7 @@ body {
 }
 
 p {
-	line-height: 1.75;
+	line-height: 1.5;
 }
 
 :where(h1, h2, h3, h4, h5) {

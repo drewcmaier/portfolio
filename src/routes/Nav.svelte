@@ -23,7 +23,7 @@
 	}
 </script>
 
-<header>
+<header class:nav--closed={!isMenuOpen}>
 	<nav>
 		<a href="/" on:click={onClickLink}>
 			<h1>dm</h1>
@@ -35,7 +35,7 @@
 				<Hamburger />
 			{/if}
 		</button>
-		<ul id="nav-menu-list" class:nav-menu--closed={!isMenuOpen}>
+		<ul id="nav-menu-list">
 			{#each routes as route}
 				<li>
 					<a href={route.path} on:click={onClickLink} class:active={$page.route.id === route.path}
@@ -64,6 +64,7 @@
 <style>
 	header {
 		background-color: var(--color-primary);
+		--nav-shadow: drop-shadow(0 0 0.5rem var(--color-primary));
 	}
 
 	nav {
@@ -84,6 +85,7 @@
 		max-width: var(--breakpoint-lg);
 		margin: auto;
 		z-index: 100;
+		filter: none;
 	}
 
 	h1 {
@@ -136,7 +138,11 @@
 		margin: -0.5rem;
 	}
 
-	.nav-menu--closed {
+	.nav--closed nav {
+		filter: var(--nav-shadow);
+	}
+
+	.nav--closed ul {
 		opacity: 0;
 		left: -9999px;
 		top: -9999px;
@@ -145,6 +151,14 @@
 	@media screen and (min-width: 32rem) {
 		nav {
 			position: static;
+		}
+
+		.nav--closed nav {
+			filter: none;
+		}
+
+		.nav--closed {
+			filter: var(--nav-shadow);
 		}
 
 		ul {
@@ -162,7 +176,7 @@
 			display: none;
 		}
 
-		.nav-menu--closed {
+		.nav--closed ul {
 			opacity: 1;
 			display: flex;
 		}
