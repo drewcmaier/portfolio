@@ -13,16 +13,16 @@
 	<h2>Experience</h2>
 	<ProjectCard heading="Indeed">
 		<p>
-			I am currently a Senior UX Developer at <a href="https://employers.indeed.com"
-				>Indeed for Employers</a
-			>.
+			I am currently a Senior UX Developer at <a href="https://employers.indeed.com">Indeed</a>.
 		</p>
 		<p>
 			As a member of the <a href="https://indeed.design/article/what-is-a-design-technologist"
 				>Design Technology</a
 			>
 			organization, I collaborate closely with software engineers to realize designs created by UX designers.
-			My focuses are <strong>usability, accessibility, and consistency</strong>.
+			Another aspect of my role is establishing best practices for <strong>usability</strong>,
+			<strong>accessibility</strong>, and
+			<strong>consistency</strong>.
 		</p>
 		<img src={indeed} alt="Indeed for Employers page" />
 		<div>
@@ -54,18 +54,19 @@
 
 	<ProjectCard heading="Gearbox Software">
 		<p>
-			I was a UI Programmer for <a href="https://borderlands.2k.com/borderlands-3/">Borderlands 3</a
+			I developed 2 AAA games at Gearbox as a UI Programmer: <a
+				href="https://borderlands.2k.com/borderlands-3/">Borderlands 3</a
 			>
-			and <a href="https://2k.com/en-US/game/battleborn-standard-edition/">Battleborn</a>. Some of
-			the features I implemented in these games included the heads-up display (HUD), item menus, and
-			map screen.
+			and <a href="https://2k.com/en-US/game/battleborn-standard-edition/">Battleborn</a>. In both
+			of these games, I implemented UI systems for the heads-up display (HUD), item menus, and map
+			screens.
 		</p>
 		<img src={bl3} alt="Screenshot from Borderlands 3" />
 		<div>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>C++</li>
-				<li>Unreal Engine 3 & 4</li>
+				<li>Unreal Engine</li>
 				<li>Scaleform</li>
 			</ul>
 		</div>
@@ -73,7 +74,7 @@
 
 	<ProjectCard heading="EA Mobile">
 		<p>
-			I was a Software Engineer for EA Mythic and worked primarily on <a
+			Returning to EA, I was a Software Engineer for EA Mythic and worked primarily on <a
 				href="https://en.wikipedia.org/wiki/Dungeon_Keeper_(2014_video_game)">Dungeon Keeper</a
 			>, the studio's final game.
 		</p>
@@ -88,7 +89,11 @@
 	</ProjectCard>
 
 	<ProjectCard heading="Zabu">
-		<p>I was a Lead Engineer for a startup that created online implementations of board games.</p>
+		<p>
+			I was a Lead Engineer for Zabu, a startup that created licensed online adaptations of board
+			games. Because this was a small company, I wore many hats: gameplay programmer, backend
+			programmer, and occasional designer.
+		</p>
 		<img src={ts} class="img-small" alt="Screenshot from Thunderstone" />
 		<div>
 			<h4>Technologies:</h4>
@@ -100,10 +105,11 @@
 		</div>
 	</ProjectCard>
 
-	<ProjectCard heading="pogo.com">
+	<ProjectCard heading="pogo.com (EA)">
 		<p>
-			I was a Gameplay Engineer for <a href="https://www.pogo.com">pogo.com</a>, where I worked on
-			the first Flash games for the site and established best practices.
+			My first tech job was as a Gameplay Engineer for <a href="https://www.pogo.com">pogo.com</a>.
+			At Pogo, my most important contribution was migrating games from Java applets to Flash, where
+			I became a subject matter expert and established best practices for future games.
 		</p>
 		<img src={puck} class="img-small" alt="Screenshot from Puck's Peak" />
 		<div>

@@ -13,9 +13,9 @@
 		>
 	</p>
 	<p>
-		Frontend development is my passion. Whether it's a <strong>website</strong>, a
-		<strong>game</strong>, or a
-		<strong>mobile app</strong>, my priority is always to create an enjoyable user experience.
+		Frontend development is my passion. Whether I'm developing a <strong>website</strong>,
+		<strong>game</strong>, or <strong>mobile app</strong>, my goal is always to create an enjoyable
+		user experience.
 	</p>
 	<ul class="contact-links">
 		<li><a href="https://www.linkedin.com/in/drew-maier"><LinkedIn /></a></li>
