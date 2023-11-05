@@ -23,10 +23,6 @@
 	--spacing-4: 1.5rem;
 	--spacing-5: 2rem;
 
-	--border-thin: 0.5px solid var(--color-primary);
-	--border-normal: 1px solid var(--color-primary);
-	--border-radius-sm: 0.25rem;
-
 	/* Font scale: https://type-scale.com/. Using Major third (rems) */
 	--font-size-0: 0.8rem;
 	--font-size-1: 1rem;
@@ -39,6 +35,10 @@
 
 	--font-weight-normal: 300;
 	--font-weight-bold: 500;
+
+	--border-thin: 0.5px solid var(--color-primary);
+	--border-normal: 1px solid var(--color-primary);
+	--border-radius-sm: 0.25rem;
 
 	--breakpoint-sm: 20rem;
 	--breakpoint-md: 32rem;
@@ -126,6 +126,10 @@ button:focus:not(:focus-visible) {
 ul,
 li {
 	margin: 0;
+}
+
+li {
+	margin-left: var(--spacing-1);
 }
 
 ul {

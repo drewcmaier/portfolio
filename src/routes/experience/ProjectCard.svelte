@@ -11,7 +11,7 @@
 
 <style>
 	section {
-		padding: var(--spacing-5);
+		padding: var(--spacing-4);
 	}
 
 	section h3 {
@@ -20,8 +20,8 @@
 
 		/* background */
 		position: relative;
-		margin-inline: calc(-1 * var(--spacing-5));
-		top: calc(-1 * var(--spacing-5));
+		margin-inline: calc(-1 * var(--spacing-4));
+		top: calc(-1 * var(--spacing-4));
 		background-color: var(--color-primary);
 		color: var(--color-text-inverse);
 		border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;

@@ -25,14 +25,14 @@
 			<strong>consistency</strong>.
 		</p>
 		<img src={indeed} alt="Indeed for Employers page" />
-		<div>
+		<aside>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>React</li>
 				<li>Typescript</li>
 				<li>CSS</li>
 			</ul>
-		</div>
+		</aside>
 	</ProjectCard>
 
 	<ProjectCard heading="Unbroken Studios">
@@ -43,13 +43,13 @@
 			<a href="https://www.suicidesquadgame.com/en-us">Suicide Squad: Kill the Justice League</a>.
 		</p>
 		<img src={fl} alt="Screenshot from Fractured Lands" />
-		<div>
+		<aside>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>C++</li>
 				<li>Unreal Engine 4</li>
 			</ul>
-		</div>
+		</aside>
 	</ProjectCard>
 
 	<ProjectCard heading="Gearbox Software">
@@ -62,14 +62,14 @@
 			screens.
 		</p>
 		<img src={bl3} alt="Screenshot from Borderlands 3" />
-		<div>
+		<aside>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>C++</li>
 				<li>Unreal Engine</li>
 				<li>Scaleform</li>
 			</ul>
-		</div>
+		</aside>
 	</ProjectCard>
 
 	<ProjectCard heading="EA Mobile">
@@ -79,13 +79,13 @@
 			>, the studio's final game.
 		</p>
 		<img src={dk} alt="Screenshot from Dungeon Keeper" />
-		<div>
+		<aside>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>C#</li>
 				<li>Unity</li>
 			</ul>
-		</div>
+		</aside>
 	</ProjectCard>
 
 	<ProjectCard heading="Zabu">
@@ -95,14 +95,14 @@
 			programmer, and occasional designer.
 		</p>
 		<img src={ts} class="img-small" alt="Screenshot from Thunderstone" />
-		<div>
+		<aside>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>Flash</li>
 				<li>Java</li>
 				<li>iOS</li>
 			</ul>
-		</div>
+		</aside>
 	</ProjectCard>
 
 	<ProjectCard heading="pogo.com (EA)">
@@ -112,13 +112,13 @@
 			I became a subject matter expert and established best practices for future games.
 		</p>
 		<img src={puck} class="img-small" alt="Screenshot from Puck's Peak" />
-		<div>
+		<aside>
 			<h4>Technologies:</h4>
 			<ul>
 				<li>Flash</li>
 				<li>Java</li>
 			</ul>
-		</div>
+		</aside>
 	</ProjectCard>
 </div>
 
@@ -127,7 +127,9 @@
 		margin-bottom: 0;
 	}
 
-	p {
+	p,
+	aside,
+	h4 {
 		font-size: var(--font-size-2);
 	}
 

@@ -57,7 +57,7 @@
 
 	.contact-links {
 		display: flex;
-		list-style: none;
+		list-style-type: none;
 		padding: 0;
 		gap: var(--spacing-3);
 		margin-block-start: var(--spacing-5);
