@@ -13,9 +13,9 @@
 	--color-secondary: #ffffff;
 	--color-tertiary: #427aa1;
 	--color-accent: #4ecdc4;
-	--color-background: #f5f1ef;
+	--color-background: #cbffd3;
 	--color-text: var(--color-primary);
-	--color-text-inverse: var(--color-background);
+	--color-text-inverse: var(--color-secondary);
 
 	--spacing-1: 0.125rem;
 	--spacing-2: 0.75rem;
@@ -137,7 +137,7 @@ svg {
 }
 
 nav svg {
-	fill: var(--color-background);
+	fill: var(--color-text-inverse);
 }
 
 section {
