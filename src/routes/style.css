@@ -128,12 +128,8 @@ li {
 	margin: 0;
 }
 
-li {
-	margin-left: var(--spacing-1);
-}
-
 ul {
-	padding-inline-start: var(--spacing-3);
+	padding-inline-start: var(--spacing-1);
 }
 
 svg {

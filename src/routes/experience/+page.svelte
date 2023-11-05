@@ -139,6 +139,10 @@
 		box-shadow: 0px 4px 16px 5px rgba(0, 0, 0, 0.125);
 	}
 
+	li {
+		list-style: square inside;
+	}
+
 	.card-container {
 		display: flex;
 		flex-direction: column;
