@@ -44,7 +44,7 @@
 	.hello {
 		display: block;
 		font-family: var(--font-mono);
-		font-size: var(--font-size-6);
+		font-size: clamp(var(--font-size-1), 12vw, var(--font-size-7));
 		padding: var(--spacing-5);
 
 		position: relative;

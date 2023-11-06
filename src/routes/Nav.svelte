@@ -120,6 +120,7 @@
 	a:visited {
 		color: var(--color-text-inverse);
 		text-decoration: none;
+		font-family: var(--font-heading);
 		font-weight: var(--font-weight-normal);
 		font-size: var(--font-size-3);
 	}

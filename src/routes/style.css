@@ -1,6 +1,6 @@
 @import '@fontsource/rubik/300.css';
 @import '@fontsource/rubik/500.css';
-@import '@fontsource/fira-mono/400.css';
+@import '@fontsource/vt323/400.css';
 
 *,
 *:before,
@@ -46,7 +46,7 @@
 
 	--font-heading: 'Rubik', sans-serif;
 	--font-body: 'Rubik', sans-serif;
-	--font-mono: 'Fira Code', monospace;
+	--font-mono: 'VT323', 'Fira Mono', monospace;
 
 	--shadow-card: 0px 4px 16px 5px rgba(0, 0, 0, 0.125);
 
