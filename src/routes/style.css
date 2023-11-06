@@ -10,9 +10,7 @@
 
 :root {
 	--color-primary: #252525;
-	--color-secondary: #ffffff;
-	--color-tertiary: #427aa1;
-	--color-accent: #4ecdc4;
+	--color-secondary: #fffdf5;
 	--color-background: #cbffd3;
 	--color-text: var(--color-primary);
 	--color-text-inverse: var(--color-secondary);
