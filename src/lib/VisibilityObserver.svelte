@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	let containerElement: Element;
-	let isVisible = false;
+	export let isVisible = false;
 
 	onMount(() => {
 		let intersectionObserver = new IntersectionObserver((entries) => {
@@ -15,7 +15,5 @@
 </script>
 
 <div bind:this={containerElement}>
-	{#if isVisible}
-		<slot />
-	{/if}
+	<slot />
 </div>

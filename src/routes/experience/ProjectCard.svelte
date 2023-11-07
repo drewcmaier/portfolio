@@ -1,22 +1,23 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
-	import RenderWhenVisible from '../../lib/RenderWhenVisible.svelte';
+	import VisibilityObserver from '../../lib/VisibilityObserver.svelte';
 
 	export let heading: string;
+	let isVisible = false;
 </script>
 
-<RenderWhenVisible>
-	<section in:fade={{ delay: 100 }}>
+<VisibilityObserver bind:isVisible>
+	<section class:project-card--fadein={isVisible}>
 		<h3>{heading}</h3>
 		<div class="project-card-content">
 			<slot />
 		</div>
 	</section>
-</RenderWhenVisible>
+</VisibilityObserver>
 
 <style>
 	section {
 		padding: var(--spacing-4);
+		opacity: 0;
 	}
 
 	section h3 {
@@ -36,5 +37,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-4);
+	}
+
+	.project-card--fadein {
+		opacity: 1;
+		transition: opacity 0.5s;
 	}
 </style>
