@@ -1,13 +1,18 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
+	import RenderWhenVisible from '../../lib/RenderWhenVisible.svelte';
+
 	export let heading: string;
 </script>
 
-<section>
-	<h3>{heading}</h3>
-	<div class="project-card-content">
-		<slot />
-	</div>
-</section>
+<RenderWhenVisible>
+	<section in:fade={{ delay: 100 }}>
+		<h3>{heading}</h3>
+		<div class="project-card-content">
+			<slot />
+		</div>
+	</section>
+</RenderWhenVisible>
 
 <style>
 	section {

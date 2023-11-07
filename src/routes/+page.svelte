@@ -1,9 +1,10 @@
 <script>
+	import { fade } from 'svelte/transition';
 	import LinkedIn from '$lib/icons/LinkedIn.svelte';
 	import GitHub from '$lib/icons/GitHub.svelte';
 </script>
 
-<section>
+<section in:fade={{ delay: 100 }}>
 	<strong class="hello">Hello, world!<span class="cursor">█</span></strong>
 	<p>
 		<span>My name is</span> <strong>Drew Maier</strong>
