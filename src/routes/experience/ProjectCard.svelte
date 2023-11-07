@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	import VisibilityObserver from '../../lib/VisibilityObserver.svelte';
 
 	export let heading: string;
@@ -6,18 +7,19 @@
 </script>
 
 <VisibilityObserver bind:isVisible>
-	<section class:project-card--fadein={isVisible}>
-		<h3>{heading}</h3>
-		<div class="project-card-content">
-			<slot />
-		</div>
-	</section>
+	{#key isVisible}
+		<section in:fade>
+			<h3>{heading}</h3>
+			<div class="project-card-content">
+				<slot />
+			</div>
+		</section>
+	{/key}
 </VisibilityObserver>
 
 <style>
 	section {
 		padding: var(--spacing-4);
-		opacity: 0;
 	}
 
 	section h3 {
@@ -37,10 +39,5 @@
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-4);
-	}
-
-	.project-card--fadein {
-		opacity: 1;
-		transition: opacity 0.5s;
 	}
 </style>
