@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
 	import VisibilityObserver from '../../lib/VisibilityObserver.svelte';
 
 	export let heading: string;
