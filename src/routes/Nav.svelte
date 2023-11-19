@@ -28,7 +28,12 @@
 		<a href="/" on:click={onClickLink}>
 			<h1>dm</h1>
 		</a>
-		<button on:click={onToggleMenu} aria-label="Menu" role="menu" aria-controls="nav-menu-list">
+		<button
+			on:click={onToggleMenu}
+			aria-label="Menu"
+			aria-expanded={isMenuOpen}
+			aria-controls="nav-menu-list"
+		>
 			{#if isMenuOpen}
 				<X />
 			{:else}

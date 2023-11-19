@@ -19,8 +19,11 @@
 		user experience.
 	</p>
 	<ul class="contact-links">
-		<li><a href="https://www.linkedin.com/in/drew-maier"><LinkedIn /></a></li>
-		<li><a href="https://github.com/drewcmaier"><GitHub /></a></li>
+		<li>
+			<a href="https://www.linkedin.com/in/drew-maier" aria-label="LinkedIn profile"><LinkedIn /></a
+			>
+		</li>
+		<li><a href="https://github.com/drewcmaier" aria-label="GitHub profile"><GitHub /></a></li>
 	</ul>
 </section>
 
