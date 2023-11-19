@@ -6,20 +6,20 @@
 	let isVisible = false;
 </script>
 
-<VisibilityObserver bind:isVisible>
-	{#key isVisible}
-		<section in:fade>
-			<h3>{heading}</h3>
-			<div class="project-card-content">
-				<slot />
-			</div>
-		</section>
-	{/key}
+<VisibilityObserver bind:isVisible threshold={0.1}>
+	<section class:project-card-transition-in={isVisible}>
+		<h3>{heading}</h3>
+		<div class="project-card-content">
+			<slot />
+		</div>
+	</section>
 </VisibilityObserver>
 
 <style>
 	section {
 		padding: var(--spacing-4);
+		opacity: 0;
+		transition: opacity 0.5s;
 	}
 
 	section h3 {
@@ -39,5 +39,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-4);
+	}
+
+	.project-card-transition-in {
+		opacity: 1;
 	}
 </style>

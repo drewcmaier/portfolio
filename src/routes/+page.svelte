@@ -4,7 +4,7 @@
 	import GitHub from '$lib/icons/GitHub.svelte';
 </script>
 
-<section in:fade>
+<section in:fade={{ duration: 0.5 }}>
 	<strong class="hello">Hello, world!<span class="cursor">█</span></strong>
 	<p>
 		<span>My name is</span> <strong>Drew Maier</strong>
@@ -64,7 +64,7 @@
 		list-style-type: none;
 		padding: 0;
 		gap: var(--spacing-3);
-		margin-block-start: var(--spacing-5);
+		margin-block-start: var(--spacing-4);
 	}
 
 	.contact-links li {

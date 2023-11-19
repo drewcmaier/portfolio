@@ -1,13 +1,18 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	let containerElement: Element;
 	export let isVisible = false;
+	export let threshold = 0;
+
+	let containerElement: Element;
 
 	onMount(() => {
-		let intersectionObserver = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => (isVisible = entry.isIntersecting));
-		});
+		let intersectionObserver = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => (isVisible = entry.isIntersecting));
+			},
+			{ threshold }
+		);
 		intersectionObserver.observe(containerElement);
 
 		return () => intersectionObserver.unobserve(containerElement);
