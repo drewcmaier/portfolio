@@ -10,7 +10,7 @@
 </script>
 
 <div class="card-container">
-	<h2>Experience</h2>
+	<h2 class="visually-hidden">Experience</h2>
 	<ProjectCard heading="Indeed">
 		<p>
 			I am currently a Senior UX Developer at <a href="https://employers.indeed.com">Indeed</a>.

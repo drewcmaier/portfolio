@@ -4,7 +4,7 @@
 	import GitHub from '$lib/icons/GitHub.svelte';
 </script>
 
-<section in:fade={{ duration: 0.5 }}>
+<section in:fade={{ duration: 500 }}>
 	<strong class="hello">Hello, world!<span class="cursor">█</span></strong>
 	<p>
 		<span>My name is</span> <strong>Drew Maier</strong>
