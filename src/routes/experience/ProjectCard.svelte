@@ -5,7 +5,7 @@
 	let isVisible = false;
 </script>
 
-<VisibilityObserver bind:isVisible threshold={0.1}>
+<VisibilityObserver bind:isVisible threshold={0.01}>
 	<section class:project-card-transition-in={isVisible}>
 		<h3>{heading}</h3>
 		<div class="project-card-content">
