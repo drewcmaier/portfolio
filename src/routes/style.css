@@ -6,7 +6,7 @@
 
 :root {
 	--color-primary: #252525;
-	--color-secondary: #fdfbf6;
+	--color-secondary: #fffdf6;
 	--color-background: #cbffd3;
 	--color-text: var(--color-primary);
 	--color-text-inverse: var(--color-secondary);
