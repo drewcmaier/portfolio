@@ -84,6 +84,8 @@
 			<ul>
 				<li>C#</li>
 				<li>Unity</li>
+				<li>iOS</li>
+				<li>Android</li>
 			</ul>
 		</aside>
 	</ProjectCard>
@@ -101,6 +103,7 @@
 				<li>Flash</li>
 				<li>Java</li>
 				<li>iOS</li>
+				<li>Android</li>
 			</ul>
 		</aside>
 	</ProjectCard>
