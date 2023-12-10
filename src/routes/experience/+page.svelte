@@ -74,9 +74,9 @@
 
 	<ProjectCard heading="EA Mobile">
 		<p>
-			Returning to EA, I was a Software Engineer for EA Mythic and worked primarily on <a
+			Returning to EA, I was a Software Engineer for EA Mobile and worked primarily on <a
 				href="https://en.wikipedia.org/wiki/Dungeon_Keeper_(2014_video_game)">Dungeon Keeper</a
-			>, the studio's final game.
+			>, the studio's final game, which released for iOS and Android.
 		</p>
 		<img src={dk} alt="Screenshot from Dungeon Keeper" />
 		<aside>
