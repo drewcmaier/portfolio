@@ -1,7 +1,13 @@
 <script lang="ts">
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+
 	import Footer from './Footer.svelte';
 	import Nav from './Nav.svelte';
 	import './style.css';
+
+	// Enables Vercel analytics
+	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 <Nav />
