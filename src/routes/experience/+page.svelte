@@ -1,12 +1,12 @@
 <script lang="ts">
 	import ProjectCard from './ProjectCard.svelte';
 
-	import indeed from './images/indeed.png';
-	import fl from './images/fl.jpeg';
+	import indeed from './images/indeed.jpg';
+	import fl from './images/fl.jpg';
 	import bl3 from './images/bl3.jpg';
 	import dk from './images/dk.jpg';
-	import ts from './images/ts.png';
-	import puck from './images/puck.png';
+	import ts from './images/ts.jpg';
+	import puck from './images/puck.jpg';
 </script>
 
 <div class="card-container">
