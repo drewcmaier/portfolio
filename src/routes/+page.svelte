@@ -4,8 +4,8 @@
 	import GitHub from '$lib/icons/GitHub.svelte';
 </script>
 
-<section in:fade={{ duration: 500 }}>
-	<strong class="hello">Hello, world!<span class="cursor">█</span></strong>
+<section class="card" in:fade={{ duration: 500 }}>
+	<strong class="card-heading">Hello, world!<span class="cursor">█</span></strong>
 	<p>
 		<span>My name is</span> <strong>Drew Maier</strong>
 		<span
@@ -28,40 +28,33 @@
 </section>
 
 <style>
-	section {
+	.card {
 		flex: 1;
-		padding: var(--spacing-5);
-		font-size: var(--font-size-2);
-		background-color: var(--color-secondary);
-		max-width: var(--breakpoint-lg);
+		padding: var(--spacing-4);
 		margin: auto;
 	}
 
-	:where(p, span):not(:last-child) {
-		margin-bottom: var(--spacing-4);
-	}
-
-	:where(p, span):last-child {
-		margin-bottom: var(--spacing-5);
-	}
-
-	.hello {
+	.card-heading {
 		display: block;
 		font-family: var(--font-mono);
 		font-size: clamp(var(--font-size-1), 11vw, var(--font-size-7));
-		padding: var(--spacing-5);
+		padding: var(--spacing-4);
 
+		/* background */
 		position: relative;
-		margin-inline: calc(-1 * var(--spacing-5));
-		top: calc(-1 * var(--spacing-5));
+		margin-inline: calc(-1 * var(--spacing-4));
+		top: calc(-1 * var(--spacing-4));
 		background-color: var(--color-primary);
 		color: var(--color-text-inverse);
 		border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
 	}
 
+	.card p {
+		margin-block-end: var(--spacing-4);
+	}
+
 	.contact-links {
 		display: flex;
-		list-style-type: none;
 		padding: 0;
 		gap: var(--spacing-3);
 		margin-block-start: var(--spacing-4);

@@ -16,6 +16,8 @@
 	--spacing-3: 1rem;
 	--spacing-4: 1.5rem;
 	--spacing-5: 2rem;
+	--spacing-6: 3rem;
+	--spacing-7: 4rem;
 
 	/* Font scale: https://type-scale.com/. Using Major third (rems) */
 	--font-size-0: 0.8rem;
@@ -42,7 +44,7 @@
 	--font-body: 'Rubik', sans-serif;
 	--font-mono: 'VT323', 'Fira Mono', monospace;
 
-	--shadow-card: 0px 4px 16px 5px rgba(0, 0, 0, 0.125);
+	--shadow-outer: 0px 4px 16px 5px rgba(0, 0, 0, 0.125);
 
 	font-family: var(--font-body);
 	font-size: var(--font-size-1);
@@ -65,12 +67,8 @@ body {
 	margin: 0;
 }
 
-:where(h1, h2, h3, h4, h5, p) {
+:where(h1, h2, h3, h4, h5, p, ul, li) {
 	margin: 0;
-}
-
-p {
-	line-height: 1.5;
 }
 
 :where(h1, h2, h3, h4, h5) {
@@ -84,46 +82,49 @@ h1 {
 
 h2 {
 	font-size: var(--font-size-3);
-	margin-bottom: var(--spacing-3);
+	margin-block-end: var(--spacing-3);
 	font-weight: var(--font-weight-normal);
 }
 
 h3 {
 	font-size: var(--font-size-2);
-	margin-bottom: var(--spacing-2);
+	margin-block-end: var(--spacing-2);
 }
 
 h4 {
-	font-size: var(--font-size-1);
+	font-size: var(--font-size-2);
 }
 
 h5 {
 	font-size: var(--font-size-1);
 }
 
-a,
-a:visited {
+:where(a, a:visited) {
 	font-weight: var(--font-weight-bold);
 	color: var(--color-text);
 }
 
-input,
-button {
+p {
+	font-size: var(--font-size-2);
+	line-height: 1.5;
+}
+
+ul {
+	padding-inline-start: var(--spacing-1);
+	font-size: var(--font-size-2);
+}
+
+li {
+	list-style-type: none;
+}
+
+:where(input, button) {
 	font-size: inherit;
 	font-family: inherit;
 }
 
 button:focus:not(:focus-visible) {
 	outline: none;
-}
-
-ul,
-li {
-	margin: 0;
-}
-
-ul {
-	padding-inline-start: var(--spacing-1);
 }
 
 svg {
@@ -137,7 +138,7 @@ nav svg {
 section {
 	background-color: var(--color-secondary);
 	border-radius: var(--border-radius-sm);
-	box-shadow: var(--shadow-card);
+	box-shadow: var(--shadow-outer);
 	max-width: var(--breakpoint-lg);
 }
 

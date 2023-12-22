@@ -126,24 +126,15 @@
 </div>
 
 <style>
-	h2 {
-		margin-bottom: 0;
-	}
-
-	p,
-	aside,
-	h4 {
-		font-size: var(--font-size-2);
-	}
-
 	img {
 		object-fit: fill;
 		max-width: fit-content;
-		box-shadow: 0px 4px 16px 5px rgba(0, 0, 0, 0.125);
+		box-shadow: var(--shadow-outer);
 	}
 
 	li {
 		list-style: square inside;
+		font-size: var(--font-size-2);
 	}
 
 	.card-container {

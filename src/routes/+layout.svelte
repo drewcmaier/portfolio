@@ -12,14 +12,14 @@
 
 <Nav />
 
-<main>
+<main class="root-content">
 	<slot />
 </main>
 
 <Footer />
 
 <style>
-	main {
+	.root-content {
 		padding: var(--spacing-3);
 		background-color: var(--color-background);
 
@@ -28,13 +28,13 @@
 		flex-direction: column;
 
 		padding: var(--spacing-3);
-		/* shift down content to account for header  */
-		padding-top: calc(71px + var(--spacing-3));
+		/* shift down content to account for floating header  */
+		padding-block-start: calc(71px + var(--spacing-3));
 	}
 
 	@media screen and (min-width: 32rem) {
-		main {
-			padding-top: var(--spacing-3);
+		.root-content {
+			padding-block-start: var(--spacing-3);
 		}
 	}
 </style>

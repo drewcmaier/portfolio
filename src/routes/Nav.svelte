@@ -23,12 +23,13 @@
 	}
 </script>
 
-<header class:nav--closed={!isMenuOpen}>
-	<nav>
-		<a href="/" on:click={onClickLink}>
+<header class="nav-outer" class:nav--closed={!isMenuOpen}>
+	<nav class="nav-menu">
+		<a href="/" on:click={onClickLink} class="nav-menu-link">
 			<h1>dm</h1>
 		</a>
 		<button
+			class="nav-menu-toggle"
 			on:click={onToggleMenu}
 			aria-label="Menu"
 			aria-expanded={isMenuOpen}
@@ -40,11 +41,14 @@
 				<Hamburger />
 			{/if}
 		</button>
-		<ul id="nav-menu-list">
+		<ul class="nav-menu-list" id="nav-menu-list">
 			{#each routes as route}
 				<li>
-					<a href={route.path} on:click={onClickLink} class:active={$page.route.id === route.path}
-						>{route.label}</a
+					<a
+						href={route.path}
+						on:click={onClickLink}
+						class="nav-menu-link"
+						class:nav-menu-link--active={$page.route.id === route.path}>{route.label}</a
 					>
 				</li>
 			{/each}
@@ -67,17 +71,15 @@
 </svelte:head>
 
 <style>
-	header {
+	.nav-outer {
 		background-color: var(--color-primary);
 		--nav-shadow: drop-shadow(0 0 0.5rem var(--color-primary));
 	}
 
-	nav {
+	.nav-menu {
 		background-color: var(--color-primary);
 		color: var(--color-text-inverse);
 		fill: var(--color-text-inverse);
-
-		border-bottom: var(--border-normal);
 
 		box-sizing: content-box;
 		display: flex;
@@ -93,11 +95,7 @@
 		filter: none;
 	}
 
-	h1 {
-		text-align: center;
-	}
-
-	ul {
+	.nav-menu-list {
 		max-width: var(--breakpoint-lg);
 		margin: 0 auto;
 		padding: 0;
@@ -112,29 +110,24 @@
 		justify-content: center;
 		justify-items: center;
 		align-items: center;
-		gap: 4rem;
+		gap: var(--spacing-7);
 
 		transition: opacity 0.2s;
 	}
 
-	li {
-		list-style-type: none;
-	}
-
-	a,
-	a:visited {
+	.nav-menu-link {
 		color: var(--color-text-inverse);
-		text-decoration: none;
 		font-family: var(--font-heading);
 		font-weight: var(--font-weight-normal);
 		font-size: var(--font-size-3);
+		text-decoration: none;
 	}
 
-	a.active {
+	.nav-menu-link--active {
 		text-decoration: underline;
 	}
 
-	button {
+	.nav-menu-toggle {
 		z-index: 1;
 		margin: 0;
 		cursor: pointer;
@@ -144,47 +137,51 @@
 		margin: -0.5rem;
 	}
 
-	.nav--closed nav {
+	.nav--closed .nav-menu {
 		filter: var(--nav-shadow);
 	}
 
-	.nav--closed ul {
+	.nav--closed .nav-menu-list {
 		opacity: 0;
 		left: -9999px;
 		top: -9999px;
 	}
 
+	/*
+		Large breakpoint styles
+		At large widths, nav is always visible instead of a toggled
+		hamburger menu.
+	 */
 	@media screen and (min-width: 32rem) {
-		nav {
-			position: static;
-		}
-
-		.nav--closed nav {
-			filter: none;
-		}
-
 		.nav--closed {
 			filter: var(--nav-shadow);
 		}
 
-		ul {
+		.nav--closed .nav-menu {
+			filter: none;
+		}
+
+		.nav--closed .nav-menu-list {
+			opacity: 1;
+			display: flex;
+		}
+
+		.nav-menu {
+			position: static;
+		}
+
+		.nav-menu-list {
 			flex-direction: row;
+			justify-content: flex-end;
 			position: static;
 			backdrop-filter: none;
-			justify-content: flex-end;
-			gap: 2rem;
 			margin: 0;
 			background-color: transparent;
 			border: 0;
 		}
 
-		button {
+		.nav-menu-toggle {
 			display: none;
-		}
-
-		.nav--closed ul {
-			opacity: 1;
-			display: flex;
 		}
 	}
 </style>

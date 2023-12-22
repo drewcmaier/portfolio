@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer-wrapper">
 	<div class="footer-content">
 		<p>©2023 Drew Maier</p>
 		<p>Created with <a href="https://kit.svelte.dev/">Sveltekit</a></p>
@@ -6,11 +6,11 @@
 </footer>
 
 <style>
-	footer {
+	.footer-wrapper {
 		background-color: var(--color-primary);
 	}
 
-	footer a {
+	.footer-wrapper a {
 		color: var(--color-text-inverse);
 	}
 
@@ -25,5 +25,9 @@
 
 		max-width: var(--breakpoint-lg);
 		margin: auto;
+	}
+
+	.footer-content p {
+		font-size: inherit;
 	}
 </style>

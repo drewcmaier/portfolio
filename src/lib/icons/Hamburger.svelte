@@ -6,6 +6,6 @@
 
 <style>
 	svg {
-		margin-top: 6px;
+		margin-block-start: 6px;
 	}
 </style>

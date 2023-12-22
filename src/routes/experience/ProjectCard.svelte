@@ -6,8 +6,8 @@
 </script>
 
 <VisibilityObserver bind:isVisible threshold={0.01}>
-	<section class:project-card-transition-in={isVisible}>
-		<h3>{heading}</h3>
+	<section class="project-card" class:project-card-transition-in={isVisible}>
+		<h3 class="project-card-heading">{heading}</h3>
 		<div class="project-card-content">
 			<slot />
 		</div>
@@ -15,15 +15,15 @@
 </VisibilityObserver>
 
 <style>
-	section {
+	.project-card {
 		padding: var(--spacing-4);
 		opacity: 0;
 		transition: opacity 0.5s;
 	}
 
-	section h3 {
+	.project-card-heading {
 		padding: var(--spacing-3);
-		margin-bottom: -0.5rem;
+		margin-block-end: 0;
 
 		/* background */
 		position: relative;
