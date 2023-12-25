@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	export let isVisible = false;
 	export let threshold = 0;
 
+	let isVisible = false;
 	let containerElement: Element;
 
 	onMount(() => {
@@ -20,5 +20,5 @@
 </script>
 
 <div bind:this={containerElement}>
-	<slot />
+	<slot {isVisible} />
 </div>

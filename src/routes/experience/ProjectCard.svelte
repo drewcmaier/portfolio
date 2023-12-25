@@ -2,10 +2,9 @@
 	import VisibilityObserver from '../../lib/VisibilityObserver.svelte';
 
 	export let heading: string;
-	let isVisible = false;
 </script>
 
-<VisibilityObserver bind:isVisible threshold={0.01}>
+<VisibilityObserver let:isVisible threshold={0.01}>
 	<section class="project-card" class:project-card-transition-in={isVisible}>
 		<h3 class="project-card-heading">{heading}</h3>
 		<div class="project-card-content">
