@@ -16,6 +16,7 @@
 
 <style>
 	svg {
-		margin-top: 6px;
+		fill: var(--color-text-inverse);
+		margin-block-start: 6px;
 	}
 </style>

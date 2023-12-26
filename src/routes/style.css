@@ -44,7 +44,7 @@
 	--font-body: 'Rubik', sans-serif;
 	--font-mono: 'VT323', 'Fira Mono', monospace;
 
-	--shadow-outer: 0px 4px 16px 5px rgba(0, 0, 0, 0.125);
+	--shadow-outer: 0px 4px 16px 8px rgba(0, 0, 0, 0.125);
 
 	font-family: var(--font-body);
 	font-size: var(--font-size-1);
@@ -129,10 +129,6 @@ button:focus:not(:focus-visible) {
 
 svg {
 	fill: var(--color-primary);
-}
-
-nav svg {
-	fill: var(--color-text-inverse);
 }
 
 section {

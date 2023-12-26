@@ -73,7 +73,7 @@
 <style>
 	.nav-outer {
 		background-color: var(--color-primary);
-		--nav-shadow: drop-shadow(0 0 0.5rem var(--color-primary));
+		--nav-shadow: drop-shadow(0 0 8px var(--color-primary));
 	}
 
 	.nav-menu {
