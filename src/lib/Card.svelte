@@ -17,6 +17,7 @@
 		padding: var(--spacing-4);
 		margin: auto;
 		flex: 1;
+		opacity: 0;
 	}
 
 	.card-heading {
