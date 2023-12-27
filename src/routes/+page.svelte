@@ -4,7 +4,7 @@
 	import Card from '$lib/Card.svelte';
 </script>
 
-<Card transitionIn={true}>
+<Card playTransitionIn={true}>
 	<strong slot="heading" class="heading-hello">Hello, world!<span class="cursor">█</span></strong>
 	<p>
 		<span>My name is</span> <strong>Drew Maier</strong>

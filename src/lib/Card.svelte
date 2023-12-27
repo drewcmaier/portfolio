@@ -1,8 +1,9 @@
 <script lang="ts">
-	export let transitionIn: boolean = false;
+	export let playTransitionIn: boolean = false;
+	export let playTransitionOut: boolean = false;
 </script>
 
-<section class="card" class:card-transition-in={transitionIn}>
+<section class="card" class:card-fade-in={playTransitionIn} class:card-fade-out={playTransitionOut}>
 	<div class="card-heading">
 		<slot name="heading" />
 	</div>
@@ -36,8 +37,14 @@
 		gap: var(--spacing-4);
 	}
 
-	.card-transition-in {
+	.card-fade-in {
 		animation: fadein 0.5s;
+		animation-fill-mode: both;
+	}
+
+	.card-fade-out {
+		animation: fadeout 0.5s;
+		animation-fill-mode: both;
 	}
 
 	@keyframes fadein {
@@ -46,6 +53,15 @@
 		}
 		to {
 			opacity: 1;
+		}
+	}
+
+	@keyframes fadeout {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
 		}
 	}
 </style>

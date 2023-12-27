@@ -5,8 +5,8 @@
 	export let heading: string;
 </script>
 
-<VisibilityObserver let:isVisible threshold={0.01}>
-	<Card transitionIn={isVisible}>
+<VisibilityObserver let:isVisible threshold={0}>
+	<Card playTransitionIn={isVisible} playTransitionOut={!isVisible}>
 		<h3 slot="heading">{heading}</h3>
 		<slot />
 	</Card>

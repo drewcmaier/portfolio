@@ -4,12 +4,16 @@
 	export let threshold = 0;
 
 	let isVisible = false;
+	let intersectionRatio = 0.0;
 	let containerElement: Element;
 
 	onMount(() => {
 		let intersectionObserver = new IntersectionObserver(
 			(entries) => {
-				entries.forEach((entry) => (isVisible = entry.isIntersecting));
+				entries.forEach((entry) => {
+					isVisible = entry.isIntersecting;
+					intersectionRatio = entry.intersectionRatio;
+				});
 			},
 			{ threshold }
 		);
@@ -20,5 +24,5 @@
 </script>
 
 <div bind:this={containerElement}>
-	<slot {isVisible} />
+	<slot {isVisible} {intersectionRatio} />
 </div>
