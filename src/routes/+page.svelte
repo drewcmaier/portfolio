@@ -1,11 +1,11 @@
 <script>
-	import { fade } from 'svelte/transition';
 	import LinkedIn from '$lib/icons/LinkedIn.svelte';
 	import GitHub from '$lib/icons/GitHub.svelte';
+	import Card from '$lib/Card.svelte';
 </script>
 
-<section class="card" in:fade={{ duration: 500 }}>
-	<strong class="card-heading">Hello, world!<span class="cursor">█</span></strong>
+<Card transitionIn={true}>
+	<strong slot="heading" class="heading-hello">Hello, world!<span class="cursor">█</span></strong>
 	<p>
 		<span>My name is</span> <strong>Drew Maier</strong>
 		<span
@@ -25,39 +25,20 @@
 		</li>
 		<li><a href="https://github.com/drewcmaier" aria-label="GitHub profile"><GitHub /></a></li>
 	</ul>
-</section>
+</Card>
 
 <style>
-	.card {
-		flex: 1;
-		padding: var(--spacing-4);
-		margin: auto;
-	}
-
-	.card-heading {
+	.heading-hello {
 		display: block;
 		font-family: var(--font-mono);
 		font-size: clamp(var(--font-size-1), 11vw, var(--font-size-7));
-		padding: var(--spacing-4);
-
-		/* background */
-		position: relative;
-		margin-inline: calc(-1 * var(--spacing-4));
-		top: calc(-1 * var(--spacing-4));
-		background-color: var(--color-primary);
-		color: var(--color-text-inverse);
-		border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
-	}
-
-	.card p {
-		margin-block-end: var(--spacing-4);
+		text-align: center;
 	}
 
 	.contact-links {
 		display: flex;
 		padding: 0;
 		gap: var(--spacing-3);
-		margin-block-start: var(--spacing-4);
 	}
 
 	.contact-links li {
