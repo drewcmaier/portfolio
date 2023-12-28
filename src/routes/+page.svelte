@@ -33,7 +33,7 @@
 		font-family: var(--font-mono);
 		font-size: clamp(var(--font-size-1), 12vw, var(--font-size-7));
 		text-align: center;
-		padding-block: var(--spacing-3);
+		padding-block: var(--spacing-4);
 	}
 
 	.contact-links {

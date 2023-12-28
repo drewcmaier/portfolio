@@ -19,7 +19,7 @@
 
 		display: flex;
 		justify-content: space-between;
-		padding: var(--spacing-3);
+		padding: var(--spacing-4);
 		font-size: var(--font-size-0);
 		color: var(--color-text-inverse);
 

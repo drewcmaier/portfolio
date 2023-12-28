@@ -73,7 +73,7 @@
 <style>
 	.nav-outer {
 		background-color: var(--color-primary);
-		--nav-shadow: drop-shadow(0 0 8px var(--color-primary));
+		--nav-shadow: drop-shadow(0 0 var(--spacing-3) var(--color-primary));
 	}
 
 	.nav-menu {
@@ -85,7 +85,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: var(--spacing-3);
+		padding: var(--spacing-4);
 
 		position: fixed;
 		inset: 0 0 auto;
@@ -110,9 +110,9 @@
 		justify-content: center;
 		justify-items: center;
 		align-items: center;
-		gap: var(--spacing-7);
+		gap: var(--spacing-8);
 
-		transition: opacity 0.2s;
+		transition: opacity 0.5s;
 	}
 
 	.nav-menu-link {
@@ -129,12 +129,11 @@
 
 	.nav-menu-toggle {
 		z-index: 1;
-		margin: 0;
 		cursor: pointer;
 		border: 0;
 		background-color: transparent;
-		padding: 0.5rem;
-		margin: -0.5rem;
+		padding: var(--spacing-3);
+		margin: calc(-1 * var(--spacing-3));
 	}
 
 	.nav--closed .nav-menu {

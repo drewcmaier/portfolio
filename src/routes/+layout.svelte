@@ -27,14 +27,14 @@
 		display: flex;
 		flex-direction: column;
 
-		padding: var(--spacing-3);
+		padding: var(--spacing-4);
 		/* shift down content to account for floating header  */
-		padding-block-start: calc(71px + var(--spacing-3));
+		padding-block-start: calc(70px + var(--spacing-4));
 	}
 
 	@media screen and (min-width: 32rem) {
 		.root-content {
-			padding-block-start: var(--spacing-3);
+			padding-block-start: var(--spacing-4);
 		}
 	}
 </style>
