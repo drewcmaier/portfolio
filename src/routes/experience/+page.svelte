@@ -145,8 +145,9 @@
 
 <style>
 	img {
-		object-fit: fill;
-		max-width: fit-content;
+		object-fit: cover;
+		object-position: top center;
+		aspect-ratio: 16 / 9;
 		box-shadow: var(--shadow-outer);
 	}
 

@@ -5,11 +5,11 @@
 	export let heading: string;
 </script>
 
-<VisibilityObserver let:isVisible threshold={0.1}>
+<VisibilityObserver let:isVisible threshold={0.01}>
 	<Card playTransitionIn={isVisible} playTransitionOut={!isVisible}>
 		<h3 slot="heading">{heading}</h3>
 		<slot name="description" />
-		<aside>
+		<aside class="technologies-inset">
 			<h4>Technologies:</h4>
 			<ul>
 				<slot name="technologies" />
@@ -25,5 +25,11 @@
 
 	h4 {
 		font-weight: bold;
+	}
+
+	.technologies-inset {
+		border: var(--border-thin);
+		border-radius: var(--border-radius-sm);
+		padding: var(--spacing-4);
 	}
 </style>
