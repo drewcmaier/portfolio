@@ -16,6 +16,7 @@
 			<p>
 				I am currently a Senior UX Developer at <a href="https://employers.indeed.com">Indeed</a>.
 			</p>
+			<img src={indeed} alt="Indeed for Employers page" />
 			<p>
 				As a member of the <a href="https://indeed.design/article/what-is-a-design-technologist"
 					>Design Technology</a
@@ -30,10 +31,9 @@
 				This role was a career pivot for me from the game industry to web development. After over a
 				decade making games, I had become interested in applying my frontend expertise in other
 				contexts. I also wanted expand my breadth of knowledge by learning web technologies. While
-				Indeed may not seem to have much in common with video games, I am able to apply my
-				background in UI on a daily basis.
+				Indeed may not seem to have much in common with video games, I apply my background from game
+				UI on a daily basis.
 			</p>
-			<img src={indeed} alt="Indeed for Employers page" />
 		</svelte:fragment>
 		<svelte:fragment slot="technologies">
 			<li>React</li>
@@ -52,12 +52,12 @@
 					href="http://fractured-lands.com/">Fractured Lands</a
 				>. This included the inventory menu, game map, and multiplayer party management screen.
 			</p>
+			<img src={fl} alt="Screenshot from Fractured Lands" />
 			<p>
 				I also briefly developed gameplay systems and tools for
 				<a href="https://www.suicidesquadgame.com/en-us">Suicide Squad: Kill the Justice League</a>,
 				which will release in February 2024.
 			</p>
-			<img src={fl} alt="Screenshot from Fractured Lands" />
 		</svelte:fragment>
 		<svelte:fragment slot="technologies">
 			<li>C++</li>
@@ -158,7 +158,7 @@
 	.card-container {
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing-3);
+		gap: var(--spacing-4);
 		width: 100%;
 		max-width: var(--breakpoint-lg);
 		margin: auto;

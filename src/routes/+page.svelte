@@ -39,7 +39,7 @@
 	.contact-links {
 		display: flex;
 		padding: 0;
-		gap: var(--spacing-3);
+		gap: var(--spacing-4);
 	}
 
 	.contact-links li {

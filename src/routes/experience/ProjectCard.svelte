@@ -24,7 +24,6 @@
 	}
 
 	h4 {
-		text-decoration: underline;
 		font-weight: bold;
 	}
 </style>
