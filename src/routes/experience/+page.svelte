@@ -74,10 +74,13 @@
 				>
 				and <a href="https://2k.com/en-US/game/battleborn-standard-edition/">Battleborn</a>. In both
 				of these games, I implemented UI systems for the heads-up display (HUD), item menus, and map
-				screens. Borderlands 3 was especially challenging to work on because it was Gearbox's first
-				game developed with Unreal Engine 4.
+				screens.
 			</p>
 			<img src={bl3} alt="Screenshot from Borderlands 3" />
+			<p>
+				Borderlands 3 was especially challenging to work on because it was Gearbox's first game
+				developed with Unreal Engine 4.
+			</p>
 		</svelte:fragment>
 		<svelte:fragment slot="technologies">
 			<li>C++</li>
@@ -95,9 +98,18 @@
 				Returning to Electronic Arts, I was a Software Engineer for EA Mobile and worked primarily
 				on <a href="https://en.wikipedia.org/wiki/Dungeon_Keeper_(2014_video_game)"
 					>Dungeon Keeper</a
-				>, the studio's final game, which released for iOS and Android.
+				>, the studio's final game, which released for iOS and Android. This experience was
+				chronicled in Jason Schreier's book
+				<a
+					href="https://www.amazon.com/Press-Reset-Recovery-Video-Industry/dp/1538735490/ref=asc_df_1538735490"
+					>Press Reset</a
+				>.
 			</p>
 			<img src={dk} alt="Screenshot from Dungeon Keeper" />
+			<p>
+				While my stint at EA Mobile was short, I learned a lot about game development and working on
+				a large team.
+			</p>
 		</svelte:fragment>
 		<svelte:fragment slot="technologies">
 			<li>C#</li>
@@ -111,10 +123,13 @@
 		<svelte:fragment slot="description">
 			<p>
 				I was a Lead Engineer for Zabu, a startup that created licensed online adaptations of board
-				games. Because this was a small company, I wore many hats: gameplay programmer, backend
-				programmer, and occasional designer.
+				games.
 			</p>
 			<img src={ts} class="img-small" alt="Screenshot from Thunderstone" />
+			<p>
+				Because this was a small company, I wore many hats: gameplay programmer, backend programmer,
+				and occasional designer.
+			</p>
 		</svelte:fragment>
 		<svelte:fragment slot="technologies">
 			<li>Flash</li>
@@ -129,11 +144,13 @@
 		<svelte:fragment slot="description">
 			<p>
 				My first tech job was as a Gameplay Engineer for <a href="https://www.pogo.com">pogo.com</a
-				>, a subsidiary of Electronic Arts. At Pogo, my most important contribution was migrating
-				games from Java Applets to Flash, where I became a subject matter expert and established
-				best practices for future games.
+				>, a subsidiary of Electronic Arts.
 			</p>
 			<img src={puck} class="img-small" alt="Screenshot from Puck's Peak" />
+			<p>
+				At Pogo, my most important contribution was migrating games from Java Applets to Flash,
+				where I became a subject matter expert and established best practices for future games.
+			</p>
 		</svelte:fragment>
 		<svelte:fragment slot="technologies">
 			<li>Flash</li>
