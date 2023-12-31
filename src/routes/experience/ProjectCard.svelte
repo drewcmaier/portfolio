@@ -28,8 +28,9 @@
 	}
 
 	.technologies-inset {
-		border: var(--border-thin);
+		background-color: var(--color-inset);
 		border-radius: var(--border-radius-sm);
 		padding: var(--spacing-4);
+		box-shadow: var(--shadow-inner);
 	}
 </style>
