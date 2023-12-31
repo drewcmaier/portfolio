@@ -1,7 +1,7 @@
 <footer class="footer-wrapper">
 	<div class="footer-content">
 		<p>©2023 Drew Maier</p>
-		<p>Created with <a href="https://kit.svelte.dev/">Sveltekit</a></p>
+		<p>Created with <a href="https://kit.svelte.dev/">SvelteKit</a></p>
 	</div>
 </footer>
 
