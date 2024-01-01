@@ -135,13 +135,6 @@ svg {
 	fill: var(--color-primary);
 }
 
-section {
-	background-color: var(--color-secondary);
-	border-radius: var(--border-radius-sm);
-	box-shadow: var(--shadow-outer);
-	max-width: var(--breakpoint-lg);
-}
-
 .visually-hidden {
 	border: 0;
 	clip: rect(0 0 0 0);

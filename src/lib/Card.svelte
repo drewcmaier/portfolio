@@ -14,6 +14,10 @@
 
 <style>
 	.card {
+		background-color: var(--color-secondary);
+		border-radius: var(--border-radius-sm);
+		box-shadow: var(--shadow-outer);
+		max-width: var(--breakpoint-lg);
 		padding: var(--spacing-5);
 		margin: auto;
 		flex: 1;
