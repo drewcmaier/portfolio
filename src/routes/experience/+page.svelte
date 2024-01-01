@@ -140,7 +140,7 @@
 			</p>
 			<img src={puck} class="img-small" alt="Screenshot from Puck's Peak" />
 			<p>
-				At Pogo, my most important contribution was migrating games from Java Applets to Flash,
+				At Pogo, my most important contribution was migrating games from Java applets to Flash,
 				where I became a subject matter expert and established best practices for future games.
 			</p>
 		</svelte:fragment>
