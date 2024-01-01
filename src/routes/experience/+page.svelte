@@ -11,7 +11,17 @@
 
 <div class="card-container">
 	<h2 class="visually-hidden">Experience</h2>
-	<ProjectCard heading="Indeed">
+	<ProjectCard
+		heading="Indeed"
+		technologies={[
+			'React',
+			'Typescript',
+			'HTML',
+			'CSS (Emotion, Sass)',
+			'WAI-ARIA',
+			'Design systems'
+		]}
+	>
 		<svelte:fragment slot="description">
 			<p>
 				I am currently a Senior UX Developer at <a href="https://employers.indeed.com">Indeed</a>.
@@ -35,17 +45,12 @@
 				UI on a daily basis.
 			</p>
 		</svelte:fragment>
-		<svelte:fragment slot="technologies">
-			<li>React</li>
-			<li>Typescript</li>
-			<li>HTML</li>
-			<li>CSS (Emotion, Sass)</li>
-			<li>WAI-ARIA</li>
-			<li>Design systems</li>
-		</svelte:fragment>
 	</ProjectCard>
 
-	<ProjectCard heading="Unbroken Studios">
+	<ProjectCard
+		heading="Unbroken Studios"
+		technologies={['C++', 'Unreal Engine 4', 'Steamworks SDK']}
+	>
 		<svelte:fragment slot="description">
 			<p>
 				As a Senior UI Engineer, I was responsible for architecting and implementing in-game UI for <a
@@ -59,14 +64,19 @@
 				which will release in February 2024.
 			</p>
 		</svelte:fragment>
-		<svelte:fragment slot="technologies">
-			<li>C++</li>
-			<li>Unreal Engine 4</li>
-			<li>Steamworks SDK</li>
-		</svelte:fragment>
 	</ProjectCard>
 
-	<ProjectCard heading="Gearbox Software">
+	<ProjectCard
+		heading="Gearbox Software"
+		technologies={[
+			'C++',
+			'Unreal Engine 3',
+			'Unreal Engine 4',
+			'Scaleform',
+			'Playstation SDK',
+			'Xbox SDK'
+		]}
+	>
 		<svelte:fragment slot="description">
 			<p>
 				I developed 2 AAA games at Gearbox as a UI Programmer: <a
@@ -82,17 +92,9 @@
 				developed with Unreal Engine 4.
 			</p>
 		</svelte:fragment>
-		<svelte:fragment slot="technologies">
-			<li>C++</li>
-			<li>Unreal Engine 3</li>
-			<li>Unreal Engine 4</li>
-			<li>Scaleform</li>
-			<li>Playstation SDK</li>
-			<li>Xbox SDK</li>
-		</svelte:fragment>
 	</ProjectCard>
 
-	<ProjectCard heading="EA Mobile">
+	<ProjectCard heading="EA Mobile" technologies={['C#', 'Unity', 'iOS SDK', 'Android SDK']}>
 		<svelte:fragment slot="description">
 			<p>
 				Returning to Electronic Arts, I was a Software Engineer for EA Mobile and worked primarily
@@ -111,15 +113,12 @@
 				a large team.
 			</p>
 		</svelte:fragment>
-		<svelte:fragment slot="technologies">
-			<li>C#</li>
-			<li>Unity</li>
-			<li>iOS SDK</li>
-			<li>Android SDK</li>
-		</svelte:fragment>
 	</ProjectCard>
 
-	<ProjectCard heading="Zabu">
+	<ProjectCard
+		heading="Zabu"
+		technologies={['Flash', 'Actionscript', 'Java', 'iOS SDK', 'Android SDK']}
+	>
 		<svelte:fragment slot="description">
 			<p>
 				I was a Lead Engineer for Zabu, a startup that created licensed online adaptations of board
@@ -131,16 +130,9 @@
 				and occasional designer.
 			</p>
 		</svelte:fragment>
-		<svelte:fragment slot="technologies">
-			<li>Flash</li>
-			<li>Actionscript</li>
-			<li>Java</li>
-			<li>iOS SDK</li>
-			<li>Android SDK</li>
-		</svelte:fragment>
 	</ProjectCard>
 
-	<ProjectCard heading="pogo.com">
+	<ProjectCard heading="pogo.com" technologies={['Flash', 'Actionscript', 'Java']}>
 		<svelte:fragment slot="description">
 			<p>
 				My first tech job was as a Gameplay Engineer for <a href="https://www.pogo.com">pogo.com</a
@@ -152,12 +144,6 @@
 				where I became a subject matter expert and established best practices for future games.
 			</p>
 		</svelte:fragment>
-		<svelte:fragment slot="technologies">
-			<li>Flash</li>
-			<li>Actionscript</li>
-			<li>Javascript</li>
-			<li>Java</li>
-		</svelte:fragment>
 	</ProjectCard>
 </div>
 
@@ -167,12 +153,6 @@
 		object-position: top center;
 		aspect-ratio: 16 / 9;
 		box-shadow: var(--shadow-outer);
-	}
-
-	li {
-		list-style: square outside;
-		margin-inline-start: var(--spacing-4);
-		font-size: var(--font-size-2);
 	}
 
 	.card-container {

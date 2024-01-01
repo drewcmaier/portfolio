@@ -3,6 +3,7 @@
 	import VisibilityObserver from '$lib/VisibilityObserver.svelte';
 
 	export let heading: string;
+	export let technologies: string[];
 </script>
 
 <VisibilityObserver let:isVisible threshold={0.01}>
@@ -10,9 +11,11 @@
 		<h3 slot="heading">{heading}</h3>
 		<slot name="description" />
 		<aside class="technologies-inset">
-			<h4>Technologies:</h4>
+			<h4>Technologies</h4>
 			<ul class="technologies-list">
-				<slot name="technologies" />
+				{#each technologies as technology}
+					<li>{technology}</li>
+				{/each}
 			</ul>
 		</aside>
 	</Card>
@@ -36,6 +39,12 @@
 
 	.technologies-list {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+	}
+
+	.technologies-list li {
+		list-style: square outside;
+		margin-inline-start: var(--spacing-4);
+		font-size: var(--font-size-2);
 	}
 </style>
