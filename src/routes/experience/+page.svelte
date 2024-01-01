@@ -29,7 +29,7 @@
 			</p>
 			<p>
 				This role was a career pivot for me from the game industry to web development. After over a
-				decade making games, I had become interested in applying my frontend expertise in other
+				decade making games, I became interested in applying my frontend expertise in other
 				contexts. I also wanted expand my breadth of knowledge by learning web technologies. While
 				Indeed may not seem to have much in common with video games, I apply my background from game
 				UI on a daily basis.
@@ -39,7 +39,7 @@
 			<li>React</li>
 			<li>Typescript</li>
 			<li>HTML</li>
-			<li>CSS (Emotion, theme-ui, Sass)</li>
+			<li>CSS (Emotion, Sass)</li>
 			<li>WAI-ARIA</li>
 			<li>Design systems</li>
 		</svelte:fragment>
@@ -114,8 +114,8 @@
 		<svelte:fragment slot="technologies">
 			<li>C#</li>
 			<li>Unity</li>
-			<li>iOS</li>
-			<li>Android</li>
+			<li>iOS SDK</li>
+			<li>Android SDK</li>
 		</svelte:fragment>
 	</ProjectCard>
 
@@ -135,8 +135,8 @@
 			<li>Flash</li>
 			<li>Actionscript</li>
 			<li>Java</li>
-			<li>iOS</li>
-			<li>Android</li>
+			<li>iOS SDK</li>
+			<li>Android SDK</li>
 		</svelte:fragment>
 	</ProjectCard>
 
@@ -155,6 +155,7 @@
 		<svelte:fragment slot="technologies">
 			<li>Flash</li>
 			<li>Actionscript</li>
+			<li>Javascript</li>
 			<li>Java</li>
 		</svelte:fragment>
 	</ProjectCard>
@@ -169,7 +170,8 @@
 	}
 
 	li {
-		list-style: square inside;
+		list-style: square outside;
+		margin-inline-start: var(--spacing-4);
 		font-size: var(--font-size-2);
 	}
 

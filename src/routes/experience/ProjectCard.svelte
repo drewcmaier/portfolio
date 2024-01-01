@@ -11,7 +11,7 @@
 		<slot name="description" />
 		<aside class="technologies-inset">
 			<h4>Technologies:</h4>
-			<ul>
+			<ul class="technologies-list">
 				<slot name="technologies" />
 			</ul>
 		</aside>
@@ -32,5 +32,10 @@
 		border-radius: var(--border-radius-sm);
 		padding: var(--spacing-4);
 		box-shadow: var(--shadow-inner);
+	}
+
+	.technologies-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 	}
 </style>
