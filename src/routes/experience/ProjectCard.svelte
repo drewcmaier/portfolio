@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Card from '$lib/Card.svelte';
+	import Tag from '$lib/Tag.svelte';
 	import VisibilityObserver from '$lib/VisibilityObserver.svelte';
 
 	export let heading: string;
@@ -14,7 +15,9 @@
 			<h4>Technologies</h4>
 			<ul class="technologies-list">
 				{#each technologies as technology}
-					<li>{technology}</li>
+					<li>
+						<Tag>{technology}</Tag>
+					</li>
 				{/each}
 			</ul>
 		</aside>
@@ -27,24 +30,16 @@
 	}
 
 	h4 {
-		font-weight: bold;
-	}
-
-	.technologies-inset {
-		background-color: var(--color-inset);
-		border-radius: var(--border-radius-sm);
-		padding: var(--spacing-4);
-		box-shadow: var(--shadow-inner);
+		font-weight: var(--font-weight-bold);
 	}
 
 	.technologies-list {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--spacing-2);
 	}
 
 	.technologies-list li {
-		list-style: square outside;
-		margin-inline-start: var(--spacing-4);
 		font-size: var(--font-size-2);
 	}
 </style>

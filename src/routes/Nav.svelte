@@ -112,7 +112,7 @@
 		align-items: center;
 		gap: var(--spacing-8);
 
-		transition: opacity 0.5s;
+		transition: opacity 0.25s;
 	}
 
 	.nav-menu-link {
