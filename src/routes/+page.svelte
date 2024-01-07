@@ -5,7 +5,9 @@
 </script>
 
 <Card playTransitionIn={true}>
-	<strong slot="heading" class="heading-hello">Hello, world!<span class="cursor">█</span></strong>
+	<strong slot="heading" class="heading-hello"
+		>Hello, world!<span class="cursor" aria-hidden>█</span></strong
+	>
 	<p>
 		<span>My name is</span> <strong>Drew Maier</strong>
 		<span

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { browser } from '$app/environment';
 	import Hamburger from '$lib/icons/Hamburger.svelte';
 	import X from '$lib/icons/X.svelte';
 
@@ -20,6 +21,19 @@
 
 	function onClickLink() {
 		isMenuOpen = false;
+	}
+
+	$: {
+		// Prevent interactions outside nav
+		if (browser) {
+			['main', 'footer']
+				.map((elementName) => document.getElementsByTagName(elementName).item(0) as HTMLElement)
+				.forEach((element) => {
+					if (element) {
+						element.inert = isMenuOpen;
+					}
+				});
+		}
 	}
 </script>
 
@@ -55,20 +69,6 @@
 		</ul>
 	</nav>
 </header>
-
-<!--
-	Scroll lock when menu is open
-	Source: https://github.com/sveltejs/svelte/issues/3105
--->
-<svelte:head>
-	{#if isMenuOpen}
-		<style>
-			body {
-				overflow: hidden;
-			}
-		</style>
-	{/if}
-</svelte:head>
 
 <style>
 	.nav-outer {
@@ -142,8 +142,7 @@
 
 	.nav--closed .nav-menu-list {
 		opacity: 0;
-		left: -9999px;
-		top: -9999px;
+		visibility: hidden;
 	}
 
 	/*
@@ -162,6 +161,7 @@
 
 		.nav--closed .nav-menu-list {
 			opacity: 1;
+			visibility: visible;
 			display: flex;
 		}
 
