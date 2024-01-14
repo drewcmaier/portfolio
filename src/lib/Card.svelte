@@ -21,7 +21,6 @@
 		padding: var(--spacing-5);
 		margin: auto;
 		flex: 1;
-		opacity: 0;
 	}
 
 	.card-heading {
@@ -43,31 +42,33 @@
 		gap: var(--spacing-4);
 	}
 
-	.card-fade-in {
-		animation: fadein 0.5s;
-		animation-fill-mode: both;
-	}
-
-	.card-fade-out {
-		animation: fadeout 0.5s;
-		animation-fill-mode: both;
-	}
-
-	@keyframes fadein {
-		from {
-			opacity: 0;
+	@media (prefers-reduced-motion: no-preference) {
+		.card-fade-in {
+			animation: fadein 0.5s;
+			animation-fill-mode: both;
 		}
-		to {
-			opacity: 1;
-		}
-	}
 
-	@keyframes fadeout {
-		from {
-			opacity: 1;
+		.card-fade-out {
+			animation: fadeout 0.5s;
+			animation-fill-mode: both;
 		}
-		to {
-			opacity: 0;
+
+		@keyframes fadein {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		@keyframes fadeout {
+			from {
+				opacity: 1;
+			}
+			to {
+				opacity: 0;
+			}
 		}
 	}
 </style>

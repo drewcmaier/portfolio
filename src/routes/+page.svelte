@@ -49,13 +49,15 @@
 		height: 44px;
 	}
 
-	.cursor {
-		animation: cursor-blink 1s step-start infinite;
-	}
+	@media (prefers-reduced-motion: no-preference) {
+		.cursor {
+			animation: cursor-blink 1s step-start infinite;
+		}
 
-	@keyframes cursor-blink {
-		50% {
-			opacity: 0;
+		@keyframes cursor-blink {
+			50% {
+				opacity: 0;
+			}
 		}
 	}
 </style>
