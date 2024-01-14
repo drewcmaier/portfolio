@@ -15,7 +15,7 @@
 					intersectionRatio = entry.intersectionRatio;
 				});
 			},
-			{ threshold }
+			{ threshold, root: null }
 		);
 		intersectionObserver.observe(containerElement);
 
