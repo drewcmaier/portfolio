@@ -17,7 +17,7 @@
 		background-color: var(--color-secondary);
 		border-radius: var(--border-radius-sm);
 		box-shadow: var(--shadow-outer);
-		max-width: var(--breakpoint-lg);
+		max-width: var(--content-max-width);
 		padding: var(--spacing-5);
 		margin: auto;
 		flex: 1;

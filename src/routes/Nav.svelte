@@ -89,14 +89,14 @@
 
 		position: fixed;
 		inset: 0 0 auto;
-		max-width: var(--breakpoint-lg);
+		max-width: var(--content-max-width);
 		margin: auto;
 		z-index: 100;
 		filter: none;
 	}
 
 	.nav-menu-list {
-		max-width: var(--breakpoint-lg);
+		max-width: var(--content-max-width);
 		margin: 0 auto;
 		padding: 0;
 

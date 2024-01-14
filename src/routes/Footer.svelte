@@ -23,7 +23,7 @@
 		font-size: var(--font-size-0);
 		color: var(--color-text-inverse);
 
-		max-width: var(--breakpoint-lg);
+		max-width: var(--content-max-width);
 		margin: auto;
 	}
 

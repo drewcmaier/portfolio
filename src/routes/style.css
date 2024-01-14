@@ -40,9 +40,7 @@
 	--border-radius-sm: 0.25rem;
 	--border-radius-md: 0.5rem;
 
-	--breakpoint-sm: 20rem;
-	--breakpoint-md: 32rem;
-	--breakpoint-lg: 48rem;
+	--content-max-width: 48rem;
 
 	--font-heading: 'Rubik', sans-serif;
 	--font-body: 'Rubik', sans-serif;

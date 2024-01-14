@@ -160,7 +160,7 @@
 		flex-direction: column;
 		gap: var(--spacing-4);
 		width: 100%;
-		max-width: var(--breakpoint-lg);
+		max-width: var(--content-max-width);
 		margin: auto;
 	}
 
