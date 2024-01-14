@@ -100,12 +100,7 @@
 				Returning to Electronic Arts, I was a Software Engineer for EA Mobile and worked primarily
 				on <a href="https://en.wikipedia.org/wiki/Dungeon_Keeper_(2014_video_game)"
 					>Dungeon Keeper</a
-				>, the studio's final game, which released for iOS and Android. This experience was
-				chronicled in Jason Schreier's book
-				<a
-					href="https://www.amazon.com/Press-Reset-Recovery-Video-Industry/dp/1538735490/ref=asc_df_1538735490"
-					>Press Reset</a
-				>.
+				>, the studio's final game, which released for iOS and Android.
 			</p>
 			<img src={dk} alt="Screenshot from Dungeon Keeper" />
 			<p>
