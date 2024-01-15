@@ -5,9 +5,11 @@
 </script>
 
 <Card playTransitionIn={true}>
-	<strong slot="heading" class="heading-hello"
-		>Hello, world!<span class="cursor" aria-hidden>█</span></strong
-	>
+	<span class="heading-container">
+		<strong class="heading-hello typing-animation"
+			>Hello, world!<span class="cursor" aria-label="">█</span></strong
+		>
+	</span>
 	<p>
 		<span>My name is</span> <strong>Drew Maier</strong>
 		<span
@@ -34,8 +36,7 @@
 		display: block;
 		font-family: var(--font-mono);
 		font-size: clamp(var(--font-size-1), 12vw, var(--font-size-7));
-		text-align: center;
-		padding-block: var(--spacing-4);
+		padding-block: var(--spacing-7);
 	}
 
 	.contact-links {
@@ -57,6 +58,28 @@
 		@keyframes cursor-blink {
 			50% {
 				opacity: 0;
+			}
+		}
+
+		.heading-container {
+			margin-inline-end: auto;
+		}
+		/* 
+			Typing effect
+			https://css-tricks.com/snippets/css/typewriter-effect/
+		*/
+		.typing-animation {
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 1.5s steps(20, end);
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+			to {
+				width: 100%;
 			}
 		}
 	}

@@ -44,7 +44,7 @@
 
 	--font-heading: 'Rubik', sans-serif;
 	--font-body: 'Rubik', sans-serif;
-	--font-mono: 'VT323', 'Fira Mono', monospace;
+	--font-mono: 'VT323', monospace;
 
 	--shadow-outer: 0px 2px 8px 2px var(--color-shadow);
 	--shadow-inner: inset 0px 2px 4px var(--color-shadow);
