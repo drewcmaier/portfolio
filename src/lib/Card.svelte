@@ -4,9 +4,11 @@
 </script>
 
 <section class="card" class:card-fade-in={playTransitionIn} class:card-fade-out={playTransitionOut}>
-	<div class="card-heading">
-		<slot name="heading" />
-	</div>
+	{#if $$slots.heading}
+		<div class="card-heading">
+			<slot name="heading" />
+		</div>
+	{/if}
 	<div class="card-content">
 		<slot />
 	</div>
