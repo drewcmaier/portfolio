@@ -46,7 +46,7 @@
 
 	@media (prefers-reduced-motion: no-preference) {
 		.card-fade-in {
-			animation: fadein 0.5s;
+			animation: fadein 1s;
 			animation-fill-mode: both;
 		}
 

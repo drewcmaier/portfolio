@@ -29,10 +29,6 @@
 		margin-block-end: 0;
 	}
 
-	h4 {
-		font-weight: var(--font-weight-bold);
-	}
-
 	.technologies-list {
 		display: flex;
 		flex-wrap: wrap;

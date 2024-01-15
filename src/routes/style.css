@@ -86,7 +86,6 @@ h1 {
 h2 {
 	font-size: var(--font-size-3);
 	margin-block-end: var(--spacing-3);
-	font-weight: var(--font-weight-normal);
 }
 
 h3 {

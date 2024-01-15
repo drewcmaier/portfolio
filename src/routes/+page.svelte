@@ -71,7 +71,7 @@
 		.typing-animation {
 			overflow: hidden;
 			white-space: nowrap;
-			animation: typing 1.5s steps(20, end);
+			animation: typing 1s steps(20, end);
 		}
 
 		@keyframes typing {

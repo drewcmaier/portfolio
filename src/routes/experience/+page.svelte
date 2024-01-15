@@ -24,7 +24,9 @@
 	>
 		<svelte:fragment slot="description">
 			<p>
-				I am currently a Senior UX Developer at <a href="https://employers.indeed.com">Indeed</a>.
+				I am currently employed as a Senior UX Developer at <a href="https://employers.indeed.com"
+					>Indeed</a
+				>.
 			</p>
 			<img src={indeed} alt="Indeed for Employers page" />
 			<p>
@@ -127,7 +129,7 @@
 		</svelte:fragment>
 	</ProjectCard>
 
-	<ProjectCard heading="pogo.com" technologies={['Flash', 'Actionscript', 'Java']}>
+	<ProjectCard heading="Pogo" technologies={['Flash', 'Actionscript', 'Java']}>
 		<svelte:fragment slot="description">
 			<p>
 				My first tech job was as a Gameplay Engineer for <a href="https://www.pogo.com">pogo.com</a
