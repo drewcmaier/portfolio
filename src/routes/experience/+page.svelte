@@ -34,10 +34,8 @@
 					>Design Technology</a
 				>
 				organization, I collaborate closely with software engineers to realize designs created by UX
-				designers. Another aspect of my role is establishing best practices for
-				<strong>usability</strong>,
-				<strong>accessibility</strong>, and
-				<strong>consistency</strong>.
+				designers. Another aspect of my role is establishing best practices for usability, accessibility,
+				and consistency.
 			</p>
 			<p>
 				This role was a career pivot for me from the game industry to web development. After over a

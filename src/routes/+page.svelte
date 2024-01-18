@@ -11,16 +11,15 @@
 		>
 	</span>
 	<p>
-		<span>My name is</span> <strong>Drew Maier</strong>
+		<span>My name is</span> Drew Maier
 		<span
 			>and I am a UX Developer for <a href="https://www.indeed.com">Indeed</a> in the Greater Philadelphia
 			area.</span
 		>
 	</p>
 	<p>
-		Frontend development is my passion. Whether I'm developing a <strong>website</strong>,
-		<strong>game</strong>, or <strong>mobile app</strong>, my goal is always to create an enjoyable
-		user experience.
+		Frontend development is my passion. Whether I'm developing a website, game, or mobile app, my
+		goal is always to create an enjoyable user experience.
 	</p>
 	<ul class="contact-links">
 		<li>
