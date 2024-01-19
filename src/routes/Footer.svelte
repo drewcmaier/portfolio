@@ -10,10 +10,6 @@
 		background-color: var(--color-primary);
 	}
 
-	.footer-wrapper a {
-		color: var(--color-text-inverse);
-	}
-
 	.footer-content {
 		box-sizing: content-box;
 
@@ -22,9 +18,14 @@
 		padding: var(--spacing-4);
 		font-size: var(--font-size-0);
 		color: var(--color-text-inverse);
+		filter: drop-shadow(var(--shadow-text-inverse));
 
 		max-width: var(--content-max-width);
 		margin: auto;
+	}
+
+	.footer-content a {
+		color: inherit;
 	}
 
 	.footer-content p {

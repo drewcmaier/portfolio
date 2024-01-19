@@ -120,6 +120,7 @@
 		font-family: var(--font-heading);
 		font-weight: var(--font-weight-normal);
 		font-size: var(--font-size-3);
+		filter: drop-shadow(var(--shadow-text-inverse));
 		text-decoration: none;
 	}
 

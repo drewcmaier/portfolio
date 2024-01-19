@@ -34,8 +34,9 @@
 		margin-block-end: calc(-1 * var(--spacing-3));
 		top: calc(-1 * var(--spacing-5));
 		background-color: var(--color-primary);
-		color: var(--color-text-inverse);
 		border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
+		color: var(--color-text-inverse);
+		filter: drop-shadow(var(--shadow-text-inverse));
 	}
 
 	.card-content {

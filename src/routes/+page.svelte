@@ -6,9 +6,9 @@
 
 <Card playTransitionIn={true}>
 	<span class="heading-container">
-		<strong class="heading-hello typing-animation"
-			>Hello, world!<span class="cursor" aria-label="">█</span></strong
-		>
+		<h2 class="heading-hello typing-animation">
+			Hello, world!<span class="cursor" aria-label="">█</span>
+		</h2>
 	</span>
 	<p>
 		<span>My name is</span> Drew Maier
@@ -32,7 +32,6 @@
 
 <style>
 	.heading-hello {
-		display: block;
 		font-family: var(--font-mono);
 		font-size: clamp(var(--font-size-1), 12vw, var(--font-size-7));
 		padding-block: var(--spacing-7);

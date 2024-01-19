@@ -27,10 +27,12 @@
 <style>
 	h3 {
 		margin-block-end: 0;
+		filter: inherit;
 	}
 
 	h4 {
 		font-weight: var(--font-weight-bold);
+		margin-block-end: var(--spacing-1);
 	}
 
 	.technologies-list {
@@ -41,5 +43,6 @@
 
 	.technologies-list li {
 		font-size: var(--font-size-2);
+		filter: none;
 	}
 </style>
