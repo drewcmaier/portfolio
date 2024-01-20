@@ -42,7 +42,7 @@
 	.card-content {
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing-4);
+		gap: var(--spacing-5);
 	}
 
 	@media (prefers-reduced-motion: no-preference) {

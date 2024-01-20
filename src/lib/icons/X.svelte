@@ -18,5 +18,6 @@
 	svg {
 		fill: var(--color-text-inverse);
 		margin-block-start: var(--spacing-2);
+		filter: drop-shadow(var(--shadow-text-inverse));
 	}
 </style>

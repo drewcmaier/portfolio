@@ -13,8 +13,8 @@
 	<p>
 		<span>My name is</span> Drew Maier
 		<span
-			>and I am a UX Developer for <a href="https://www.indeed.com">Indeed</a> in the Greater Philadelphia
-			area.</span
+			>and I am a Senior UX Developer for <a href="https://www.indeed.com">Indeed</a> in the Greater
+			Philadelphia area.</span
 		>
 	</p>
 	<p>
@@ -40,7 +40,7 @@
 	.contact-links {
 		display: flex;
 		padding: 0;
-		gap: var(--spacing-4);
+		gap: var(--spacing-5);
 	}
 
 	.contact-links li {
@@ -59,9 +59,6 @@
 			}
 		}
 
-		.heading-container {
-			margin-inline-end: auto;
-		}
 		/* 
 			Typing effect
 			https://css-tricks.com/snippets/css/typewriter-effect/

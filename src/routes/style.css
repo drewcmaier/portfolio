@@ -12,7 +12,7 @@
 	--color-text: var(--color-primary);
 	--color-text-inverse: var(--color-secondary);
 	--color-border: var(--color-primary);
-	--color-shadow: rgba(0, 0, 0, 0.125);
+	--color-shadow: color-mix(in srgb, var(--color-primary), transparent 85%);
 
 	--spacing-1: 0.25rem;
 	--spacing-2: 0.375rem;
@@ -47,10 +47,10 @@
 	--font-body: 'Rubik', sans-serif;
 	--font-mono: 'VT323', monospace;
 
-	--shadow-outer: 0px 2px 8px 2px var(--color-shadow);
+	--shadow-outer: 0px 2px 4px 2px var(--color-shadow);
 	--shadow-inner: inset 0px 2px 4px var(--color-shadow);
-	--shadow-text: 0px 1px 1px color-mix(in srgb, var(--color-primary), transparent 70%);
-	--shadow-text-inverse: 0px 1px 1px color-mix(in srgb, var(--color-secondary), transparent 70%);
+	--shadow-text: 0px 1px 1px color-mix(in srgb, var(--color-primary), transparent 65%);
+	--shadow-text-inverse: 0px 1px 1px color-mix(in srgb, var(--color-secondary), transparent 65%);
 
 	font-family: var(--font-body);
 	font-size: var(--font-size-1);
