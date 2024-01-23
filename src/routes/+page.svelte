@@ -2,14 +2,15 @@
 	import LinkedIn from '$lib/icons/LinkedIn.svelte';
 	import GitHub from '$lib/icons/GitHub.svelte';
 	import Card from '$lib/Card.svelte';
+	import TypingEffect from '$lib/TypingEffect.svelte';
 </script>
 
 <Card playTransitionIn={true}>
-	<span class="heading-container">
-		<h2 class="heading-hello typing-animation">
-			Hello, world!<span class="cursor" aria-label="">█</span>
+	<TypingEffect>
+		<h2 class="heading-hello">
+			Hello, world!<span class="cursor" aria-label="blinking cursor">█</span>
 		</h2>
-	</span>
+	</TypingEffect>
 	<p>
 		<span>My name is</span> Drew Maier
 		<span
@@ -56,25 +57,6 @@
 		@keyframes cursor-blink {
 			50% {
 				opacity: 0;
-			}
-		}
-
-		/* 
-			Typing effect
-			https://css-tricks.com/snippets/css/typewriter-effect/
-		*/
-		.typing-animation {
-			overflow: hidden;
-			white-space: nowrap;
-			animation: typing 1s steps(20, end);
-		}
-
-		@keyframes typing {
-			from {
-				width: 0;
-			}
-			to {
-				width: 100%;
 			}
 		}
 	}
