@@ -26,7 +26,7 @@
 			<p>
 				I am currently employed as a Senior UX Developer at <a href="https://employers.indeed.com"
 					>Indeed</a
-				>.
+				>, where I work on the Employer product.
 			</p>
 			<img src={indeed} alt="Indeed for Employers page" />
 			<p>
@@ -38,11 +38,11 @@
 				and consistency.
 			</p>
 			<p>
-				This role was a career pivot for me from the game industry to web development. After over a
-				decade making games, I became interested in applying my frontend expertise in other
-				contexts. I also wanted expand my breadth of knowledge by learning web technologies. While
-				Indeed may not seem to have much in common with video games, I apply my background from game
-				UI on a daily basis.
+				This role represented a significant career pivot for me, transitioning from the game
+				industry to web development. After over a decade making games, I became interested in
+				applying my frontend expertise in other contexts. I also wanted expand my breadth of
+				knowledge by learning web technologies. While Indeed may not seem to have much in common
+				with video games, I apply my background from game UI on a daily basis.
 			</p>
 		</svelte:fragment>
 	</ProjectCard>
@@ -58,11 +58,6 @@
 				>. This included the inventory menu, game map, and multiplayer party management screen.
 			</p>
 			<img src={fl} alt="Screenshot from Fractured Lands" />
-			<p>
-				I also briefly developed gameplay systems and tools for
-				<a href="https://www.suicidesquadgame.com/en-us">Suicide Squad: Kill the Justice League</a>,
-				which will release in February 2024.
-			</p>
 		</svelte:fragment>
 	</ProjectCard>
 
