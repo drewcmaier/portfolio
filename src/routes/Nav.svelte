@@ -14,7 +14,7 @@
 		{ path: '/experience', label: 'Experience' }
 	];
 
-	let isMenuOpen = false;
+	let isMenuOpen = $state(false);
 	function onToggleMenu() {
 		isMenuOpen = !isMenuOpen;
 	}
@@ -23,7 +23,7 @@
 		isMenuOpen = false;
 	}
 
-	$: {
+	$effect(() => {
 		// Prevent interactions outside nav
 		if (browser) {
 			['main', 'footer']
@@ -34,17 +34,17 @@
 					}
 				});
 		}
-	}
+	});
 </script>
 
 <header class="nav-outer" class:nav--closed={!isMenuOpen}>
 	<nav class="nav-menu">
-		<a href="/" on:click={onClickLink} class="nav-menu-link">
+		<a href="/" onclick={onClickLink} class="nav-menu-link">
 			<h1>dm</h1>
 		</a>
 		<button
 			class="nav-menu-toggle"
-			on:click={onToggleMenu}
+			onclick={onToggleMenu}
 			aria-label="Menu"
 			aria-expanded={isMenuOpen}
 			aria-controls="nav-menu-list"
@@ -60,7 +60,7 @@
 				<li>
 					<a
 						href={route.path}
-						on:click={onClickLink}
+						onclick={onClickLink}
 						class="nav-menu-link"
 						class:nav-menu-link--active={$page.route.id === route.path}>{route.label}</a
 					>
