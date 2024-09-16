@@ -1,13 +1,23 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import type { Snippet } from 'svelte';
 
-	export let threshold = 0;
+	interface VisibilityObserverProps {
+		threshold: number;
+		isVisible?: boolean;
+		intersectionRatio?: number;
+		children: Snippet<[boolean, number]>;
+	}
 
-	let isVisible = false;
-	let intersectionRatio = 0.0;
+	let {
+		threshold,
+		isVisible = $bindable(false),
+		intersectionRatio = $bindable(0.0),
+		children
+	}: VisibilityObserverProps = $props();
+
 	let containerElement: Element;
 
-	onMount(() => {
+	$effect(() => {
 		let intersectionObserver = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
@@ -24,5 +34,5 @@
 </script>
 
 <div bind:this={containerElement}>
-	<slot {isVisible} {intersectionRatio} />
+	{@render children(isVisible, intersectionRatio)}
 </div>

@@ -22,7 +22,7 @@
 			'Design systems'
 		]}
 	>
-		<svelte:fragment slot="description">
+		{#snippet description()}
 			<p>
 				I am currently employed as a Senior UX Developer at <a href="https://employers.indeed.com"
 					>Indeed</a
@@ -44,21 +44,21 @@
 				knowledge by learning web technologies. While Indeed may not seem to have much in common
 				with video games, I apply my background from game UI on a daily basis.
 			</p>
-		</svelte:fragment>
+		{/snippet}
 	</ProjectCard>
 
 	<ProjectCard
 		heading="Unbroken Studios"
 		technologies={['C++', 'Unreal Engine 4', 'Steamworks SDK']}
 	>
-		<svelte:fragment slot="description">
+		{#snippet description()}
 			<p>
 				As a Senior UI Engineer, I was responsible for architecting and implementing in-game UI for <a
 					href="http://fractured-lands.com/">Fractured Lands</a
 				>. This included the inventory menu, game map, and multiplayer party management screen.
 			</p>
 			<img src={fl} alt="Screenshot from Fractured Lands" />
-		</svelte:fragment>
+		{/snippet}
 	</ProjectCard>
 
 	<ProjectCard
@@ -72,7 +72,7 @@
 			'Xbox SDK'
 		]}
 	>
-		<svelte:fragment slot="description">
+		{#snippet description()}
 			<p>
 				I developed 2 AAA games at Gearbox as a UI Programmer: <a
 					href="https://borderlands.2k.com/borderlands-3/">Borderlands 3</a
@@ -86,11 +86,11 @@
 				Borderlands 3 was especially challenging to work on because it was Gearbox's first game
 				developed with Unreal Engine 4.
 			</p>
-		</svelte:fragment>
+		{/snippet}
 	</ProjectCard>
 
 	<ProjectCard heading="EA Mobile" technologies={['C#', 'Unity', 'iOS SDK', 'Android SDK']}>
-		<svelte:fragment slot="description">
+		{#snippet description()}
 			<p>
 				Returning to Electronic Arts, I was a Software Engineer for EA Mobile and worked primarily
 				on <a href="https://en.wikipedia.org/wiki/Dungeon_Keeper_(2014_video_game)"
@@ -102,14 +102,14 @@
 				While my stint at EA Mobile was short, I learned a lot about game development and working on
 				a large team.
 			</p>
-		</svelte:fragment>
+		{/snippet}
 	</ProjectCard>
 
 	<ProjectCard
 		heading="Zabu"
 		technologies={['Flash', 'Actionscript', 'Java', 'iOS SDK', 'Android SDK']}
 	>
-		<svelte:fragment slot="description">
+		{#snippet description()}
 			<p>
 				I was a Lead Engineer for Zabu, a startup that created licensed online adaptations of board
 				games.
@@ -119,11 +119,11 @@
 				Because this was a small company, I wore many hats: gameplay programmer, backend programmer,
 				and occasional designer.
 			</p>
-		</svelte:fragment>
+		{/snippet}
 	</ProjectCard>
 
 	<ProjectCard heading="Pogo" technologies={['Flash', 'Actionscript', 'Java']}>
-		<svelte:fragment slot="description">
+		{#snippet description()}
 			<p>
 				My first tech job was as a Gameplay Engineer for <a href="https://www.pogo.com">pogo.com</a
 				>, a subsidiary of Electronic Arts.
@@ -133,7 +133,7 @@
 				At Pogo, my most important contribution was migrating games from Java applets to Flash,
 				where I became a subject matter expert and established best practices for future games.
 			</p>
-		</svelte:fragment>
+		{/snippet}
 	</ProjectCard>
 </div>
 

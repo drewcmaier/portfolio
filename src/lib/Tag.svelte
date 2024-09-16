@@ -1,5 +1,15 @@
+<script lang="ts">
+	import type { Snippet } from 'svelte';
+
+	interface TagProps {
+		children: Snippet;
+	}
+
+	let { children }: TagProps = $props();
+</script>
+
 <div class="tag">
-	<slot />
+	{@render children()}
 </div>
 
 <style>

@@ -6,6 +6,8 @@
 	import Nav from './Nav.svelte';
 	import './style.css';
 
+	let { children } = $props();
+
 	// Enables Vercel analytics
 	inject({ mode: dev ? 'development' : 'production' });
 </script>
@@ -13,7 +15,7 @@
 <Nav />
 
 <main class="root-content">
-	<slot />
+	{@render children()}
 </main>
 
 <Footer />

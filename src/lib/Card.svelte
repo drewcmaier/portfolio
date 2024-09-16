@@ -1,16 +1,29 @@
 <script lang="ts">
-	export let playTransitionIn: boolean = false;
-	export let playTransitionOut: boolean = false;
+	import type { Snippet } from 'svelte';
+
+	interface CardProps {
+		children: Snippet;
+		heading?: Snippet;
+		playTransitionIn?: boolean;
+		playTransitionOut?: boolean;
+	}
+
+	let {
+		heading,
+		children,
+		playTransitionIn = false,
+		playTransitionOut = false
+	}: CardProps = $props();
 </script>
 
 <section class="card" class:card-fade-in={playTransitionIn} class:card-fade-out={playTransitionOut}>
-	{#if $$slots.heading}
+	{#if heading}
 		<div class="card-heading">
-			<slot name="heading" />
+			{@render heading()}
 		</div>
 	{/if}
 	<div class="card-content">
-		<slot />
+		{@render children()}
 	</div>
 </section>
 

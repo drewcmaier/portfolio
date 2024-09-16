@@ -1,5 +1,15 @@
+<script lang="ts">
+	import type { Snippet } from 'svelte';
+
+	interface TypingEffectProps {
+		children: Snippet;
+	}
+
+	let { children }: TypingEffectProps = $props();
+</script>
+
 <span class="typing-animation">
-	<slot />
+	{@render children()}
 </span>
 
 <style>
