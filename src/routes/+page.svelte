@@ -12,15 +12,14 @@
 		</h2>
 	</TypingEffect>
 	<p>
-		<span>My name is</span> Drew Maier
 		<span
-			>and I am a Senior UX Developer for <a href="https://www.indeed.com">Indeed</a> in the Greater
-			Philadelphia area.</span
+			>I'm Drew Maier and I am a Senior UX Developer for <a href="https://www.indeed.com">Indeed</a>
+			in the Greater Philadelphia area.</span
 		>
 	</p>
 	<p>
-		Frontend development is my passion. Whether I'm developing a website, game, or mobile app, my
-		goal is always to create an enjoyable user experience.
+		With a passion for frontend development, I create immersive digital experiences for web, gaming,
+		and mobile platforms. My goal is to bring both functionality and enjoyment to every interaction.
 	</p>
 	<ul class="contact-links">
 		<li>
