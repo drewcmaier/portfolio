@@ -12,7 +12,7 @@
 	}
 
 	let { heading, technologies, description }: ProjectCardProps = $props();
-	let isVisible: boolean = $state(false);
+	let isVisible: boolean = $state(true);
 </script>
 
 {#snippet ProjectHeading()}
