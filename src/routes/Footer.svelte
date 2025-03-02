@@ -1,6 +1,6 @@
 <footer class="footer-wrapper">
 	<div class="footer-content">
-		<p>©2024 Drew Maier</p>
+		<p>©2025 Drew Maier</p>
 		<p>Created with <a href="https://kit.svelte.dev/">SvelteKit</a></p>
 	</div>
 </footer>
