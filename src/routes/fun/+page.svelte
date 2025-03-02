@@ -17,29 +17,38 @@
 
 <style>
 	article {
+		--fun-padding: 1rem;
 		background: white;
 		display: flex;
 		flex-direction: column;
-		margin-inline: auto;
-		margin-block: 4rem;
+		padding: var(--fun-padding);
 
-		padding-inline: 8rem;
-		padding-block-start: 2rem;
-		padding-block-end: 4rem;
-		max-width: fit-content;
+		& * {
+			max-inline-size: 48rem;
+			margin-inline: 0;
+		}
+	}
+
+	@media screen and (min-width: 52rem) {
+		article {
+			--fun-padding: 2rem;
+
+			& * {
+				margin-inline: auto;
+			}
+		}
 	}
 
 	h1 {
 		font-family: 'Futura';
-		font-size: 4rem;
+		font-size: clamp(var(--font-size-1), 12vw, var(--font-size-7));
 		color: #e9c760;
-		/* filter: drop-shadow(); */
 		text-transform: uppercase;
 		text-align: center;
-		margin-block-end: 2rem;
+		margin-block-end: var(--fun-padding);
 	}
 
-	img:not(:last-of-type) {
-		margin-block-end: 4rem;
+	img {
+		margin-block-end: var(--fun-padding);
 	}
 </style>
