@@ -1,7 +1,14 @@
 <script lang="ts">
 	import ProjectCard from './ProjectCard.svelte';
 
-	import indeed from './images/indeed.jpg';
+	import indeed from './images/indeed.png';
+	import unbroken from './images/unbroken.png';
+	import gearbox from './images/gearbox.png';
+	import ea from './images/ea.png';
+	import zabu from './images/zabu.png';
+	import pogo from './images/pogo.png';
+
+	import employer from './images/employer.jpg';
 	import fl from './images/fl.jpg';
 	import bl3 from './images/bl3.jpg';
 	import dk from './images/dk.jpg';
@@ -12,6 +19,7 @@
 <div class="card-container">
 	<h2 class="visually-hidden">Experience</h2>
 	<ProjectCard
+		logo={indeed}
 		heading="Indeed"
 		technologies={[
 			'React',
@@ -28,7 +36,7 @@
 					>Indeed</a
 				>, where I work on the Employer product.
 			</p>
-			<img src={indeed} alt="Indeed for Employers page" />
+			<img src={employer} class="project-img" alt="Indeed for Employers page" />
 			<p>
 				As a member of the <a href="https://indeed.design/article/what-is-a-design-technologist"
 					>Design Technology</a
@@ -48,6 +56,7 @@
 	</ProjectCard>
 
 	<ProjectCard
+		logo={unbroken}
 		heading="Unbroken Studios"
 		technologies={['C++', 'Unreal Engine 4', 'Steamworks SDK']}
 	>
@@ -57,11 +66,12 @@
 					href="http://fractured-lands.com/">Fractured Lands</a
 				>. This included the inventory menu, game map, and multiplayer party management screen.
 			</p>
-			<img src={fl} alt="Screenshot from Fractured Lands" />
+			<img src={fl} class="project-img" alt="Screenshot from Fractured Lands" />
 		{/snippet}
 	</ProjectCard>
 
 	<ProjectCard
+		logo={gearbox}
 		heading="Gearbox Software"
 		technologies={[
 			'C++',
@@ -81,7 +91,7 @@
 				of these games, I implemented UI systems for the heads-up display (HUD), item menus, and map
 				screens.
 			</p>
-			<img src={bl3} alt="Screenshot from Borderlands 3" />
+			<img src={bl3} class="project-img" alt="Screenshot from Borderlands 3" />
 			<p>
 				Borderlands 3 was especially challenging to work on because it was Gearbox's first game
 				developed with Unreal Engine 4.
@@ -89,7 +99,11 @@
 		{/snippet}
 	</ProjectCard>
 
-	<ProjectCard heading="EA Mobile" technologies={['C#', 'Unity', 'iOS SDK', 'Android SDK']}>
+	<ProjectCard
+		logo={ea}
+		heading="EA Mobile"
+		technologies={['C#', 'Unity', 'iOS SDK', 'Android SDK']}
+	>
 		{#snippet description()}
 			<p>
 				Returning to Electronic Arts, I was a Software Engineer for EA Mobile and worked primarily
@@ -97,7 +111,7 @@
 					>Dungeon Keeper</a
 				>, the studio's final game, which released for iOS and Android.
 			</p>
-			<img src={dk} alt="Screenshot from Dungeon Keeper" />
+			<img src={dk} class="project-img" alt="Screenshot from Dungeon Keeper" />
 			<p>
 				While my stint at EA Mobile was short, I learned a lot about game development and working on
 				a large team.
@@ -106,6 +120,7 @@
 	</ProjectCard>
 
 	<ProjectCard
+		logo={zabu}
 		heading="Zabu"
 		technologies={['Flash', 'Actionscript', 'Java', 'iOS SDK', 'Android SDK']}
 	>
@@ -114,7 +129,7 @@
 				I was a Lead Engineer for Zabu, a startup that created licensed online adaptations of board
 				games.
 			</p>
-			<img src={ts} class="img-small" alt="Screenshot from Thunderstone" />
+			<img src={ts} class="project-img-small" alt="Screenshot from Thunderstone" />
 			<p>
 				Because this was a small company, I wore many hats: gameplay programmer, backend programmer,
 				and occasional designer.
@@ -122,13 +137,13 @@
 		{/snippet}
 	</ProjectCard>
 
-	<ProjectCard heading="Pogo" technologies={['Flash', 'Actionscript', 'Java']}>
+	<ProjectCard logo={pogo} heading="Pogo" technologies={['Flash', 'Actionscript', 'Java']}>
 		{#snippet description()}
 			<p>
 				My first tech job was as a Gameplay Engineer for <a href="https://www.pogo.com">pogo.com</a
 				>, a subsidiary of Electronic Arts.
 			</p>
-			<img src={puck} class="img-small" alt="Screenshot from Puck's Peak" />
+			<img src={puck} class="project-img-small" alt="Screenshot from Puck's Peak" />
 			<p>
 				At Pogo, my most important contribution was migrating games from Java applets to Flash,
 				where I became a subject matter expert and established best practices for future games.
@@ -154,12 +169,18 @@
 		margin: auto;
 	}
 
-	.img-small {
+	.project-img {
+		width: 100%;
+		height: auto;
+		border-radius: var(--border-radius-sm);
+	}
+
+	.project-img-small {
 		max-width: 100%;
 	}
 
 	@media screen and (min-width: 32rem) {
-		.img-small {
+		.project-img-small {
 			align-self: center;
 		}
 	}

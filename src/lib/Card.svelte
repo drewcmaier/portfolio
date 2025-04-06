@@ -40,6 +40,9 @@
 
 	.card-heading {
 		padding: var(--spacing-4);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 
 		/* background */
 		position: relative;

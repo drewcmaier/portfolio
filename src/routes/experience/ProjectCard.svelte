@@ -6,16 +6,18 @@
 	import VisibilityObserver from '$lib/VisibilityObserver.svelte';
 
 	interface ProjectCardProps {
+		logo: string;
 		heading: string;
 		technologies: string[];
 		description: Snippet;
 	}
 
-	let { heading, technologies, description }: ProjectCardProps = $props();
+	let { logo, heading, technologies, description }: ProjectCardProps = $props();
 	let isVisible: boolean = $state(true);
 </script>
 
 {#snippet ProjectHeading()}
+	<img class="project-card-logo" src={logo} alt="" />
 	<h3 class="project-card-heading">{heading}</h3>
 {/snippet}
 
@@ -37,8 +39,15 @@
 
 <style>
 	.project-card-heading {
+		display: inline;
 		margin-block-end: 0;
 		filter: inherit;
+	}
+
+	.project-card-logo {
+		max-block-size: 2rem;
+		margin-inline-end: var(--spacing-4);
+		filter: brightness(0) invert(1);
 	}
 
 	.project-card-technologies-heading {
