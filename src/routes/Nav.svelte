@@ -103,7 +103,6 @@
 		position: fixed;
 		inset: 0;
 		background-color: var(--color-primary);
-		border: var(--border-normal);
 
 		display: flex;
 		flex-direction: column;

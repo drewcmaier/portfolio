@@ -42,12 +42,13 @@
 		display: inline;
 		margin-block-end: 0;
 		filter: inherit;
+		font-weight: var(--font-weight-bold);
 	}
 
 	.project-card-logo {
 		max-block-size: 2rem;
 		margin-inline-end: var(--spacing-4);
-		filter: brightness(0) invert(1);
+		filter: brightness(0) drop-shadow(var(--shadow-text));
 	}
 
 	.project-card-technologies-heading {

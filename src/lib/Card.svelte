@@ -39,7 +39,8 @@
 	}
 
 	.card-heading {
-		padding: var(--spacing-4);
+		padding-inline: var(--spacing-4);
+		padding-block: var(--spacing-4);
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -49,10 +50,10 @@
 		margin-inline: calc(-1 * var(--spacing-5));
 		margin-block-end: calc(-1 * var(--spacing-3));
 		top: calc(-1 * var(--spacing-5));
-		background-color: var(--color-primary);
+		box-shadow: var(--shadow-outer);
 		border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
-		color: var(--color-text-inverse);
-		filter: drop-shadow(var(--shadow-text-inverse));
+		color: var(--color-text);
+		filter: drop-shadow(var(--shadow-text));
 	}
 
 	.card-content {

@@ -32,8 +32,8 @@
 	>
 		{#snippet description()}
 			<p>
-				I'm a Senior UX Developer at <a href="https://employers.indeed.com">Indeed</a>, where I work
-				on the Employer product.
+				I'm currently a Senior UX Developer at <a href="https://employers.indeed.com">Indeed</a>,
+				where I work on the Employer product.
 			</p>
 			<img src={employer} class="project-img" alt="Indeed for Employers page" />
 			<p>
