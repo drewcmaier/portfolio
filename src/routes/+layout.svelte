@@ -23,21 +23,20 @@
 
 <style>
 	.root-content {
-		padding: var(--spacing-3);
 		background-color: var(--color-background);
 
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 
-		padding: var(--spacing-4);
+		padding: var(--spacing-5);
 		/* shift down content to account for floating header  */
-		padding-block-start: calc(70px + var(--spacing-4));
+		padding-block-start: calc(70px + var(--spacing-5));
 	}
 
 	@media screen and (min-width: 32rem) {
 		.root-content {
-			padding-block-start: var(--spacing-4);
+			padding-block-start: var(--spacing-5);
 		}
 	}
 </style>

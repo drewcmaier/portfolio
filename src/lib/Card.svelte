@@ -29,37 +29,28 @@
 
 <style>
 	.card {
-		background-color: var(--color-secondary);
-		border-radius: var(--border-radius-sm);
-		box-shadow: var(--shadow-outer);
 		max-width: var(--content-max-width);
-		padding: var(--spacing-5);
 		margin: auto;
 		flex: 1;
 	}
 
 	.card-heading {
-		padding-inline: var(--spacing-4);
-		padding-block: var(--spacing-4);
-		display: flex;
-		flex-direction: row;
 		align-items: center;
-
-		/* background */
-		position: relative;
-		margin-inline: calc(-1 * var(--spacing-5));
-		margin-block-end: calc(-1 * var(--spacing-3));
-		top: calc(-1 * var(--spacing-5));
-		box-shadow: var(--shadow-outer);
-		border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
 		color: var(--color-text);
+		display: flex;
 		filter: drop-shadow(var(--shadow-text));
+		flex-direction: row;
+		margin-block-end: var(--spacing-4);
 	}
 
 	.card-content {
+		background-color: var(--color-secondary);
+		box-shadow: var(--shadow-outer);
+		border-radius: var(--border-radius-sm);
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-5);
+		padding: var(--spacing-5);
 	}
 
 	@media (prefers-reduced-motion: no-preference) {

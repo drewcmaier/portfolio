@@ -34,7 +34,7 @@
 	.heading-hello {
 		font-family: var(--font-mono);
 		font-size: clamp(var(--font-size-1), 12vw, var(--font-size-8));
-		padding-block: var(--spacing-7);
+		padding-block: var(--spacing-4);
 	}
 
 	.contact-links {
