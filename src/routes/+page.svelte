@@ -13,7 +13,7 @@
 	</TypingEffect>
 	<p>
 		<span
-			>I'm Drew Maier and I am a Senior UX Developer for <a href="https://www.indeed.com">Indeed</a>
+			>I'm Drew Maier and I am a Software Engineer for <a href="https://www.indeed.com">Indeed</a>
 			in the Greater Philadelphia area.</span
 		>
 	</p>

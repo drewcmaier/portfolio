@@ -32,17 +32,14 @@
 	>
 		{#snippet description()}
 			<p>
-				I'm currently a Senior UX Developer at <a href="https://employers.indeed.com">Indeed</a>,
+				I'm currently a Software Engineer at <a href="https://employers.indeed.com">Indeed</a>,
 				where I work on the Employer product.
 			</p>
 			<img src={employer} class="project-img" alt="Indeed for Employers page" />
 			<p>
-				As a member of the <a href="https://indeed.design/article/what-is-a-design-technologist"
-					>Design Technology</a
-				>
-				organization, I collaborate closely with software engineers to realize designs created by UX
-				designers. Another aspect of my role is establishing best practices for usability, accessibility,
-				and consistency.
+				I collaborate closely with product owners to realize designs created by UX designers.
+				Another aspect of my role is establishing best practices for usability, accessibility, and
+				consistency.
 			</p>
 			<p>
 				This role represented a significant career pivot for me, transitioning from the game
