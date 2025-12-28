@@ -58,7 +58,7 @@
 	}
 
 	input {
-		max-width: 50%;
+		max-width: 100%;
 	}
 
 	textarea {
@@ -67,12 +67,22 @@
 	}
 
 	button {
-		align-self: start;
+		align-self: stretch;
 	}
 
 	.submit-success {
 		color: var(--color-primary);
 		font-weight: var(--font-weight-bold);
 		font-size: var(--font-size-2);
+	}
+
+	@media screen and (min-width: 36rem) {
+		input {
+			max-width: 50%;
+		}
+
+		button {
+			align-self: flex-start;
+		}
 	}
 </style>

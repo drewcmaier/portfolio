@@ -35,7 +35,7 @@
 		padding-block-start: calc(70px + var(--spacing-5));
 	}
 
-	@media screen and (min-width: 32rem) {
+	@media screen and (min-width: 36rem) {
 		.root-content {
 			padding-block-start: var(--spacing-5);
 		}

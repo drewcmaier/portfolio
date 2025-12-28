@@ -151,7 +151,7 @@
 		At large widths, nav is always visible instead of a toggled
 		hamburger menu.
 	 */
-	@media screen and (min-width: 32rem) {
+	@media screen and (min-width: 36rem) {
 		.nav--closed {
 			filter: var(--nav-shadow);
 		}

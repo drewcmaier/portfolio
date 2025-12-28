@@ -174,7 +174,7 @@
 		max-width: 100%;
 	}
 
-	@media screen and (min-width: 32rem) {
+	@media screen and (min-width: 36rem) {
 		.project-img-small {
 			align-self: center;
 		}
