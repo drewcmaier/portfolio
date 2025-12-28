@@ -32,8 +32,10 @@
 	>
 		{#snippet description()}
 			<p>
-				I'm currently a Software Engineer at <a href="https://employers.indeed.com">Indeed</a>,
-				where I work on the Employer product.
+				I'm currently a Staff Software Engineer at <a href="https://employers.indeed.com">Indeed</a
+				>, where I work on the Employer product. Recently I helped build and launch
+				<a href="https://www.indeed.com/employers/talentscout">Talent Scout</a>, an AI-powered tool
+				that helps employers find candidates faster.
 			</p>
 			<img src={employer} class="project-img" alt="Indeed for Employers page" />
 			<p>
