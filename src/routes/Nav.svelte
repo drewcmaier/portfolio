@@ -11,7 +11,8 @@
 
 	const routes: Route[] = [
 		{ path: '/', label: 'About me' },
-		{ path: '/experience', label: 'Experience' }
+		{ path: '/experience', label: 'Experience' },
+		{ path: '/contact', label: 'Contact' }
 	];
 
 	let isMenuOpen = $state(false);

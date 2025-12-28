@@ -29,9 +29,9 @@
 
 <style>
 	.card {
-		max-width: var(--content-max-width);
-		margin: auto;
 		flex: 1;
+		width: 100%;
+		max-width: var(--content-max-width);
 	}
 
 	.card-heading {

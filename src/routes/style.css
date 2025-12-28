@@ -8,6 +8,7 @@
 	--color-primary: #1e1e2f;
 	--color-secondary: #f9f9fc;
 	--color-background: #e8e8f0;
+	--color-button-primary: var(--color-primary);
 	--color-inset: rgba(255, 255, 255, 0.7);
 	--color-text: #1e1e2f;
 	--color-text-inverse: #ffffff;
@@ -22,6 +23,8 @@
 	--spacing-6: 2rem;
 	--spacing-7: 3rem;
 	--spacing-8: 4rem;
+	--spacing-button-vertical: 0.75rem;
+	--spacing-button-horizontal: 2rem;
 
 	/* Font scale: https://type-scale.com/. Using Major third (rems) */
 	--font-size-0: 0.8rem;
@@ -73,7 +76,7 @@ body {
 	margin: 0;
 }
 
-:where(h1, h2, h3, h4, h5, p, ul, li) {
+:where(h1, h2, h3, h4, h5, p, ul, li, label) {
 	margin: 0;
 	filter: drop-shadow(var(--shadow-text));
 }
@@ -126,9 +129,26 @@ li {
 	list-style-type: none;
 }
 
-:where(input, button) {
-	font-size: inherit;
-	font-family: inherit;
+:where(input, textarea) {
+	font-size: var(--font-size-2);
+	font-family: var(--font-body);
+	font-weight: inherit;
+	border-radius: var(--border-radius-sm);
+	border: var(--border-normal);
+	padding: var(--spacing-2);
+}
+
+label {
+	font-size: var(--font-size-2);
+	font-weight: var(--font-weight-bold);
+}
+
+label+:where(input, textarea):not(:last-child) {
+	margin-bottom: var(--spacing-4);
+}
+
+label:has(+ :where(input, textarea)) {
+	margin-bottom: var(--spacing-1);
 }
 
 button:focus:not(:focus-visible) {
@@ -137,6 +157,30 @@ button:focus:not(:focus-visible) {
 
 svg {
 	fill: var(--color-primary);
+}
+
+.button-primary {
+	background-color: var(--color-button-primary);
+	color: var(--color-text-inverse);
+	padding: var(--spacing-button-vertical) var(--spacing-button-horizontal);
+	border: none;
+	border-radius: var(--border-radius-sm);
+	font-size: var(--font-size-2);
+	box-shadow: var(--shadow-outer);
+	transition: background-color 0.2s ease;
+	cursor: pointer;
+}
+
+.button-primary:hover {
+	background-color: color-mix(in hsl, var(--color-button-primary), white 20%);
+}
+
+.button-primary>.button-primary-text {
+	filter: drop-shadow(var(--shadow-text-inverse));
+}
+
+.error {
+	color: var(--color-error);
 }
 
 .visually-hidden {

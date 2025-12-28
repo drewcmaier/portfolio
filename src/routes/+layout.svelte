@@ -28,6 +28,7 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 
 		padding: var(--spacing-5);
 		/* shift down content to account for floating header  */
