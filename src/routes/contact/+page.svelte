@@ -8,6 +8,15 @@
 
 <Card playTransitionIn={true}>
 	<form method="POST" use:enhance>
+		<input
+			id="contact-website"
+			name="website"
+			type="text"
+			tabindex="-1"
+			autocomplete="off"
+			aria-hidden="true"
+			class="visually-hidden"
+		/>
 		<fieldset disabled={form?.success}>
 			<legend class="visually-hidden">Contact me</legend>
 

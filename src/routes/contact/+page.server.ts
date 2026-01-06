@@ -12,9 +12,15 @@ export const actions: Actions = {
 		const name = data.get('name')?.toString();
 		const email = data.get('email')?.toString();
 		const message = data.get('message')?.toString();
+		const website = data.get('website')?.toString();
 
 		if (!name || !email || !message) {
 			return fail(400, { error: 'All fields are required.', name, email, message });
+		}
+
+		// Honeypot field check
+		if (website && website.trim() !== '') {
+			return { success: true };
 		}
 
 		await resend.emails.send({
