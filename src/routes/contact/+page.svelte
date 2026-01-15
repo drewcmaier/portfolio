@@ -7,6 +7,7 @@
 </script>
 
 <Card playTransitionIn={true}>
+	<p>Let's get in touch!</p>
 	<form method="POST" use:enhance>
 		<input
 			id="contact-website"
