@@ -26,8 +26,11 @@
 			'Typescript',
 			'HTML',
 			'CSS (Emotion, Sass)',
-			'WAI-ARIA',
-			'Design systems'
+			'GraphQL',
+			'Python',
+			'Accessibility',
+			'Design systems',
+			'LLMs'
 		]}
 	>
 		{#snippet description()}
