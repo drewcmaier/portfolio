@@ -1,5 +1,6 @@
 <article class="awards-layout">
 	<h1 class="awards-title">The Dogcademy Awards</h1>
+	<a href="/fun/2024">2024</a>
 	<a href="/fun/2025">2025</a>
 	<a href="/fun/2026">2026</a>
 </article>

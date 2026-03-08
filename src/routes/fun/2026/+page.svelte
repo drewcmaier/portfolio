@@ -1,9 +1,9 @@
 <script lang="ts">
 	import AwardsPage from '../AwardsPage.svelte';
-	import frankenstein from './images/frankenstein.png';
-	import hamnet from './images/hamnet.png';
-	import martysupreme from './images/martysupreme.png';
-	import sinners from './images/sinners.png';
+	import frankenstein from './images/frankenstein.jpg';
+	import hamnet from './images/hamnet.jpg';
+	import martysupreme from './images/martysupreme.jpg';
+	import sinners from './images/sinners.jpg';
 
 	const images = [frankenstein, hamnet, martysupreme, sinners];
 </script>
