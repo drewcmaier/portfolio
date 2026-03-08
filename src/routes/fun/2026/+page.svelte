@@ -1,7 +1,10 @@
+<script lang="ts">
+	// Stub for 2026 content
+</script>
+
 <article>
-	<h1>The Dogcademy Awards</h1>
-	<a href="/fun/2025">2025</a>
-	<a href="/fun/2026">2026</a>
+	<h1>The Dogcademy Awards 2026</h1>
+	<p>Coming soon...</p>
 </article>
 
 <style>
@@ -10,10 +13,7 @@
 		background: white;
 		display: flex;
 		flex-direction: column;
-		gap: var(--fun-padding);
 		padding: var(--fun-padding);
-		inline-size: 100%;
-		block-size: 100%;
 
 		& * {
 			max-inline-size: 48rem;
@@ -37,24 +37,10 @@
 		color: #e9c760;
 		text-transform: uppercase;
 		text-align: center;
+		margin-block-end: var(--fun-padding);
 	}
 
-	a {
-		font-family: 'Futura';
-		font-size: var(--font-size-4);
-		color: #333;
-		text-decoration: none;
-		padding: 1rem 8rem;
-		border: 2px solid #e9c760;
-		border-radius: 0.5rem;
-		transition:
-			background-color 0.3s,
-			color 0.3s;
+	p {
 		text-align: center;
-	}
-
-	a:hover {
-		background-color: #e9c760;
-		color: white;
 	}
 </style>

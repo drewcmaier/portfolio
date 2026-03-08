@@ -13,10 +13,8 @@
 	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
-{#if page.route.id === '/fun'}
-	<main class="root-content">
-		{@render children()}
-	</main>
+{#if page.route.id?.includes('/fun')}
+	{@render children()}
 {:else}
 	<Nav />
 
