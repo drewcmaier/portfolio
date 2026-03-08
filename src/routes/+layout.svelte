@@ -13,13 +13,19 @@
 	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
-<Nav />
+{#if page.route.id === '/fun'}
+	<main class="root-content">
+		{@render children()}
+	</main>
+{:else}
+	<Nav />
 
-<main class="root-content">
-	{@render children()}
-</main>
+	<main class="root-content">
+		{@render children()}
+	</main>
 
-<Footer />
+	<Footer />
+{/if}
 
 <style>
 	.root-content {
