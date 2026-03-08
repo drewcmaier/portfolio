@@ -1,42 +1,15 @@
-<article>
-	<h1>The Dogcademy Awards</h1>
+<article class="awards-layout">
+	<h1 class="awards-title">The Dogcademy Awards</h1>
 	<a href="/fun/2025">2025</a>
 	<a href="/fun/2026">2026</a>
 </article>
 
 <style>
+	@import './awards.css';
+
 	article {
-		--fun-padding: 1rem;
-		background: white;
-		display: flex;
-		flex-direction: column;
-		gap: var(--fun-padding);
-		padding: var(--fun-padding);
 		inline-size: 100%;
 		block-size: 100%;
-
-		& * {
-			max-inline-size: 48rem;
-			margin-inline: 0;
-		}
-	}
-
-	@media screen and (min-width: 52rem) {
-		article {
-			--fun-padding: 2rem;
-
-			& * {
-				margin-inline: auto;
-			}
-		}
-	}
-
-	h1 {
-		font-family: 'Futura';
-		font-size: clamp(var(--font-size-1), 12vw, var(--font-size-7));
-		color: #e9c760;
-		text-transform: uppercase;
-		text-align: center;
 	}
 
 	a {
