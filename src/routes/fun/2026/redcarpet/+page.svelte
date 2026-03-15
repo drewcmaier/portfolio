@@ -8,8 +8,7 @@
 			id: 1,
 			image: pearl,
 			title: 'Pearl',
-			caption:
-				'The beautiful baby embraces her French roots in a stunning custom Chanel gown and pink beret'
+			caption: 'The beautiful baby embraces her French roots in a stunning custom Chanel gown'
 		},
 		{
 			id: 2,
@@ -36,7 +35,7 @@
 	<meta property="og:description" content="Red Carpet 2026" />
 	<meta
 		property="og:image"
-		content="https://akns-images.eonline.com/eol_images/Entire_Site/20260315/9401470c-7cc1-4801-92ad-48a87d655f5c_1773608743.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top"
+		content="https://akns-images.eonline.com/eol_images/Entire_Site/20260315/cca9d761-ae11-4ada-a7db-31b7983d5baa_1773614898.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top"
 	/>
 	<meta property="og:url" content="https://www.eonline.com/photos/38129/pre-oscars-2026-parties" />
 	<meta name="twitter:card" content="summary_large_image" />
@@ -44,7 +43,7 @@
 	<meta name="twitter:description" content="Red Carpet 2026" />
 	<meta
 		name="twitter:image"
-		content="https://akns-images.eonline.com/eol_images/Entire_Site/20260315/9401470c-7cc1-4801-92ad-48a87d655f5c_1773608743.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top"
+		content="https://akns-images.eonline.com/eol_images/Entire_Site/20260315/cca9d761-ae11-4ada-a7db-31b7983d5baa_1773614898.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top"
 	/>
 </svelte:head>
 
@@ -199,19 +198,6 @@
 									<div class="photo-item" id="photo-{item.id}">
 										<figure>
 											<div class="photo-item__photo-content">
-												<div class="photo-item__pinterest">
-													<a
-														data-pin-do="buttonPin"
-														data-pin-tall="true"
-														data-pin-round="true"
-														href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.eonline.com%2Fphotos%2F38129%2Fpre-oscars-2026-parties%23{item.id}&amp;media={item.image}&amp;description={item.title} from Red Carpet 2026 on E! Online"
-													>
-														<img
-															src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png"
-															alt="Pin It"
-														/>
-													</a>
-												</div>
 												<span class="thumb thumb--inview">
 													<img
 														srcSet="{item.image}?fit=around%7C776:1035&amp;output-quality=90&amp;crop=776:1035;center,top 1x, {item.image}?fit=around%7C768:1024&amp;output-quality=90&amp;crop=768:1024;center,top 2x"
@@ -470,19 +456,6 @@
 
 	.photo-item__photo-content {
 		position: relative;
-	}
-
-	.photo-item__pinterest {
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
-		z-index: 2;
-	}
-
-	.photo-item__pinterest img {
-		width: 32px;
-		height: 32px;
-		display: block;
 	}
 
 	.thumb {
