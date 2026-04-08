@@ -4,6 +4,9 @@
 	import type { PageProps } from './$types';
 
 	let { form }: PageProps = $props();
+
+	// Add timestamp when component mounts
+	let timestamp = $state(Date.now());
 </script>
 
 <Card playTransitionIn={true}>
@@ -18,6 +21,16 @@
 			aria-hidden="true"
 			class="visually-hidden"
 		/>
+		<input
+			id="contact-phone"
+			name="phone"
+			type="text"
+			tabindex="-1"
+			autocomplete="off"
+			aria-hidden="true"
+			class="visually-hidden"
+		/>
+		<input type="hidden" name="timestamp" value={timestamp} />
 		<fieldset disabled={form?.success}>
 			<legend class="visually-hidden">Contact me</legend>
 
