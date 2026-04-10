@@ -2,6 +2,9 @@
 	import { dev } from '$app/environment';
 	import { page } from '$app/state';
 	import { inject } from '@vercel/analytics';
+	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
+	import { theme } from '$lib/themeStore.svelte';
 
 	import Footer from './Footer.svelte';
 	import Nav from './Nav.svelte';
@@ -11,6 +14,16 @@
 
 	// Enables Vercel analytics
 	inject({ mode: dev ? 'development' : 'production' });
+
+	// Initialize theme on mount
+	onMount(() => {
+		if (browser) {
+			const unsubscribe = theme.subscribe((currentTheme) => {
+				document.documentElement.setAttribute('data-theme', currentTheme);
+			});
+			return unsubscribe;
+		}
+	});
 </script>
 
 {#if page.route.id?.includes('/fun')}

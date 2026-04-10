@@ -16,7 +16,11 @@
 	.tag {
 		border-radius: var(--border-radius-md);
 		background-color: var(--color-inset);
-		box-shadow: var(--shadow-inner);
-		padding: var(--spacing-3);
+		border: 1px solid var(--color-accent);
+		color: var(--color-text);
+		padding: var(--spacing-3) var(--spacing-4);
+		font-size: var(--font-size-1);
+		font-weight: var(--font-weight-normal);
+		display: inline-block;
 	}
 </style>

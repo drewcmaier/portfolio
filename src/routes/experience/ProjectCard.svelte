@@ -51,6 +51,10 @@
 		filter: brightness(0) drop-shadow(var(--shadow-text));
 	}
 
+	:root[data-theme='dark'] .project-card-logo {
+		filter: brightness(0) invert(1) drop-shadow(var(--shadow-text));
+	}
+
 	.project-card-technologies-heading {
 		font-weight: var(--font-weight-bold);
 		margin-block-end: var(--spacing-1);

@@ -45,12 +45,20 @@
 
 	.card-content {
 		background-color: var(--color-secondary);
+		border: 1px solid var(--color-border);
 		box-shadow: var(--shadow-outer);
-		border-radius: var(--border-radius-sm);
+		border-radius: var(--border-radius-md);
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-5);
 		padding: var(--spacing-5);
+		transition:
+			box-shadow 0.3s ease,
+			border-color 0.3s ease;
+	}
+
+	.card-content:hover {
+		box-shadow: 0px 12px 24px var(--color-shadow);
 	}
 
 	@media (prefers-reduced-motion: no-preference) {

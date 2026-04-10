@@ -5,15 +5,23 @@
 }
 
 :root {
-	--color-primary: #1e1e2f;
-	--color-secondary: #f9f9fc;
-	--color-background: #e8e8f0;
-	--color-button-primary: var(--color-primary);
-	--color-inset: rgba(255, 255, 255, 0.7);
-	--color-text: #1e1e2f;
-	--color-text-inverse: #ffffff;
-	--color-border: #d1d1d6;
-	--color-shadow: rgba(0, 0, 0, 0.15);
+	/* Light theme (default) */
+	--color-primary: #0F172A;
+	--color-secondary: #FFFFFF;
+	--color-background: #F8FAFB;
+	--color-accent: #3B82F6;
+	--color-accent-secondary: #2563EB;
+	--color-button-primary: var(--color-accent);
+	--color-inset: rgba(59, 130, 246, 0.1);
+	--color-text: #0F172A;
+	--color-text-inverse: #FFFFFF;
+	--color-border: #E2E8F0;
+	--color-shadow: rgba(15, 23, 42, 0.08);
+	--color-link-hover: #2563EB;
+
+	/* Smooth theme transitions */
+	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease,
+		box-shadow 0.3s ease;
 
 	--spacing-1: 0.25rem;
 	--spacing-2: 0.375rem;
@@ -52,7 +60,7 @@
 
 	--shadow-outer: 0px 6px 12px var(--color-shadow);
 	--shadow-inner: inset 0px 2px 4px var(--color-shadow);
-	--shadow-text: 0px 2px 1px rgba(0, 0, 0, 0.15);
+	--shadow-text: 0px 2px 1px rgba(15, 23, 42, 0.15);
 	--shadow-text-inverse: 0px 2px 1px rgba(255, 255, 255, 0.3);
 
 	font-family: var(--font-body);
@@ -60,9 +68,26 @@
 	color: var(--color-text);
 }
 
+/* Dark theme */
+:root[data-theme='dark'] {
+	--color-primary: #C9D1D9;
+	--color-secondary: #161B22;
+	--color-background: #0F1117;
+	--color-accent: #58A6FF;
+	--color-accent-secondary: #79C0FF;
+	--color-button-primary: var(--color-accent);
+	--color-inset: rgba(88, 166, 255, 0.1);
+	--color-text: #C9D1D9;
+	--color-text-inverse: #0F1117;
+	--color-border: #30363D;
+	--color-shadow: rgba(0, 0, 0, 0.4);
+	--color-link-hover: #79C0FF;
+}
+
 html {
 	height: 100%;
 	background-color: var(--color-background);
+	scrollbar-gutter: stable;
 }
 
 body {
@@ -108,7 +133,12 @@ h5 {
 
 :where(a, a:visited) {
 	font-weight: var(--font-weight-bold);
-	color: var(--color-text);
+	color: var(--color-accent);
+	transition: color 0.2s ease;
+}
+
+:where(a:hover, a:focus-visible) {
+	color: var(--color-link-hover);
 }
 
 strong {
@@ -156,7 +186,8 @@ button:focus:not(:focus-visible) {
 }
 
 svg {
-	fill: var(--color-primary);
+	fill: var(--color-accent);
+	stroke: var(--color-accent);
 }
 
 .button-primary {
@@ -167,12 +198,17 @@ svg {
 	border-radius: var(--border-radius-sm);
 	font-size: var(--font-size-2);
 	box-shadow: var(--shadow-outer);
-	transition: background-color 0.2s ease;
+	transition: background-color 0.2s ease, transform 0.1s ease;
 	cursor: pointer;
 }
 
 .button-primary:hover {
-	background-color: color-mix(in hsl, var(--color-button-primary), white 20%);
+	background-color: var(--color-link-hover);
+	transform: translateY(-1px);
+}
+
+.button-primary:active {
+	transform: translateY(0);
 }
 
 .button-primary>.button-primary-text {
