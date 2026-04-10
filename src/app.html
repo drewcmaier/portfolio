@@ -9,6 +9,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&family=VT323&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width" />
+	<script>
+		// Apply theme from localStorage immediately to prevent flash
+		(function () {
+			const stored = localStorage.getItem('theme');
+			const theme = stored === 'light' || stored === 'dark' ? stored : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+			document.documentElement.setAttribute('data-theme', theme);
+		})();
+	</script>
 	%sveltekit.head%
 </head>
 

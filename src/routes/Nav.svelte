@@ -19,6 +19,8 @@
 	];
 
 	let isMenuOpen = $state(false);
+	let mounted = $state(false);
+
 	function onToggleMenu() {
 		isMenuOpen = !isMenuOpen;
 	}
@@ -30,6 +32,10 @@
 	function handleThemeToggle() {
 		theme.toggle();
 	}
+
+	$effect(() => {
+		mounted = true;
+	});
 
 	$effect(() => {
 		// Prevent interactions outside nav
@@ -57,10 +63,12 @@
 				aria-label="Toggle theme"
 				title={$theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
 			>
-				{#if $theme === 'light'}
-					<Moon />
-				{:else}
-					<Sun />
+				{#if mounted}
+					{#if $theme === 'light'}
+						<Moon />
+					{:else}
+						<Sun />
+					{/if}
 				{/if}
 			</button>
 			<button
@@ -88,6 +96,22 @@
 					>
 				</li>
 			{/each}
+			<li class="nav-menu-item-theme">
+				<button
+					class="theme-toggle theme-toggle--menu"
+					onclick={handleThemeToggle}
+					aria-label="Toggle theme"
+					title={$theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+				>
+					{#if mounted}
+						{#if $theme === 'light'}
+							<Moon />
+						{:else}
+							<Sun />
+						{/if}
+					{/if}
+				</button>
+			</li>
 		</ul>
 	</nav>
 </header>
@@ -219,6 +243,24 @@
 		stroke: var(--color-accent);
 	}
 
+	.theme-toggle--menu {
+		display: none;
+		width: auto;
+		height: auto;
+		border: none;
+		font-size: var(--font-size-2);
+		gap: var(--spacing-2);
+	}
+
+	.theme-toggle--menu :global(svg) {
+		width: 24px;
+		height: 24px;
+	}
+
+	.nav-menu-item-theme {
+		display: none;
+	}
+
 	.nav--closed .nav-menu {
 		filter: var(--nav-shadow);
 	}
@@ -261,6 +303,7 @@
 			background-color: transparent;
 			border: 0;
 			gap: var(--spacing-4);
+			padding-right: 80px;
 		}
 
 		.nav-menu-toggle {
@@ -270,6 +313,51 @@
 		.nav-controls {
 			position: absolute;
 			right: var(--spacing-4);
+		}
+
+		.nav-menu-item-theme {
+			display: none;
+		}
+
+		.theme-toggle--menu {
+			display: none;
+		}
+	}
+
+	/* Mobile: show theme toggle in menu, hide in nav-controls */
+	@media screen and (max-width: 35.9rem) {
+		.nav-menu-item-theme {
+			display: flex;
+			justify-content: center;
+		}
+
+		.theme-toggle--menu {
+			display: flex;
+			align-items: center;
+			background: none;
+			border: 1px solid var(--color-border);
+			border-radius: var(--border-radius-md);
+			padding: var(--spacing-3);
+			cursor: pointer;
+			color: var(--color-text);
+			transition:
+				background-color 0.2s ease,
+				border-color 0.2s ease,
+				transform 0.1s ease;
+		}
+
+		.theme-toggle--menu:hover {
+			background-color: var(--color-background);
+			border-color: var(--color-accent);
+			transform: scale(1.05);
+		}
+
+		.theme-toggle--menu:active {
+			transform: scale(0.95);
+		}
+
+		.nav-controls .theme-toggle {
+			display: none;
 		}
 	}
 </style>
