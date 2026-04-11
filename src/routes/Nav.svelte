@@ -119,7 +119,6 @@
 <style>
 	.nav-outer {
 		background-color: var(--color-secondary);
-		border-bottom: 1px solid var(--color-border);
 		--nav-shadow: drop-shadow(0 2px 3px var(--color-shadow));
 		transition:
 			background-color 0.3s ease,
@@ -130,6 +129,7 @@
 		background-color: var(--color-secondary);
 		color: var(--color-text);
 		fill: var(--color-accent);
+		border-bottom: 1px solid var(--color-border);
 
 		box-sizing: content-box;
 		display: flex;
@@ -243,21 +243,47 @@
 		stroke: var(--color-accent);
 	}
 
-	.theme-toggle--menu {
-		display: none;
-		width: auto;
-		height: auto;
-		border: none;
-		font-size: var(--font-size-2);
-		gap: var(--spacing-2);
-	}
-
 	.theme-toggle--menu :global(svg) {
 		width: 24px;
 		height: 24px;
 	}
 
 	.nav-menu-item-theme {
+		display: flex;
+		justify-content: center;
+	}
+
+	.theme-toggle--menu {
+		width: auto;
+		height: auto;
+		/* border: none; */
+		font-size: var(--font-size-2);
+		gap: var(--spacing-2);
+		display: flex;
+		align-items: center;
+		background: none;
+		border: 1px solid var(--color-border);
+		border-radius: var(--border-radius-md);
+		padding: var(--spacing-3);
+		cursor: pointer;
+		color: var(--color-text);
+		transition:
+			background-color 0.2s ease,
+			border-color 0.2s ease,
+			transform 0.1s ease;
+	}
+
+	.theme-toggle--menu:hover {
+		background-color: var(--color-background);
+		border-color: var(--color-accent);
+		transform: scale(1.05);
+	}
+
+	.theme-toggle--menu:active {
+		transform: scale(0.95);
+	}
+
+	.nav-controls .theme-toggle {
 		display: none;
 	}
 
@@ -290,8 +316,13 @@
 			display: flex;
 		}
 
+		.nav-outer {
+			border-bottom: 1px solid var(--color-border);
+		}
+
 		.nav-menu {
 			position: static;
+			border-bottom: none;
 		}
 
 		.nav-menu-list {
@@ -302,8 +333,7 @@
 			margin: 0;
 			background-color: transparent;
 			border: 0;
-			gap: var(--spacing-4);
-			padding-right: 80px;
+			gap: var(--spacing-6);
 		}
 
 		.nav-menu-toggle {
@@ -315,6 +345,11 @@
 			right: var(--spacing-4);
 		}
 
+		.nav-controls .theme-toggle {
+			display: flex;
+			filter: drop-shadow(var(--shadow-text));
+		}
+
 		.nav-menu-item-theme {
 			display: none;
 		}
@@ -324,40 +359,9 @@
 		}
 	}
 
-	/* Mobile: show theme toggle in menu, hide in nav-controls */
-	@media screen and (max-width: 35.9rem) {
-		.nav-menu-item-theme {
-			display: flex;
-			justify-content: center;
-		}
-
-		.theme-toggle--menu {
-			display: flex;
-			align-items: center;
-			background: none;
-			border: 1px solid var(--color-border);
-			border-radius: var(--border-radius-md);
-			padding: var(--spacing-3);
-			cursor: pointer;
-			color: var(--color-text);
-			transition:
-				background-color 0.2s ease,
-				border-color 0.2s ease,
-				transform 0.1s ease;
-		}
-
-		.theme-toggle--menu:hover {
-			background-color: var(--color-background);
-			border-color: var(--color-accent);
-			transform: scale(1.05);
-		}
-
-		.theme-toggle--menu:active {
-			transform: scale(0.95);
-		}
-
-		.nav-controls .theme-toggle {
-			display: none;
+	@media screen and (max-width: 55rem) {
+		.nav-menu-list {
+			padding-right: 80px;
 		}
 	}
 </style>

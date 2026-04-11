@@ -9,7 +9,7 @@
 	--color-primary: #0F172A;
 	--color-secondary: #FFFFFF;
 	--color-background: #F8FAFB;
-	--color-accent: #0369A1;
+	--color-accent: #025e90;
 	--color-accent-secondary: #0284C7;
 	--color-button-primary: var(--color-accent);
 	--color-inset: rgba(3, 105, 161, 0.1);
@@ -73,7 +73,7 @@
 	--color-primary: #C9D1D9;
 	--color-secondary: #161B22;
 	--color-background: #0F1117;
-	--color-accent: #38BDF8;
+	--color-accent: #26b9f8;
 	--color-accent-secondary: #0EA5E9;
 	--color-button-primary: var(--color-accent);
 	--color-inset: rgba(56, 189, 248, 0.1);
@@ -188,7 +188,7 @@ button:focus:not(:focus-visible) {
 
 svg {
 	fill: var(--color-accent);
-	stroke: var(--color-accent);
+	stroke: transparent;
 }
 
 .button-primary {

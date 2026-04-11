@@ -35,13 +35,14 @@
 		flex-direction: column;
 		align-items: center;
 
-		padding: var(--spacing-5);
+		padding: var(--spacing-4);
 		/* shift down content to account for floating header  */
 		padding-block-start: calc(70px + var(--spacing-5));
 	}
 
 	@media screen and (min-width: 36rem) {
 		.root-content {
+			padding: var(--spacing-5);
 			padding-block-start: var(--spacing-5);
 		}
 	}
