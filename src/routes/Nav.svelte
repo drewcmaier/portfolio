@@ -359,7 +359,7 @@
 		}
 	}
 
-	@media screen and (max-width: 55rem) {
+	@media screen and (36rem <= width <= 55rem) {
 		.nav-menu-list {
 			padding-right: 80px;
 		}
