@@ -1,32 +1,32 @@
 /* Shared styles for awards pages */
 .awards-layout {
-    --fun-padding: 1rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    gap: var(--fun-padding);
-    padding: var(--fun-padding);
+	--fun-padding: 1rem;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	gap: var(--fun-padding);
+	padding: var(--fun-padding);
 
-    & * {
-        max-inline-size: 48rem;
-        margin-inline: 0;
-    }
+	& * {
+		max-inline-size: 48rem;
+		margin-inline: 0;
+	}
 }
 
 @media screen and (min-width: 52rem) {
-    .awards-layout {
-        --fun-padding: 2rem;
+	.awards-layout {
+		--fun-padding: 2rem;
 
-        & * {
-            margin-inline: auto;
-        }
-    }
+		& * {
+			margin-inline: auto;
+		}
+	}
 }
 
 .awards-title {
-    font-family: 'Futura';
-    font-size: clamp(var(--font-size-1), 12vw, var(--font-size-7));
-    color: #e9c760;
-    text-transform: uppercase;
-    text-align: center;
+	font-family: 'Futura';
+	font-size: clamp(var(--font-size-1), 12vw, var(--font-size-7));
+	color: #e9c760;
+	text-transform: uppercase;
+	text-align: center;
 }

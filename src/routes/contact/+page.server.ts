@@ -48,7 +48,7 @@ export const actions: Actions = {
 		];
 
 		const combinedText = `${name} ${email} ${message}`.toLowerCase();
-		if (spamPatterns.some(pattern => pattern.test(combinedText))) {
+		if (spamPatterns.some((pattern) => pattern.test(combinedText))) {
 			return { success: true };
 		}
 
@@ -64,7 +64,7 @@ export const actions: Actions = {
 		From: ${name} <${email}>
 
 		${message}
-		`,
+		`
 		});
 
 		return { name, email, message, success: true };

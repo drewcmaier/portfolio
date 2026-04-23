@@ -10,7 +10,6 @@
 
 	let { children } = $props();
 
-	// Enables Vercel analytics
 	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
@@ -28,7 +27,7 @@
 
 <style>
 	.root-content {
-		background-color: var(--color-background);
+		background-color: transparent;
 
 		flex: 1;
 		display: flex;
@@ -36,14 +35,13 @@
 		align-items: center;
 
 		padding: var(--spacing-4);
-		/* shift down content to account for floating header  */
-		padding-block-start: calc(70px + var(--spacing-5));
+		padding-block-start: var(--spacing-6);
 	}
 
 	@media screen and (min-width: 36rem) {
 		.root-content {
 			padding: var(--spacing-5);
-			padding-block-start: var(--spacing-5);
+			padding-block-start: var(--spacing-7);
 		}
 	}
 </style>

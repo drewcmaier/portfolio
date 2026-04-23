@@ -14,13 +14,16 @@
 
 <style>
 	.tag {
-		border-radius: var(--border-radius-md);
-		background-color: var(--color-inset);
-		border: 1px solid var(--color-accent);
+		border-radius: 0;
+		background-color: transparent;
+		border: 2px solid var(--color-border);
 		color: var(--color-text);
-		padding: var(--spacing-3) var(--spacing-4);
-		font-size: var(--font-size-1);
-		font-weight: var(--font-weight-normal);
+		padding: 0.15rem 0.5rem;
+		font-size: var(--font-size-0);
+		font-family: var(--font-mono);
+		font-weight: var(--font-weight-medium);
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
 		display: inline-block;
 	}
 </style>

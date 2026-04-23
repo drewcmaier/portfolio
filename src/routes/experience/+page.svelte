@@ -158,7 +158,7 @@
 		object-fit: cover;
 		object-position: top center;
 		aspect-ratio: 16 / 9;
-		box-shadow: var(--shadow-outer);
+		border: var(--border-normal);
 	}
 
 	.card-container {
@@ -170,7 +170,7 @@
 	.project-img {
 		width: 100%;
 		height: auto;
-		border-radius: var(--border-radius-sm);
+		border-radius: 0;
 	}
 
 	.project-img-small {

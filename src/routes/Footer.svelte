@@ -1,46 +1,60 @@
 <footer class="footer-wrapper">
 	<div class="footer-content">
-		<p>©2026 Drew Maier</p>
-		<p>Created with <a href="https://kit.svelte.dev/">Svelte</a></p>
+		<p><span class="md-slash">//</span> © 2026 Drew Maier</p>
+		<p><span class="md-slash">//</span> <a href="https://kit.svelte.dev/">svelte</a></p>
 	</div>
 </footer>
 
 <style>
 	.footer-wrapper {
-		background-color: var(--color-secondary);
-		border-top: 1px solid var(--color-border);
+		background-color: var(--color-background);
+		border-top: var(--border-normal);
+		margin-block-start: var(--spacing-7);
 		transition:
-			background-color 0.3s ease,
-			border-color 0.3s ease;
+			background-color 0.2s,
+			border-color 0.2s;
 	}
 
 	.footer-content {
-		box-sizing: content-box;
-
 		display: flex;
 		justify-content: space-between;
 		padding: var(--spacing-4);
+		font-family: var(--font-mono);
 		font-size: var(--font-size-0);
-		color: var(--color-text);
-		filter: drop-shadow(var(--shadow-text));
-
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--color-text-muted);
 		max-width: var(--content-max-width);
 		margin: auto;
 	}
 
 	.footer-content a {
-		color: var(--color-accent);
+		color: var(--color-text);
 		text-decoration: none;
-		transition: color 0.2s ease;
+		padding: 0 0.2em;
 	}
 
 	.footer-content a:hover {
-		color: var(--color-link-hover);
-		text-decoration: underline;
+		background-color: var(--color-accent);
+		color: var(--color-accent-ink);
 	}
 
 	.footer-content p {
 		font-size: inherit;
 		margin: 0;
+	}
+
+	.md-slash {
+		color: var(--color-accent-secondary);
+	}
+
+	:root[data-theme='dark'] .md-slash {
+		color: var(--color-accent);
+	}
+
+	@media screen and (min-width: 52rem) {
+		.footer-content {
+			padding: var(--spacing-4) 0;
+		}
 	}
 </style>

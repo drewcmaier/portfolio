@@ -25,7 +25,9 @@
 	<Card playTransitionIn={isVisible} playTransitionOut={!isVisible} heading={ProjectHeading}>
 		{@render description()}
 		<aside>
-			<h4 class="project-card-technologies-heading">Technologies</h4>
+			<h4 class="project-card-technologies-heading">
+				<span class="md-slash">//</span> Technologies
+			</h4>
 			<ul class="project-card-technologies-list">
 				{#each technologies as technology}
 					<li class="project-card-technologies-list-item">
@@ -41,23 +43,37 @@
 	.project-card-heading {
 		display: inline;
 		margin-block-end: 0;
-		filter: inherit;
+		font-family: var(--font-mono);
 		font-weight: var(--font-weight-bold);
+		text-transform: uppercase;
+		letter-spacing: -0.02em;
 	}
 
 	.project-card-logo {
-		max-block-size: 2rem;
-		margin-inline-end: var(--spacing-4);
-		filter: brightness(0) drop-shadow(var(--shadow-text));
+		max-block-size: 1.5rem;
+		margin-inline-end: var(--spacing-3);
+		filter: brightness(0);
 	}
 
 	:root[data-theme='dark'] .project-card-logo {
-		filter: brightness(0) invert(1) drop-shadow(var(--shadow-text));
+		filter: brightness(0) invert(1);
 	}
 
 	.project-card-technologies-heading {
+		font-family: var(--font-mono);
+		font-size: var(--font-size-0);
 		font-weight: var(--font-weight-bold);
-		margin-block-end: var(--spacing-1);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		margin-block-end: var(--spacing-3);
+	}
+
+	.md-slash {
+		color: var(--color-accent-secondary);
+	}
+
+	:root[data-theme='dark'] .md-slash {
+		color: var(--color-accent);
 	}
 
 	.project-card-technologies-list {
@@ -67,7 +83,6 @@
 	}
 
 	.project-card-technologies-list-item {
-		font-size: var(--font-size-2);
-		filter: none;
+		font-size: var(--font-size-1);
 	}
 </style>

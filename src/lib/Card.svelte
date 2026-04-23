@@ -38,65 +38,65 @@
 		align-items: center;
 		color: var(--color-text);
 		display: flex;
-		filter: drop-shadow(var(--shadow-text));
 		flex-direction: row;
-		margin-block-end: var(--spacing-4);
+		padding: var(--spacing-3) var(--spacing-4);
+		border: var(--border-normal);
+		border-bottom: none;
+		background-color: var(--color-secondary);
 	}
 
 	.card-content {
 		background-color: var(--color-secondary);
-		border: 1px solid var(--color-border);
-		box-shadow: var(--shadow-outer);
-		border-radius: var(--border-radius-md);
+		border: var(--border-normal);
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-5);
-		padding: var(--spacing-4);
-		transition:
-			box-shadow 0.3s ease,
-			border-color 0.3s ease;
+		padding: var(--spacing-5);
+		position: relative;
 	}
 
-	.card-content:hover {
-		box-shadow: 0px 12px 24px var(--color-shadow);
+	.card-content::before {
+		content: '';
+		position: absolute;
+		inset: 6px -6px -6px 6px;
+		background-color: var(--color-accent-secondary);
+		z-index: -1;
 	}
 
-	@media screen and (min-width: 36rem) {
-		.card-content {
-			padding: var(--spacing-5);
-		}
+	:root[data-theme='dark'] .card-content::before {
+		background-color: var(--color-accent);
 	}
 
 	@media (prefers-reduced-motion: no-preference) {
 		.card-fade-in {
-			animation: fadein 1s;
+			animation: slidein 0.5s cubic-bezier(0.2, 0.9, 0.2, 1);
 			animation-fill-mode: both;
 		}
 
 		.card-fade-out {
-			animation: fadeout 0.5s;
+			animation: slideout 0.3s cubic-bezier(0.2, 0.9, 0.2, 1);
 			animation-fill-mode: both;
 		}
 
-		@keyframes fadein {
+		@keyframes slidein {
 			from {
 				opacity: 0;
-				transform: translateY(10px);
+				transform: translateX(-12px);
 			}
 			to {
 				opacity: 1;
-				transform: translateY(0);
+				transform: translateX(0);
 			}
 		}
 
-		@keyframes fadeout {
+		@keyframes slideout {
 			from {
 				opacity: 1;
-				transform: translateY(0);
+				transform: translateX(0);
 			}
 			to {
 				opacity: 0;
-				transform: translateY(10px);
+				transform: translateX(12px);
 			}
 		}
 	}
