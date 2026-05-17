@@ -14,7 +14,6 @@
 	},
 	"type": "module",
 	"devDependencies": {
-		"@rollup/rollup-darwin-arm64": "^4.60.4",
 		"@sveltejs/adapter-vercel": "^6.3.0",
 		"@sveltejs/kit": "^2.57.1",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
@@ -37,7 +36,7 @@
 	"optionalDependencies": {
 		"@rollup/rollup-android-arm-eabi": "^4.59.0",
 		"@rollup/rollup-android-arm64": "^4.59.0",
-		"@rollup/rollup-darwin-arm64": "^4.59.0",
+		"@rollup/rollup-darwin-arm64": "^4.60.4",
 		"@rollup/rollup-darwin-x64": "^4.59.0",
 		"@rollup/rollup-freebsd-arm64": "^4.59.0",
 		"@rollup/rollup-freebsd-x64": "^4.59.0",
