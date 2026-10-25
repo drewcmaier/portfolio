@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import Card from '$lib/Card.svelte';
+	import Card from '#lib/Card.svelte';
 	import type { PageProps } from './$types';
 
 	let { form }: PageProps = $props();

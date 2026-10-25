@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import { browser } from '$app/environment';
-	import { theme } from '$lib/themeStore.svelte';
-	import Hamburger from '$lib/icons/Hamburger.svelte';
-	import X from '$lib/icons/X.svelte';
-	import Sun from '$lib/icons/Sun.svelte';
-	import Moon from '$lib/icons/Moon.svelte';
+	import { page } from '$app/state';
+	import { browser } from '$app/env';
+	import { theme } from '#lib/themeStore.svelte.ts';
+	import Hamburger from '#lib/icons/Hamburger.svelte';
+	import X from '#lib/icons/X.svelte';
+	import Sun from '#lib/icons/Sun.svelte';
+	import Moon from '#lib/icons/Moon.svelte';
 
 	interface Route {
 		path: string;
@@ -75,10 +75,10 @@
 						href={route.path}
 						onclick={onClickLink}
 						class="nav-menu-link"
-						class:nav-menu-link--active={$page.route.id === route.path}
+						class:nav-menu-link--active={page.route.id === route.path}
 					>
-						{#if $page.route.id === route.path}<span class="nav-bracket">[</span
-							>{/if}{route.label}{#if $page.route.id === route.path}<span class="nav-bracket"
+						{#if page.route.id === route.path}<span class="nav-bracket">[</span
+							>{/if}{route.label}{#if page.route.id === route.path}<span class="nav-bracket"
 								>]</span
 							>{/if}
 					</a>

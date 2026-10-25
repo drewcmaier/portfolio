@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { dev } from '$app/environment';
 	import { page } from '$app/state';
-	import { inject } from '@vercel/analytics';
-	import { theme } from '$lib/themeStore.svelte';
+	import { theme } from '#lib/themeStore.svelte.ts';
 
 	import Footer from './Footer.svelte';
 	import Nav from './Nav.svelte';
@@ -10,7 +8,6 @@
 
 	let { children } = $props();
 
-	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 {#if page.route.id?.includes('/fun')}

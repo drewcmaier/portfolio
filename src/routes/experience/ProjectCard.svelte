@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 
-	import Card from '$lib/Card.svelte';
-	import Tag from '$lib/Tag.svelte';
-	import VisibilityObserver from '$lib/VisibilityObserver.svelte';
+	import Card from '#lib/Card.svelte';
+	import Tag from '#lib/Tag.svelte';
+	import VisibilityObserver from '#lib/VisibilityObserver.svelte';
 
 	interface ProjectCardProps {
 		logo: string;

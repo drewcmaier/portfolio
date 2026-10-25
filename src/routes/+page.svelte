@@ -1,8 +1,8 @@
 <script>
-	import LinkedIn from '$lib/icons/LinkedIn.svelte';
-	import GitHub from '$lib/icons/GitHub.svelte';
-	import Card from '$lib/Card.svelte';
-	import TypingEffect from '$lib/TypingEffect.svelte';
+	import LinkedIn from '#lib/icons/LinkedIn.svelte';
+	import GitHub from '#lib/icons/GitHub.svelte';
+	import Card from '#lib/Card.svelte';
+	import TypingEffect from '#lib/TypingEffect.svelte';
 </script>
 
 <Card playTransitionIn={true}>

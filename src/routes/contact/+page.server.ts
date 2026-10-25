@@ -1,7 +1,7 @@
 import type { Actions } from './$types';
 import { fail } from '@sveltejs/kit';
 import { Resend } from 'resend';
-import { CONTACT_TO_EMAIL, RESEND_API_KEY } from '$env/static/private';
+import { CONTACT_TO_EMAIL, RESEND_API_KEY } from '$app/env/private';
 
 const resend = new Resend(RESEND_API_KEY);
 
